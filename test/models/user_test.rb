@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
@@ -8,7 +10,7 @@ class UserTest < ActiveSupport::TestCase
   def test_user_should_be_valid
     assert @user.valid?
   end
-  
+
   def test_invalid_user
     @user.first_name = ""
     assert_not @user.valid?
@@ -50,13 +52,13 @@ class UserTest < ActiveSupport::TestCase
 
   def test_first_name_should_be_valid_length
     @user.first_name = "a" * 100
-    assert_not @user.valid? 
+    assert_not @user.valid?
     assert_equal ["First name is too long (maximum is 50 characters)"], @user.errors.full_messages
   end
 
   def test_last_name_should_be_valid_length
     @user.last_name = "a" * 100
-    assert_not @user.valid? 
+    assert_not @user.valid?
     assert_equal ["Last name is too long (maximum is 50 characters)"], @user.errors.full_messages
   end
 
@@ -76,7 +78,7 @@ class UserTest < ActiveSupport::TestCase
   def test_validation_should_accept_valid_addresses
     valid_emails = %w[user@example.com USER@example.COM US-ER@example.org
       first.last@example.in user+one@example.ac.in]
-  
+
     valid_emails.each do |email|
       @user.email = email
       assert @user.valid?
@@ -86,7 +88,7 @@ class UserTest < ActiveSupport::TestCase
   def test_validation_should_reject_invalid_addresses
     invalid_emails = %w[user@example,com user_at_example.org user.name@example.
       @sam-sam.com sam@sam+exam.com fishy+#.com]
-  
+
     invalid_emails.each do |email|
       @user.email = email
       assert @user.invalid?
@@ -100,5 +102,4 @@ class UserTest < ActiveSupport::TestCase
     user2.email = "sam@example.com"
     assert user2.invalid?
   end
-
 end
