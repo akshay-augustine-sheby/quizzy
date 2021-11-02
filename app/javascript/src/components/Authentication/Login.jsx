@@ -24,7 +24,7 @@ const Login = () => {
       });
       setAuthHeaders();
       //setLoading(false);
-      window.location.href = "/";
+      //window.location.href = "/";
     } catch (error) {
       logger.error(error);
       //setLoading(false);
@@ -32,11 +32,13 @@ const Login = () => {
   };
 
   return (
-    <LoginForm
-      setEmail={setEmail}
-      setPassword={setPassword}
-      handleSubmit={handleSubmit}
-    />
+    <div>
+      <LoginForm
+        setEmail={setEmail}
+        setPassword={setPassword}
+        handleSubmit={handleSubmit}
+      />
+    </div>
   );
 };
 
