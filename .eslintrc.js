@@ -30,7 +30,7 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: "detect",
+      version: "latest",
     },
   },
   parserOptions: {
@@ -39,6 +39,10 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: "module",
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ["@babel/preset-react"],
+    },
   },
   // babel-eslint is deprecated now. This is the latest package.
   parser: "@babel/eslint-parser",
