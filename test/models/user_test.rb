@@ -4,7 +4,9 @@ require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(first_name: "Sam", last_name: "Smith", email: "sam@example.com")
+    @user = User.new(
+      first_name: "Sam", last_name: "Smith", email: "sam@example.com", password: "welcome",
+      password_confirmation: "welcome")
   end
 
   def test_user_should_be_valid
@@ -14,7 +16,7 @@ class UserTest < ActiveSupport::TestCase
   def test_invalid_user
     @user.first_name = ""
     assert_not @user.valid?
-    assert_equal ["First name can't be blank"], @user.errors.full_messages
+    assert_includes @user.errors.full_messages, "First name can't be blank"
   end
 
   def test_first_name_should_be_present
@@ -25,7 +27,7 @@ class UserTest < ActiveSupport::TestCase
   def test_first_name_cant_be_blank
     @user.first_name = ""
     assert_not @user.valid?
-    assert_equal ["First name can't be blank"], @user.errors.full_messages
+    assert_includes @user.errors.full_messages, "First name can't be blank"
   end
 
   def test_last_name_should_be_present
@@ -36,7 +38,7 @@ class UserTest < ActiveSupport::TestCase
   def test_last_name_cant_be_blank
     @user.last_name = ""
     assert_not @user.valid?
-    assert_equal ["Last name can't be blank"], @user.errors.full_messages
+    assert_includes @user.errors.full_messages, "Last name can't be blank"
   end
 
   def test_email_should_be_present
@@ -112,5 +114,24 @@ class UserTest < ActiveSupport::TestCase
     assert_raises(ArgumentError) do
       @user.role = 2
     end
+  end
+
+  def test_password_cant_be_blank
+    @user.password = nil
+    assert_not @user.save
+    assert_includes @user.errors.full_messages, "Password can't be blank"
+  end
+
+  def test_password_should_have_minimum_length
+    @user.password = "welc"
+    @user.password_confirmation = "welc"
+    assert_not @user.save
+    assert_equal @user.errors.full_messages, ["Password is too short (minimum is 6 characters)"]
+  end
+
+  def test_user_should_have_matching_password_and_password_confirmation
+    @user.password_confirmation = "#{@user.password}-random"
+    assert_not @user.save
+    assert_includes @user.errors.full_messages, "Password confirmation doesn't match Password"
   end
 end
