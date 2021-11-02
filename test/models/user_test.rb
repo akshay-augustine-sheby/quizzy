@@ -102,4 +102,15 @@ class UserTest < ActiveSupport::TestCase
     user2.email = "sam@example.com"
     assert user2.invalid?
   end
+
+  def test_user_should_have_valid_role
+    @user.role = 1
+    assert @user.valid?
+  end
+
+  def test_user_cant_have_invalid_role
+    assert_raises(ArgumentError) do
+      @user.role = 2
+    end
+  end
 end
