@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 const ToastrComponent = ({ message }) => {
   return (
     <div className="flex flex-row items-start justify-start">
-      <p className="mx-4 font-medium leading-5 text-white">{message}</p>
+      <p className="mx-4 font-bold leading-5 text-black">{message}</p>
     </div>
   );
 };
