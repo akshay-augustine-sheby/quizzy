@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 
+import { Edit, Delete } from "@bigbinary/neeto-icons";
 import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
 import { useTable } from "react-table";
 
@@ -17,16 +18,24 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
         Header: "",
         accessor: "slug",
         Cell: ({ value }) => (
-          <div>
-            <button onClick={() => editQuiz(value)}>Edit</button>
-            <button
+          <div className="space-x-1 px-1 py-2">
+            <Button
+              onClick={() => editQuiz(value)}
+              style="secondary"
+              label="Edit"
+              iconPosition="left"
+              icon={Edit}
+            />
+            <Button
               onClick={() => {
                 setShowModalExtraSmall(true);
                 setVal(value);
               }}
-            >
-              Delete
-            </button>
+              style="secondary"
+              label="Delete"
+              iconPosition="left"
+              icon={Delete}
+            />
           </div>
         ),
       },
@@ -42,13 +51,24 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
     tableInstance;
 
   return (
-    <div>
-      <table {...getTableProps()}>
+    <div className="">
+      <table
+        {...getTableProps()}
+        className="border border-collapse w-full border-black"
+      >
         <thead>
           {headerGroups.map(headerGroup => (
-            <tr key={headerGroup.id} {...headerGroup.getHeaderGroupProps()}>
+            <tr
+              key={headerGroup.id}
+              {...headerGroup.getHeaderGroupProps()}
+              className="border"
+            >
               {headerGroup.headers.map(column => (
-                <th key={column.id} {...column.getHeaderProps()}>
+                <th
+                  key={column.id}
+                  {...column.getHeaderProps()}
+                  className="border w-3/4"
+                >
                   {column.render("Header")}
                 </th>
               ))}
@@ -59,10 +79,14 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
           {rows.map(row => {
             prepareRow(row);
             return (
-              <tr key={row.id} {...row.getRowProps()}>
+              <tr key={row.id} {...row.getRowProps()} className="border">
                 {row.cells.map(cell => {
                   return (
-                    <td key={cell.id} {...cell.getCellProps()}>
+                    <td
+                      key={cell.id}
+                      {...cell.getCellProps()}
+                      className="border px-3"
+                    >
                       {cell.render("Cell")}
                     </td>
                   );

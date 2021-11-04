@@ -88,7 +88,8 @@ const Dashboard = () => {
             icon={Plus}
           />
         </div>
-        <div>
+        <div className="space-y-4">
+          <div className="text-3xl font-bold">List of quizzes</div>
           <Table
             quizzes={quizzes}
             deleteQuiz={deleteQuiz}
