@@ -8,11 +8,12 @@ import { setToLocalStorage } from "helpers/storage";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       const response = await authApi.login({ login: { email, password } });
       //console.log(response)
       setToLocalStorage({
@@ -23,11 +24,11 @@ const Login = () => {
         userLastName: response.data.last_name,
       });
       setAuthHeaders();
-      //setLoading(false);
+      setLoading(false);
       window.location.href = "/";
     } catch (error) {
       logger.error(error);
-      //setLoading(false);
+      setLoading(false);
     }
   };
 
@@ -36,6 +37,7 @@ const Login = () => {
       <LoginForm
         setEmail={setEmail}
         setPassword={setPassword}
+        loading={loading}
         handleSubmit={handleSubmit}
       />
     </div>
