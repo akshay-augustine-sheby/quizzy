@@ -1,8 +1,10 @@
 import React from "react";
 
-import { Input, Button } from "@bigbinary/neetoui/v2";
+import { Input } from "@bigbinary/neetoui/v2";
 
-const LoginForm = ({ handleSubmit, setEmail, setPassword }) => {
+import Button from "components/Button";
+
+const LoginForm = ({ handleSubmit, setEmail, setPassword, loading }) => {
   return (
     <div>
       <div className="text-5xl font-bold border-b-2 px-12">Quizzy</div>
@@ -12,7 +14,6 @@ const LoginForm = ({ handleSubmit, setEmail, setPassword }) => {
           <Input
             label="Email"
             placeholder="sam@example.com"
-            required
             size="small"
             type="email"
             onChange={e => setEmail(e.target.value)}
@@ -20,12 +21,11 @@ const LoginForm = ({ handleSubmit, setEmail, setPassword }) => {
           <Input
             label="Password"
             placeholder="********"
-            required
             size="small"
             type="password"
             onChange={e => setPassword(e.target.value)}
           />
-          <Button label="Submit" size="default" style="primary" type="submit" />
+          <Button type="submit" buttonText="Submit" loading={loading} />
         </form>
       </div>
     </div>

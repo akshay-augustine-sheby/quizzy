@@ -3,13 +3,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { resetAuthTokens } from "src/apis/axios";
 
+import authApi from "apis/auth";
 import { getFromLocalStorage, setToLocalStorage } from "helpers/storage";
 
 const NavBar = () => {
   const userFirstName = getFromLocalStorage("authUserFirstName");
   const userLastName = getFromLocalStorage("authUserLastName");
-  const handleLogout = () => {
+  const handleLogout = async () => {
     try {
+      await authApi.logout();
       setToLocalStorage({
         authToken: null,
         authEmail: null,
@@ -18,7 +20,7 @@ const NavBar = () => {
         userLastName: null,
       });
       resetAuthTokens();
-      window.location.href = "/login";
+      window.location.href = "/";
     } catch (error) {
       logger.error(error);
     }
