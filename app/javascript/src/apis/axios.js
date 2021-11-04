@@ -29,7 +29,7 @@ const handleSuccessResponse = response => {
     response.success = response.status === 200;
     if (response.data.notice) {
       Toastr.success(response.data.notice);
-    } else Toastr.success("Logged in successfully");
+    }
   }
 
   return response;

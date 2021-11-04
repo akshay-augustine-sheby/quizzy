@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Plus } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
@@ -7,8 +7,11 @@ import { isNil, isEmpty, either } from "ramda";
 import Container from "components/Container";
 
 const Dashboard = () => {
-  const [quiz, setQuiz] = useState([]);
-  setQuiz([]);
+  const quiz = [];
+  //setQuiz([]);
+  const handleCreateQuiz = () => {
+    window.location.href = "/quizcreate";
+  };
   if (either(isNil, isEmpty)(quiz)) {
     return (
       <Container>
@@ -19,7 +22,7 @@ const Dashboard = () => {
               label="Add new quiz"
               size="default"
               style="primary"
-              onClick={() => {}}
+              onClick={handleCreateQuiz}
               icon={Plus}
             />
           </div>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import authApi from "apis/auth";
 import { setAuthHeaders } from "apis/axios";
 import LoginForm from "components/Authentication/Form/LoginForm";
+import Toastr from "components/Common/Toastr";
 import { setToLocalStorage } from "helpers/storage";
 
 const Login = () => {
@@ -24,6 +25,7 @@ const Login = () => {
         userLastName: response.data.last_name,
       });
       setAuthHeaders();
+      Toastr.success("User logged in successfully");
       setLoading(false);
       window.location.href = "/";
     } catch (error) {
