@@ -12,7 +12,7 @@ const Dashboard = () => {
   if (either(isNil, isEmpty)(quiz)) {
     return (
       <Container>
-        <div className="flex-col space-y-40">
+        <div className="flex-col space-y-20">
           <div className="my-6">
             <Button
               iconPosition="left"
