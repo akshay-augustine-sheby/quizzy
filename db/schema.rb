@@ -12,13 +12,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_04_071551) do
+ActiveRecord::Schema.define(version: 2021_11_04_110602) do
 
   create_table "quizzes", force: :cascade do |t|
     t.text "quiz_name", null: false
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "slug", null: false
+    t.index ["slug"], name: "index_quizzes_on_slug", unique: true
     t.index ["user_id"], name: "index_quizzes_on_user_id"
   end
 
