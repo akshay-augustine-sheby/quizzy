@@ -11,6 +11,8 @@ import PrivateRoute from "components/Common/PrivateRoute";
 
 import Dashboard from "./components/Dashboard";
 import CreateQuiz from "./components/Dashboard/CreateQuiz";
+import EditQuiz from "./components/Dashboard/EditQuiz";
+import PageLoader from "./components/PageLoader";
 import { getFromLocalStorage } from "./helpers/storage";
 
 const App = () => {
@@ -25,7 +27,11 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return (
+      <div className="h-screen">
+        <PageLoader />
+      </div>
+    );
   }
 
   return (
@@ -34,6 +40,7 @@ const App = () => {
       <Switch>
         <Route exact path="/login" component={Login} />
         <Route exact path="/quizcreate" component={CreateQuiz} />
+        <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <PrivateRoute
           path="/"
           redirectRoute="/login"
