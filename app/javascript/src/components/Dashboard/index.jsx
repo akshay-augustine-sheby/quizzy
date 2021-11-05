@@ -43,6 +43,11 @@ const Dashboard = () => {
     window.location.href = `/quiz/${slug}/edit`;
   };
 
+  const showQuiz = slug => {
+    //history.push(`/quiz/${slug}/show`);
+    logger.log(slug);
+  };
+
   useEffect(() => {
     fetchQuizzes();
   }, []);
@@ -94,6 +99,7 @@ const Dashboard = () => {
             quizzes={quizzes}
             deleteQuiz={deleteQuiz}
             editQuiz={editQuiz}
+            showQuiz={showQuiz}
           />
         </div>
       </div>

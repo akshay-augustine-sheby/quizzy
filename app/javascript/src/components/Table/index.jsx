@@ -4,7 +4,7 @@ import { Edit, Delete } from "@bigbinary/neeto-icons";
 import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
 import { useTable } from "react-table";
 
-const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
+const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
   const [showModalExtraSmall, setShowModalExtraSmall] = useState(false);
   const [val, setVal] = useState("");
 
@@ -89,7 +89,8 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
                     <td
                       key={cell.id}
                       {...cell.getCellProps()}
-                      className="border px-3 border-gray-400 font-medium"
+                      className="border px-3 border-gray-400 font-medium cursor-pointer"
+                      onClick={() => showQuiz(cell.row.values.slug)}
                     >
                       {cell.render("Cell")}
                     </td>
