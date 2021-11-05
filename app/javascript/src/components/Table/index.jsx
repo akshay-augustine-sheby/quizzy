@@ -4,7 +4,7 @@ import { Edit, Delete } from "@bigbinary/neeto-icons";
 import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
 import { useTable } from "react-table";
 
-const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
+const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
   const [showModalExtraSmall, setShowModalExtraSmall] = useState(false);
   const [val, setVal] = useState("");
 
@@ -13,6 +13,11 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
       {
         Header: "Quiz Name",
         accessor: "quiz_name", // accessor is the "key" in the data
+        Cell: props => (
+          <div onClick={() => showQuiz(props.cell.row.values.slug)}>
+            {props.cell.row.values.quiz_name}
+          </div>
+        ),
       },
       {
         Header: "",
@@ -61,13 +66,13 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
             <tr
               key={headerGroup.id}
               {...headerGroup.getHeaderGroupProps()}
-              className="border"
+              className="border border-black"
             >
               {headerGroup.headers.map(column => (
                 <th
                   key={column.id}
                   {...column.getHeaderProps()}
-                  className="border w-3/4"
+                  className="border w-3/4 bg-gray-400 border-gray-400"
                 >
                   {column.render("Header")}
                 </th>
@@ -79,13 +84,17 @@ const Table = ({ quizzes, deleteQuiz, editQuiz }) => {
           {rows.map(row => {
             prepareRow(row);
             return (
-              <tr key={row.id} {...row.getRowProps()} className="border">
+              <tr
+                key={row.id}
+                {...row.getRowProps()}
+                className="border border-gray-400"
+              >
                 {row.cells.map(cell => {
                   return (
                     <td
                       key={cell.id}
                       {...cell.getCellProps()}
-                      className="border px-3"
+                      className="border px-3 border-gray-400 font-medium cursor-pointer"
                     >
                       {cell.render("Cell")}
                     </td>

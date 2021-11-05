@@ -54,11 +54,11 @@ const EditQuiz = ({ history }) => {
   return (
     <Container>
       <div className="flex items-center justify-center">
-        <form onSubmit={handleSubmit} className="space-y-4 py-40">
+        <form onSubmit={handleSubmit} className="space-y-4 py-40 w-4/5">
           <div className="text-2xl font-bold">Edit Quiz</div>
           <Input
             label="Quiz Name"
-            placeholder=""
+            placeholder="Enter the new quiz name"
             value={quiz}
             size="small"
             type="text"

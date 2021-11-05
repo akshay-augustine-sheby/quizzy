@@ -49,7 +49,7 @@ const CreateQuiz = ({ history }) => {
   return (
     <Container>
       <div className="flex items-center justify-center">
-        <form onSubmit={handleSubmit} className="space-y-4 py-40">
+        <form onSubmit={handleSubmit} className="space-y-4 py-40 w-4/5">
           <div className="text-2xl font-bold">Add New Quiz</div>
           <Input
             label="Quiz Name"
