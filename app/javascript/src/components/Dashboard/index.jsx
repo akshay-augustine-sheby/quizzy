@@ -10,7 +10,7 @@ import Container from "components/Container";
 import PageLoader from "../PageLoader";
 import Table from "../Table";
 
-const Dashboard = () => {
+const Dashboard = ({ history }) => {
   const [quizzes, setQuizzes] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -40,11 +40,12 @@ const Dashboard = () => {
   };
 
   const editQuiz = slug => {
-    window.location.href = `/quiz/${slug}/edit`;
+    //window.location.href = `/quiz/${slug}/edit`;
+    history.push(`/quiz/${slug}/edit`);
   };
 
   const showQuiz = slug => {
-    //history.push(`/quiz/${slug}/show`);
+    history.push(`/quiz/${slug}/show`);
     logger.log(slug);
   };
 

@@ -2,7 +2,7 @@
 
 class QuizzesController < ApplicationController
   before_action :authenticate_user_using_x_auth_token
-  before_action :load_quiz, only: %i[update destroy]
+  before_action :load_quiz, only: %i[update destroy show]
 
   def index
     quizzes = Quiz.all.as_json(only: %i[quiz_name slug user_id])
@@ -35,6 +35,14 @@ class QuizzesController < ApplicationController
     else
       render status: :unprocessable_entity,
         json: { error: @quiz.errors.full_messages.to_sentence }
+    end
+  end
+
+  def show
+    if @quiz
+      render status: :ok, json: { quiz: @quiz }
+    else
+      render status: :not_found, json: { error: "Quiz not found" }
     end
   end
 

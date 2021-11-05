@@ -13,6 +13,11 @@ const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
       {
         Header: "Quiz Name",
         accessor: "quiz_name", // accessor is the "key" in the data
+        Cell: props => (
+          <div onClick={() => showQuiz(props.cell.row.values.slug)}>
+            {props.cell.row.values.quiz_name}
+          </div>
+        ),
       },
       {
         Header: "",
@@ -90,7 +95,6 @@ const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
                       key={cell.id}
                       {...cell.getCellProps()}
                       className="border px-3 border-gray-400 font-medium cursor-pointer"
-                      onClick={() => showQuiz(cell.row.values.slug)}
                     >
                       {cell.render("Cell")}
                     </td>
