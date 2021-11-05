@@ -9,6 +9,7 @@ import { initializeLogger } from "common/logger";
 import Login from "components/Authentication/Login";
 import PrivateRoute from "components/Common/PrivateRoute";
 
+import QuestionForm from "./components/Authentication/Form/QuestionForm";
 import Dashboard from "./components/Dashboard";
 import CreateQuiz from "./components/Dashboard/CreateQuiz";
 import EditQuiz from "./components/Dashboard/EditQuiz";
@@ -43,6 +44,7 @@ const App = () => {
         <Route exact path="/quizcreate" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
+        <Route exact path="/question/create" component={QuestionForm} />
         <PrivateRoute
           path="/"
           redirectRoute="/login"

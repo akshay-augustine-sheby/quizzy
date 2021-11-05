@@ -10,14 +10,14 @@ import Container from "components/Container";
 import quizzesApi from "../../apis/quizzes";
 import PageLoader from "../PageLoader";
 
-const ShowQuiz = () => {
+const ShowQuiz = ({ history }) => {
   const { slug } = useParams();
   const question = [];
   const [quiz, setQuiz] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
 
   const handleCreateQuestion = () => {
-    window.location.href = "/";
+    history.push("/question/create");
   };
   const fetchQuizDetails = async () => {
     try {
