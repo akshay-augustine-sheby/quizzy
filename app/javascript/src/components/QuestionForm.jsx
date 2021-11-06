@@ -1,32 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Input, Select, Button } from "@bigbinary/neetoui/v2";
 
 import Button2 from "components/Button";
 import Container from "components/Container";
 
-const QuestionForm = () => {
-  const [question, setQuestion] = useState("");
-  const [options1, setOptions1] = useState([{ option: "" }, { option: "" }]);
-
-  const handleChange = (id, e) => {
-    const values = [...options1];
-    values[id].value = e.target.value;
-    setOptions1(values);
-  };
-
-  const handleAdd = () => {
-    const values = [...options1];
-    values.push({ option: "" });
-    setOptions1(values);
-  };
-
-  const handleRemove = id => {
-    const values = [...options1];
-    values.splice(id, 1);
-    setOptions1(values);
-  };
-
+const QuestionForm = ({
+  question,
+  setQuestion,
+  options1,
+  handleChange,
+  handleAdd,
+  handleRemove,
+}) => {
   return (
     <Container>
       <div className="flex-col space-y-40 mt-10">
