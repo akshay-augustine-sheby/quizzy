@@ -98,8 +98,6 @@ class UserTest < ActiveSupport::TestCase
   end
 
   def test_users_with_same_emails_cant_be_created
-    @user.email = "SAM@example.com"
-    @user.save!
     user2 = User.new(first_name: "John", last_name: "Xavier", email: "john@example.com")
     user2.email = "sam@example.com"
     assert user2.invalid?
