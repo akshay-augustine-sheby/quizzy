@@ -132,4 +132,10 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.save
     assert_includes @user.errors.full_messages, "Password confirmation doesn't match Password"
   end
+
+  def test_password_confirmation_cant_be_blank
+    @user.password_confirmation = nil
+    assert_not @user.save
+    assert_includes @user.errors.full_messages, "Password confirmation can't be blank"
+  end
 end
