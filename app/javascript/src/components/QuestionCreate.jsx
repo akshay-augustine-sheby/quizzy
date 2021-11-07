@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import PageLoader from "./PageLoader";
 import QuestionForm from "./QuestionForm";
 
+import optionsApi from "../apis/options";
 import questionsApi from "../apis/questions";
 import quizzesApi from "../apis/quizzes";
 
@@ -16,6 +17,7 @@ const QuestionCreate = ({ history }) => {
   const { slug } = useParams();
   const [quiz, setQuiz] = useState([]);
   const [quizId, setQuizId] = useState("");
+  //const [questionId, setQuestionId] = useState("");
   const [pageLoading, setPageLoading] = useState(true);
   const [loading, setLoading] = useState(false);
 
@@ -40,13 +42,23 @@ const QuestionCreate = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      //response =
-      await questionsApi.create({
+      const response = await questionsApi.create({
         question: { question: question, answer: answer.value, quiz_id: quizId },
       });
-      setLoading(false);
+      //setQuestionId(response.data.dat.id)
       //console.log(response)
+      //console.log(response.data.dat.id)
+      //console.log(questionId)
+      options1.map(async it => {
+        await optionsApi.create({
+          option: { option: it.value, question_id: response.data.dat.id },
+        });
+        //console.log(it.value)
+      });
+
+      setLoading(false);
       history.push(`/quiz/${slug}/show`);
+      //console.log(response.data.dat.id)
     } catch (error) {
       logger.error(error);
       setLoading(false);
