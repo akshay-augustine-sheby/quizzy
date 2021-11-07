@@ -44,7 +44,11 @@ const App = () => {
         <Route exact path="/quizcreate" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
-        <Route exact path="/question/create" component={QuestionCreate} />
+        <Route
+          exact
+          path="/quiz/:slug/question/create"
+          component={QuestionCreate}
+        />
         <PrivateRoute
           path="/"
           redirectRoute="/login"

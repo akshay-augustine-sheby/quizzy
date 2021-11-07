@@ -6,18 +6,22 @@ import Button2 from "components/Button";
 import Container from "components/Container";
 
 const QuestionForm = ({
-  question,
+  quiz,
   setQuestion,
+  answer,
+  setAnswer,
   options1,
   handleChange,
   handleAdd,
   handleRemove,
+  handleSubmit,
+  loading,
 }) => {
   return (
     <Container>
       <div className="flex-col space-y-40 mt-10">
-        <div className="text-3xl font-bold">Quiz Name {question}</div>
-        <form>
+        <div className="text-3xl font-bold">{quiz.quiz_name}</div>
+        <form onSubmit={handleSubmit}>
           <Input
             label="Question"
             placeholder=""
@@ -84,9 +88,11 @@ const QuestionForm = ({
                 };
               })}
               placeholder="Select an Option"
+              value={answer}
+              onChange={val => setAnswer(val)}
             />
           </div>
-          <Button2 type="submit" buttonText="Submit" />
+          <Button2 type="submit" buttonText="Submit" loading={loading} />
         </form>
       </div>
     </Container>

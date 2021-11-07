@@ -17,7 +17,7 @@ const ShowQuiz = ({ history }) => {
   const [pageLoading, setPageLoading] = useState(true);
 
   const handleCreateQuestion = () => {
-    history.push("/question/create");
+    history.push(`/quiz/${slug}/question/create`);
   };
   const fetchQuizDetails = async () => {
     try {

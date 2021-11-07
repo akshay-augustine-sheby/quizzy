@@ -13,7 +13,7 @@ class QuizzesController < ApplicationController
     @quiz = Quiz.new(quiz_params)
     if @quiz.save
       render status: :ok,
-        json: { notice: "Quiz is successfully created", dat: @quiz }
+        json: { notice: "Quiz is successfully created" }
     else
       errors = @quiz.errors.full_messages.to_sentence
       render status: :unprocessable_entity, json: { error: errors }
