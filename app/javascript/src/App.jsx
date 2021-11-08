@@ -14,6 +14,7 @@ import CreateQuiz from "./components/Dashboard/CreateQuiz";
 import EditQuiz from "./components/Dashboard/EditQuiz";
 import ShowQuiz from "./components/Dashboard/ShowQuiz";
 import PageLoader from "./components/PageLoader";
+import QuestionCreate from "./components/QuestionCreate";
 import { getFromLocalStorage } from "./helpers/storage";
 
 const App = () => {
@@ -43,6 +44,11 @@ const App = () => {
         <Route exact path="/quizcreate" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
+        <Route
+          exact
+          path="/quiz/:slug/question/create"
+          component={QuestionCreate}
+        />
         <PrivateRoute
           path="/"
           redirectRoute="/login"

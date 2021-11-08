@@ -10,14 +10,14 @@ import Container from "components/Container";
 import quizzesApi from "../../apis/quizzes";
 import PageLoader from "../PageLoader";
 
-const ShowQuiz = () => {
+const ShowQuiz = ({ history }) => {
   const { slug } = useParams();
   const question = [];
   const [quiz, setQuiz] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
 
   const handleCreateQuestion = () => {
-    window.location.href = "/";
+    history.push(`/quiz/${slug}/question/create`);
   };
   const fetchQuizDetails = async () => {
     try {
@@ -43,8 +43,9 @@ const ShowQuiz = () => {
   } else if (either(isNil, isEmpty)(question)) {
     return (
       <Container>
-        <div className="flex-col space-y-10">
-          <div className="my-6">
+        <div className="flex-col space-y-40 mt-10">
+          <div className="flex justify-between">
+            <div className="text-3xl font-bold">{quiz.quiz_name}</div>
             <Button
               iconPosition="left"
               label="Add questions"
@@ -54,10 +55,9 @@ const ShowQuiz = () => {
               icon={Plus}
             />
           </div>
-          <div className="text-3xl font-bold">{quiz.quiz_name}</div>
-          <h1 className="my-6 text-xl leading-5 text-center">
+          <div className="text-xl text-center">
             There are no questions in this quiz.
-          </h1>
+          </div>
         </div>
       </Container>
     );

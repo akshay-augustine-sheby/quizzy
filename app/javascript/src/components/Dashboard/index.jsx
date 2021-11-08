@@ -62,8 +62,9 @@ const Dashboard = ({ history }) => {
   } else if (either(isNil, isEmpty)(quizzes)) {
     return (
       <Container>
-        <div className="flex-col space-y-20">
-          <div className="my-6">
+        <div className="flex-col space-y-40 mt-10">
+          <div className="flex justify-between">
+            <div></div>
             <Button
               iconPosition="left"
               label="Add new quiz"
@@ -73,9 +74,9 @@ const Dashboard = ({ history }) => {
               icon={Plus}
             />
           </div>
-          <h1 className="my-6 text-xl leading-5 text-center">
+          <div className="text-xl text-center">
             You have not created any quiz.
-          </h1>
+          </div>
         </div>
       </Container>
     );
@@ -83,8 +84,9 @@ const Dashboard = ({ history }) => {
 
   return (
     <Container>
-      <div className="flex-col space-y-20">
-        <div className="my-6">
+      <div className="flex-col space-y-5 mt-10">
+        <div className="flex justify-between">
+          <div className="text-3xl font-bold ">List of quizzes</div>
           <Button
             iconPosition="left"
             label="Add new quiz"
@@ -94,8 +96,7 @@ const Dashboard = ({ history }) => {
             icon={Plus}
           />
         </div>
-        <div className="space-y-4">
-          <div className="text-3xl font-bold">List of quizzes</div>
+        <div className="">
           <Table
             quizzes={quizzes}
             deleteQuiz={deleteQuiz}

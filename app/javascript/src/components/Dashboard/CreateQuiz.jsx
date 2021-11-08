@@ -14,11 +14,14 @@ const CreateQuiz = ({ history }) => {
   const [loading, setLoading] = useState(false);
   const [pageLoading, setPageLoading] = useState(true);
   //const [users,setUsers] = useState([])
+  //let response = []
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      //response =
       await quizzesApi.create({ quiz: { quiz_name: quiz, user_id: userId } });
       setLoading(false);
+      //console.log(response)
       history.push("/");
     } catch (error) {
       logger.error(error);

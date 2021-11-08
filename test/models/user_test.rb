@@ -98,8 +98,6 @@ class UserTest < ActiveSupport::TestCase
   end
 
   def test_users_with_same_emails_cant_be_created
-    @user.email = "SAM@example.com"
-    @user.save!
     user2 = User.new(first_name: "John", last_name: "Xavier", email: "john@example.com")
     user2.email = "sam@example.com"
     assert user2.invalid?
@@ -133,5 +131,11 @@ class UserTest < ActiveSupport::TestCase
     @user.password_confirmation = "#{@user.password}-random"
     assert_not @user.save
     assert_includes @user.errors.full_messages, "Password confirmation doesn't match Password"
+  end
+
+  def test_password_confirmation_cant_be_blank
+    @user.password_confirmation = nil
+    assert_not @user.save
+    assert_includes @user.errors.full_messages, "Password confirmation can't be blank"
   end
 end
