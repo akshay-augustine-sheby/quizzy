@@ -12,9 +12,11 @@ class Option < ApplicationRecord
       count_hash = Option.group(:question_id).count
       f = 0
       count_hash.each do |key, value|
-        if value >= 2
-          f = 1
-          break
+        if question.id == key
+          if value >= 2
+            f = 1
+            break
+          end
         end
       end
       if f == 1
