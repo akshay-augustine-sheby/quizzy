@@ -3,7 +3,7 @@
 require "test_helper"
 
 class OptionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @option = Option.new(option: )
+  end
 end
