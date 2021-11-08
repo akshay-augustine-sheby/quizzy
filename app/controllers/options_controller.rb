@@ -5,7 +5,7 @@ class OptionsController < ApplicationController
     @option = Option.new(option_params)
     if @option.save
       render status: :ok,
-        json: { notice: "Option is successfully created" }
+        json: {}
     else
       errors = @option.errors.full_messages.to_sentence
       render status: :unprocessable_entity, json: { error: errors }

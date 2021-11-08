@@ -42,17 +42,26 @@ const QuestionCreate = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      //console.log(options1[0].value)
       const response = await questionsApi.create({
-        question: { question: question, answer: answer.value, quiz_id: quizId },
+        question: {
+          question: question,
+          answer: answer.value,
+          quiz_id: quizId,
+          option1: options1[0].value,
+          option2: options1[1].value,
+        },
       });
       //setQuestionId(response.data.dat.id)
       //console.log(response)
       //console.log(response.data.dat.id)
       //console.log(questionId)
-      options1.map(async it => {
-        await optionsApi.create({
-          option: { option: it.value, question_id: response.data.dat.id },
-        });
+      options1.map(async (it, index) => {
+        if (index > 1) {
+          await optionsApi.create({
+            option: { option: it.value, question_id: response.data.dat.id },
+          });
+        }
         //console.log(it.value)
       });
 
