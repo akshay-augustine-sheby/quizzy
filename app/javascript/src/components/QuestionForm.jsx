@@ -80,8 +80,7 @@ const QuestionForm = ({
                 label: "Select an option",
                 value: "",
               }}
-              isClearable
-              isSearchable
+              isCreatable
               label="Correct answer"
               name="ValueList"
               options={options1.map(opt => {

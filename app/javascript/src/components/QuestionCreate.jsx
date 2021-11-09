@@ -79,6 +79,10 @@ const QuestionCreate = ({ history }) => {
     fetchQuizDetails();
   }, []);
 
+  useEffect(() => {
+    setAnswer("");
+  }, [options1]);
+
   //console.log(quiz)
   //console.log(question)
   //console.log(answer.value)
