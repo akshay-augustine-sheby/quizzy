@@ -21,7 +21,7 @@ const EditQuiz = ({ history }) => {
     try {
       await quizzesApi.update({
         slug,
-        payload: { quiz: { quiz_name: quiz, user_id: userId } },
+        payload: { quiz: { name: quiz, user_id: userId } },
       });
       setLoading(false);
       history.push("/");

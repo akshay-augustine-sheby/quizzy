@@ -3,5 +3,5 @@
 class Option < ApplicationRecord
   belongs_to :question
 
-  validates :option, presence: true
+  validates :name, presence: true
 end

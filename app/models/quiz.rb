@@ -4,7 +4,7 @@ class Quiz < ApplicationRecord
   belongs_to :user
   has_many :questions, dependent: :destroy
 
-  validates :quiz_name, presence: true
+  validates :name, presence: true
   validates :slug, uniqueness: true
   validate :slug_not_changed
 
@@ -13,7 +13,7 @@ class Quiz < ApplicationRecord
   private
 
     def set_slug
-      quiz_name_slug = quiz_name.parameterize
+      quiz_name_slug = name.parameterize
       regex_pattern = "slug #{Constants::DB_REGEX_OPERATOR} ?"
       latest_quiz_slug = Quiz.where(
         regex_pattern,

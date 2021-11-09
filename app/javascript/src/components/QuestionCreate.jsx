@@ -43,12 +43,12 @@ const QuestionCreate = ({ history }) => {
     try {
       await questionsApi.create({
         question: {
-          question: question,
+          name: question,
           answer: answer.value,
           quiz_id: quizId,
           options_attributes: options1.map(it => {
             return {
-              option: it.value,
+              name: it.value,
             };
           }),
         },

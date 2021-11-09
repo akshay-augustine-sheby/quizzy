@@ -19,7 +19,7 @@ const CreateQuiz = ({ history }) => {
     event.preventDefault();
     try {
       //response =
-      await quizzesApi.create({ quiz: { quiz_name: quiz, user_id: userId } });
+      await quizzesApi.create({ quiz: { name: quiz, user_id: userId } });
       setLoading(false);
       //console.log(response)
       history.push("/");

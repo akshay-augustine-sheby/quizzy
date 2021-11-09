@@ -5,7 +5,7 @@ class QuizzesController < ApplicationController
   before_action :load_quiz, only: %i[update destroy show]
 
   def index
-    quizzes = Quiz.all.as_json(only: %i[quiz_name slug user_id])
+    quizzes = Quiz.all.as_json(only: %i[name slug user_id])
     render status: :ok, json: { quizzes: quizzes }
   end
 
@@ -49,7 +49,7 @@ class QuizzesController < ApplicationController
   private
 
     def quiz_params
-      params.require(:quiz).permit(:quiz_name, :user_id)
+      params.require(:quiz).permit(:name, :user_id)
     end
 
     def load_quiz

@@ -10,36 +10,36 @@ class QuestionTest < ActiveSupport::TestCase
     @user = User.create!(
       first_name: "Sam", last_name: "Smith", email: "sam@example.com", password: "welcome",
       password_confirmation: "welcome")
-    @quiz = Quiz.create!(quiz_name: "Sample Quiz", user_id: @user.id)
+    @quiz = Quiz.create!(name: "Sample Quiz", user_id: @user.id)
   end
 
   def test_option1_should_be_present
     @question = Question.new(
-      question: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
-      options_attributes: [{ option: "" }])
+      name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
+      options_attributes: [{ name: "" }])
     assert_not @question.valid?
     assert_includes @question.errors.full_messages, "Provide atleast 2 options"
   end
 
   def test_option2_should_be_present
     @question = Question.new(
-      question: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
-      options_attributes: [{ option: "optionA" }, { option: "" }])
+      name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
+      options_attributes: [{ name: "optionA" }, { name: "" }])
     assert_not @question.valid?
     assert_includes @question.errors.full_messages, "Provide atleast 2 options"
   end
 
   def test_atleast_2_options_should_be_present
     @question = Question.new(
-      question: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
-      options_attributes: [{ option: "optionA" }, { option: "optionB" }])
+      name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
+      options_attributes: [{ name: "optionA" }, { name: "optionB" }])
     assert @question.valid?
   end
 
   def test_upto_4_options_can_be_present
     @question = Question.new(
-      question: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
-      options_attributes: [{ option: "optionA" }, { option: "optionB" }, { option: "optionC" }, { option: "optionD" }])
+      name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
+      options_attributes: [{ name: "optionA" }, { name: "optionB" }, { name: "optionC" }, { name: "optionD" }])
     assert @question.valid?
   end
 end

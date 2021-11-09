@@ -45,7 +45,7 @@ const ShowQuiz = ({ history }) => {
       <Container>
         <div className="flex-col space-y-40 mt-10">
           <div className="flex justify-between">
-            <div className="text-3xl font-bold">{quiz.quiz_name}</div>
+            <div className="text-3xl font-bold">{quiz.name}</div>
             <Button
               iconPosition="left"
               label="Add questions"

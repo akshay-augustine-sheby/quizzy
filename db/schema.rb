@@ -12,10 +12,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_09_080712) do
+ActiveRecord::Schema.define(version: 2021_11_09_155421) do
 
   create_table "options", force: :cascade do |t|
-    t.text "option", null: false
+    t.text "name", null: false
     t.integer "question_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_11_09_080712) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.text "question", null: false
+    t.text "name", null: false
     t.text "answer", null: false
     t.integer "quiz_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_11_09_080712) do
   end
 
   create_table "quizzes", force: :cascade do |t|
-    t.text "quiz_name", null: false
+    t.text "name", null: false
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
