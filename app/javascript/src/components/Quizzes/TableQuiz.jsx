@@ -1,10 +1,12 @@
 import React, { useMemo, useState } from "react";
 
 import { Edit, Delete } from "@bigbinary/neeto-icons";
-import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
+import { Button } from "@bigbinary/neetoui/v2";
 import { useTable } from "react-table";
 
-const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
+import ModalQuiz from "./ModalQuiz";
+
+const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
   const [showModalExtraSmall, setShowModalExtraSmall] = useState(false);
   const [val, setVal] = useState("");
 
@@ -12,7 +14,7 @@ const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
     () => [
       {
         Header: "Quiz Name",
-        accessor: "name", // accessor is the "key" in the data
+        accessor: "name",
         Cell: props => (
           <div onClick={() => showQuiz(props.cell.row.values.slug)}>
             {props.cell.row.values.name}
@@ -105,37 +107,13 @@ const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
           })}
         </tbody>
       </table>
-      <Modal
-        isOpen={showModalExtraSmall}
-        onClose={() => setShowModalExtraSmall(false)}
-        size="xs"
-      >
-        <Modal.Header>
-          <Typography style="h2">Delete Confirmation</Typography>
-        </Modal.Header>
-        <Modal.Body>
-          <Typography style="body2" lineHeight="normal">
-            Are you sure you want to delete?
-          </Typography>
-        </Modal.Body>
-        <Modal.Footer className="space-x-2">
-          <Button
-            size="large"
-            label="Delete"
-            onClick={() => {
-              setShowModalExtraSmall(false);
-              deleteQuiz(val);
-            }}
-          />
-          <Button
-            style="text"
-            size="large"
-            label="Cancel"
-            onClick={() => setShowModalExtraSmall(false)}
-          />
-        </Modal.Footer>
-      </Modal>
+      <ModalQuiz
+        showModalExtraSmall={showModalExtraSmall}
+        val={val}
+        setShowModalExtraSmall={setShowModalExtraSmall}
+        deleteQuiz={deleteQuiz}
+      />
     </div>
   );
 };
-export default Table;
+export default TableQuiz;

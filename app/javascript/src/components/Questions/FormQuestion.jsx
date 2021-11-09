@@ -5,7 +5,7 @@ import { Input, Select, Button } from "@bigbinary/neetoui/v2";
 import Button2 from "components/Button";
 import Container from "components/Container";
 
-const QuestionForm = ({
+const FormQuestion = ({
   quiz,
   setQuestion,
   answer,
@@ -101,4 +101,4 @@ const QuestionForm = ({
     </Container>
   );
 };
-export default QuestionForm;
+export default FormQuestion;

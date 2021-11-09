@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 
-import PageLoader from "./PageLoader";
-import QuestionForm from "./QuestionForm";
+import FormQuestion from "./FormQuestion";
 
-import questionsApi from "../apis/questions";
-import quizzesApi from "../apis/quizzes";
+import questionsApi from "../../apis/questions";
+import quizzesApi from "../../apis/quizzes";
+import PageLoader from "../PageLoader";
 
 const QuestionCreate = ({ history }) => {
   const [question, setQuestion] = useState("");
@@ -97,7 +97,7 @@ const QuestionCreate = ({ history }) => {
 
   return (
     <div>
-      <QuestionForm
+      <FormQuestion
         quiz={quiz}
         setQuestion={setQuestion}
         answer={answer}
