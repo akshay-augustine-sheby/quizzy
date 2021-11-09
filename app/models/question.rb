@@ -6,6 +6,6 @@ class Question < ApplicationRecord
 
   validates :question, presence: true
   validates :answer, presence: true
-  validates :option1, presence: true
-  validates :option2, presence: true
+
+  accepts_nested_attributes_for :options, limit: 4, reject_if: proc { |attributes| attributes["option"].blank? }
 end

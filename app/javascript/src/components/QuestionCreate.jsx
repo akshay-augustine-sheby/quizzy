@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import PageLoader from "./PageLoader";
 import QuestionForm from "./QuestionForm";
 
-import optionsApi from "../apis/options";
 import questionsApi from "../apis/questions";
 import quizzesApi from "../apis/quizzes";
 
@@ -42,32 +41,20 @@ const QuestionCreate = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      //console.log(options1[0].value)
-      const response = await questionsApi.create({
+      await questionsApi.create({
         question: {
           question: question,
           answer: answer.value,
           quiz_id: quizId,
-          option1: options1[0].value,
-          option2: options1[1].value,
+          options_attributes: options1.map(it => {
+            return {
+              option: it.value,
+            };
+          }),
         },
       });
-      //setQuestionId(response.data.dat.id)
-      //console.log(response)
-      //console.log(response.data.dat.id)
-      //console.log(questionId)
-      options1.map(async (it, index) => {
-        if (index > 1) {
-          await optionsApi.create({
-            option: { option: it.value, question_id: response.data.dat.id },
-          });
-        }
-        //console.log(it.value)
-      });
-
       setLoading(false);
       history.push(`/quiz/${slug}/show`);
-      //console.log(response.data.dat.id)
     } catch (error) {
       logger.error(error);
       setLoading(false);
