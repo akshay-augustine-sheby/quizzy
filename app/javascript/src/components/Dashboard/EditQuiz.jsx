@@ -1,27 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { Input } from "@bigbinary/neetoui/v2";
 import { useParams } from "react-router-dom";
 
 import quizzesApi from "apis/quizzes";
-import usersApi from "apis/users";
 import Button from "components/Button";
 import Container from "components/Container";
 import PageLoader from "components/PageLoader";
 
 const EditQuiz = ({ history }) => {
   const [quiz, setQuiz] = useState("");
-  const [userId, setUserId] = useState("");
   const [loading, setLoading] = useState(false);
-  const [pageLoading, setPageLoading] = useState(true);
   const { slug } = useParams();
-  //const [users,setUsers] = useState([])
+
   const handleSubmit = async event => {
     event.preventDefault();
     try {
       await quizzesApi.update({
         slug,
-        payload: { quiz: { name: quiz, user_id: userId } },
+        payload: { quiz: { name: quiz } },
       });
       setLoading(false);
       history.push("/");
@@ -31,23 +28,7 @@ const EditQuiz = ({ history }) => {
     }
   };
 
-  const fetchUserDetails = async () => {
-    try {
-      const response = await usersApi.list();
-      //setUsers(response.data.users);
-      setUserId(response.data.users[0].id);
-      setPageLoading(false);
-    } catch (error) {
-      logger.error(error);
-      setPageLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchUserDetails();
-  }, []);
-
-  if (pageLoading) {
+  if (loading) {
     return <PageLoader />;
   }
 

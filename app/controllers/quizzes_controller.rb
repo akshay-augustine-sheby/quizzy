@@ -5,12 +5,12 @@ class QuizzesController < ApplicationController
   before_action :load_quiz, only: %i[update destroy show]
 
   def index
-    quizzes = Quiz.all.as_json(only: %i[name slug user_id])
+    quizzes = @current_user.quizzes.all.as_json(only: %i[name slug user_id])
     render status: :ok, json: { quizzes: quizzes }
   end
 
   def create
-    @quiz = Quiz.new(quiz_params)
+    @quiz = @current_user.quizzes.new(quiz_params)
     if @quiz.save
       render status: :ok,
         json: { notice: "Quiz is successfully created" }
@@ -49,11 +49,11 @@ class QuizzesController < ApplicationController
   private
 
     def quiz_params
-      params.require(:quiz).permit(:name, :user_id)
+      params.require(:quiz).permit(:name)
     end
 
     def load_quiz
-      @quiz = Quiz.find_by(slug: params[:slug])
+      @quiz = @current_user.quizzes.find_by(slug: params[:slug])
       unless @quiz
         render status: :not_found, json: { error: "Quiz not found" }
       end

@@ -40,7 +40,6 @@ const Dashboard = ({ history }) => {
   };
 
   const editQuiz = slug => {
-    //window.location.href = `/quiz/${slug}/edit`;
     history.push(`/quiz/${slug}/edit`);
   };
 

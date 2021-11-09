@@ -12,10 +12,10 @@ const Table = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
     () => [
       {
         Header: "Quiz Name",
-        accessor: "quiz_name", // accessor is the "key" in the data
+        accessor: "name", // accessor is the "key" in the data
         Cell: props => (
           <div onClick={() => showQuiz(props.cell.row.values.slug)}>
-            {props.cell.row.values.quiz_name}
+            {props.cell.row.values.name}
           </div>
         ),
       },
