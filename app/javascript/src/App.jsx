@@ -41,7 +41,7 @@ const App = () => {
       <ToastContainer />
       <Switch>
         <Route exact path="/login" component={Login} />
-        <Route exact path="/quizcreate" component={CreateQuiz} />
+        <Route exact path="/quiz/create" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
         <Route

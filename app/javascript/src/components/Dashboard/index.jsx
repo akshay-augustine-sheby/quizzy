@@ -26,7 +26,7 @@ const Dashboard = ({ history }) => {
   };
 
   const handleCreateQuiz = () => {
-    window.location.href = "/quizcreate";
+    window.location.href = "/quiz/create";
   };
 
   const deleteQuiz = async slug => {

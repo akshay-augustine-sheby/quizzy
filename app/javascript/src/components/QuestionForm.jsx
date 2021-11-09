@@ -19,14 +19,15 @@ const QuestionForm = ({
 }) => {
   return (
     <Container>
-      <div className="flex-col space-y-40 mt-10">
+      <div className="flex-col space-y-20 mt-10">
         <div className="text-3xl font-bold">{quiz.quiz_name}</div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="space-y-3">
           <Input
             label="Question"
             placeholder=""
             size="small"
             type="text"
+            className="w-3/5"
             onChange={e => setQuestion(e.target.value)}
           />
           {options1.map((opt, id) => {
@@ -38,6 +39,7 @@ const QuestionForm = ({
                     placeholder=""
                     size="small"
                     type="text"
+                    className="w-3/5"
                     onChange={e => handleChange(id, e)}
                   />
                 </div>
@@ -51,12 +53,14 @@ const QuestionForm = ({
                   placeholder=""
                   size="small"
                   type="text"
+                  className="w-3/5"
                   onChange={e => handleChange(id, e)}
                 />
                 <Button
                   label="Remove"
                   onClick={() => handleRemove(id)}
-                  style="secondary"
+                  style="danger"
+                  className="h-1"
                 />
               </div>
             );
