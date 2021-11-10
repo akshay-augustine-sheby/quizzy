@@ -1,6 +1,15 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
+  def show
+    @question = Question.where("quiz_id = ?", params[:id])
+    if @question
+      render status: :ok, json: { questions: @question }
+    else
+      render status: :not_found, json: { error: "Question not found" }
+    end
+  end
+
   def create
     @question = Question.new(question_params)
     if @question.save
