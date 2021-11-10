@@ -1,5 +1,6 @@
 import React from "react";
 
+import { CloseCircle } from "@bigbinary/neeto-icons";
 import { Input, Select, Button } from "@bigbinary/neetoui/v2";
 
 import Button2 from "components/Button";
@@ -61,6 +62,8 @@ const FormQuestion = ({
                   onClick={() => handleRemove(id)}
                   style="danger"
                   className="h-1"
+                  icon={CloseCircle}
+                  iconPosition="left"
                 />
               </div>
             );

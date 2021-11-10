@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Delete } from "@bigbinary/neeto-icons";
 import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
 
 const ModalQuiz = ({
@@ -15,7 +16,9 @@ const ModalQuiz = ({
       size="xs"
     >
       <Modal.Header>
-        <Typography style="h2">Delete Confirmation</Typography>
+        <Typography style="h2" className="text-red-500">
+          Delete Confirmation
+        </Typography>
       </Modal.Header>
       <Modal.Body>
         <Typography style="body2" lineHeight="normal">
@@ -27,6 +30,8 @@ const ModalQuiz = ({
           size="large"
           label="Delete"
           style="danger"
+          icon={Delete}
+          iconPosition="left"
           onClick={() => {
             setShowModalExtraSmall(false);
             deleteQuiz(val);

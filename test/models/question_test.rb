@@ -36,10 +36,15 @@ class QuestionTest < ActiveSupport::TestCase
     assert @question.valid?
   end
 
-  def test_upto_4_options_can_be_present
+  def test_more_than_4_options_not_allowed
     @question = Question.new(
       name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
-      options_attributes: [{ name: "optionA" }, { name: "optionB" }, { name: "optionC" }, { name: "optionD" }])
-    assert @question.valid?
+      options_attributes: [{ name: "optionA" },
+                            { name: "optionB" },
+                            { name: "optionC" },
+                            { name: "optionD" },
+                            { name: "optionE" }])
+    assert_not @question.valid?
+    assert_includes @question.errors.full_messages, "Too many options, maximum only 4 options allowed"
   end
 end
