@@ -7,10 +7,11 @@ import { isNil, isEmpty, either } from "ramda";
 import quizzesApi from "apis/quizzes";
 import Container from "components/Container";
 
-import PageLoader from "../PageLoader";
-import Table from "../Table";
+import TableQuiz from "./TableQuiz";
 
-const Dashboard = ({ history }) => {
+import PageLoader from "../PageLoader";
+
+const Quizzes = ({ history }) => {
   const [quizzes, setQuizzes] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -26,7 +27,7 @@ const Dashboard = ({ history }) => {
   };
 
   const handleCreateQuiz = () => {
-    window.location.href = "/quizcreate";
+    window.location.href = "/quiz/create";
   };
 
   const deleteQuiz = async slug => {
@@ -40,7 +41,6 @@ const Dashboard = ({ history }) => {
   };
 
   const editQuiz = slug => {
-    //window.location.href = `/quiz/${slug}/edit`;
     history.push(`/quiz/${slug}/edit`);
   };
 
@@ -97,7 +97,7 @@ const Dashboard = ({ history }) => {
           />
         </div>
         <div className="">
-          <Table
+          <TableQuiz
             quizzes={quizzes}
             deleteQuiz={deleteQuiz}
             editQuiz={editQuiz}
@@ -108,4 +108,4 @@ const Dashboard = ({ history }) => {
     </Container>
   );
 };
-export default Dashboard;
+export default Quizzes;

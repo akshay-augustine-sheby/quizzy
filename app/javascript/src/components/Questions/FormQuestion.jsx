@@ -1,11 +1,12 @@
 import React from "react";
 
+import { CloseCircle } from "@bigbinary/neeto-icons";
 import { Input, Select, Button } from "@bigbinary/neetoui/v2";
 
 import Button2 from "components/Button";
 import Container from "components/Container";
 
-const QuestionForm = ({
+const FormQuestion = ({
   quiz,
   setQuestion,
   answer,
@@ -19,14 +20,15 @@ const QuestionForm = ({
 }) => {
   return (
     <Container>
-      <div className="flex-col space-y-40 mt-10">
+      <div className="flex-col space-y-20 mt-10">
         <div className="text-3xl font-bold">{quiz.quiz_name}</div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="space-y-3">
           <Input
             label="Question"
             placeholder=""
             size="small"
             type="text"
+            className="w-3/5"
             onChange={e => setQuestion(e.target.value)}
           />
           {options1.map((opt, id) => {
@@ -38,6 +40,7 @@ const QuestionForm = ({
                     placeholder=""
                     size="small"
                     type="text"
+                    className="w-3/5"
                     onChange={e => handleChange(id, e)}
                   />
                 </div>
@@ -51,12 +54,16 @@ const QuestionForm = ({
                   placeholder=""
                   size="small"
                   type="text"
+                  className="w-3/5"
                   onChange={e => handleChange(id, e)}
                 />
                 <Button
                   label="Remove"
                   onClick={() => handleRemove(id)}
-                  style="secondary"
+                  style="danger"
+                  className="h-1"
+                  icon={CloseCircle}
+                  iconPosition="left"
                 />
               </div>
             );
@@ -76,8 +83,7 @@ const QuestionForm = ({
                 label: "Select an option",
                 value: "",
               }}
-              isClearable
-              isSearchable
+              isCreatable
               label="Correct answer"
               name="ValueList"
               options={options1.map(opt => {
@@ -98,4 +104,4 @@ const QuestionForm = ({
     </Container>
   );
 };
-export default QuestionForm;
+export default FormQuestion;

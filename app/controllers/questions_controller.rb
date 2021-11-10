@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params)
     if @question.save
       render status: :ok,
-        json: { notice: "Question is successfully created", dat: @question }
+        json: { notice: "Question is successfully created" }
     else
       errors = @question.errors.full_messages.to_sentence
       render status: :unprocessable_entity, json: { error: errors }
@@ -15,6 +15,9 @@ class QuestionsController < ApplicationController
   private
 
     def question_params
-      params.require(:question).permit(:question, :answer, :quiz_id, :option1, :option2)
+      params.require(:question).permit(
+        :name, :answer, :quiz_id,
+        options_attributes: [ :name ]
+      )
     end
 end

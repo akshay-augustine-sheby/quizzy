@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 
-import PageLoader from "./PageLoader";
-import QuestionForm from "./QuestionForm";
+import FormQuestion from "./FormQuestion";
 
-import optionsApi from "../apis/options";
-import questionsApi from "../apis/questions";
-import quizzesApi from "../apis/quizzes";
+import questionsApi from "../../apis/questions";
+import quizzesApi from "../../apis/quizzes";
+import PageLoader from "../PageLoader";
 
 const QuestionCreate = ({ history }) => {
   const [question, setQuestion] = useState("");
@@ -42,32 +41,20 @@ const QuestionCreate = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      //console.log(options1[0].value)
-      const response = await questionsApi.create({
+      await questionsApi.create({
         question: {
-          question: question,
+          name: question,
           answer: answer.value,
           quiz_id: quizId,
-          option1: options1[0].value,
-          option2: options1[1].value,
+          options_attributes: options1.map(it => {
+            return {
+              name: it.value,
+            };
+          }),
         },
       });
-      //setQuestionId(response.data.dat.id)
-      //console.log(response)
-      //console.log(response.data.dat.id)
-      //console.log(questionId)
-      options1.map(async (it, index) => {
-        if (index > 1) {
-          await optionsApi.create({
-            option: { option: it.value, question_id: response.data.dat.id },
-          });
-        }
-        //console.log(it.value)
-      });
-
       setLoading(false);
       history.push(`/quiz/${slug}/show`);
-      //console.log(response.data.dat.id)
     } catch (error) {
       logger.error(error);
       setLoading(false);
@@ -92,6 +79,10 @@ const QuestionCreate = ({ history }) => {
     fetchQuizDetails();
   }, []);
 
+  useEffect(() => {
+    setAnswer("");
+  }, [options1]);
+
   //console.log(quiz)
   //console.log(question)
   //console.log(answer.value)
@@ -106,7 +97,7 @@ const QuestionCreate = ({ history }) => {
 
   return (
     <div>
-      <QuestionForm
+      <FormQuestion
         quiz={quiz}
         setQuestion={setQuestion}
         answer={answer}

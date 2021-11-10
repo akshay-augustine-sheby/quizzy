@@ -9,12 +9,12 @@ import { initializeLogger } from "common/logger";
 import Login from "components/Authentication/Login";
 import PrivateRoute from "components/Common/PrivateRoute";
 
-import Dashboard from "./components/Dashboard";
-import CreateQuiz from "./components/Dashboard/CreateQuiz";
-import EditQuiz from "./components/Dashboard/EditQuiz";
-import ShowQuiz from "./components/Dashboard/ShowQuiz";
 import PageLoader from "./components/PageLoader";
-import QuestionCreate from "./components/QuestionCreate";
+import QuestionCreate from "./components/Questions/CreateQuestion";
+import Quizzes from "./components/Quizzes";
+import CreateQuiz from "./components/Quizzes/CreateQuiz";
+import EditQuiz from "./components/Quizzes/EditQuiz";
+import ShowQuiz from "./components/Quizzes/ShowQuiz";
 import { getFromLocalStorage } from "./helpers/storage";
 
 const App = () => {
@@ -41,7 +41,7 @@ const App = () => {
       <ToastContainer />
       <Switch>
         <Route exact path="/login" component={Login} />
-        <Route exact path="/quizcreate" component={CreateQuiz} />
+        <Route exact path="/quiz/create" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
         <Route
@@ -53,7 +53,7 @@ const App = () => {
           path="/"
           redirectRoute="/login"
           condition={isLoggedIn}
-          component={Dashboard}
+          component={Quizzes}
         />
       </Switch>
     </Router>

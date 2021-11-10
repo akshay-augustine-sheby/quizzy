@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   defaults format: :json do
     resources :quizzes, only: %i[index create update destroy show], param: :slug
     resources :questions, only: %i[create]
-    resources :options, only: %i[create]
     resources :users, only: %i[index]
     resource :sessions, only: %i[create destroy]
   end
