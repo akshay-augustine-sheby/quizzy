@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
-  before_action :load_question, only: %i[destroy]
+  before_action :load_question, only: %i[destroy update]
 
   def show
     @question = Question.where("quiz_id = ?", params[:id])
@@ -26,6 +26,15 @@ class QuestionsController < ApplicationController
   def destroy
     if @question.destroy
       render status: :ok, json: { notice: "Question is successfully deleted" }
+    else
+      render status: :unprocessable_entity,
+        json: { error: @question.errors.full_messages.to_sentence }
+    end
+  end
+
+  def update
+    if @question.update(question_params)
+      render status: :ok, json: { notice: "Question is successfully updated" }
     else
       render status: :unprocessable_entity,
         json: { error: @question.errors.full_messages.to_sentence }

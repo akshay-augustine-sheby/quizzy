@@ -7,6 +7,7 @@ import Button2 from "components/Button";
 import Container from "components/Container";
 
 const FormQuestion = ({
+  type,
   quiz,
   setQuestion,
   answer,
@@ -98,7 +99,11 @@ const FormQuestion = ({
               onChange={val => setAnswer(val)}
             />
           </div>
-          <Button2 type="submit" buttonText="Submit" loading={loading} />
+          <Button2
+            type="submit"
+            buttonText={type === "update" ? "Update" : "Submit"}
+            loading={loading}
+          />
         </form>
       </div>
     </Container>

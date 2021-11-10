@@ -11,6 +11,7 @@ import PrivateRoute from "components/Common/PrivateRoute";
 
 import PageLoader from "./components/PageLoader";
 import QuestionCreate from "./components/Questions/CreateQuestion";
+import EditQuestion from "./components/Questions/EditQuestion";
 import Quizzes from "./components/Quizzes";
 import CreateQuiz from "./components/Quizzes/CreateQuiz";
 import EditQuiz from "./components/Quizzes/EditQuiz";
@@ -44,6 +45,12 @@ const App = () => {
         <Route exact path="/quiz/create" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
         <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
+        <Route
+          exact
+          path="/question/:question_id/edit"
+          component={EditQuestion}
+        />
+
         <Route
           exact
           path="/quiz/:slug/question/create"

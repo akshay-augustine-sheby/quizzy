@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { Plus } from "@bigbinary/neeto-icons";
+import { Plus, Edit } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
 import { isNil, isEmpty, either } from "ramda";
 import { useParams } from "react-router-dom";
@@ -70,6 +70,10 @@ const ShowQuiz = ({ history }) => {
     } finally {
       setPageLoading(false);
     }
+  };
+
+  const editQuestion = question_id => {
+    history.push(`/question/${question_id}/edit`);
   };
 
   useEffect(() => {
@@ -142,6 +146,13 @@ const ShowQuiz = ({ history }) => {
               <div className="flex space-x-10 ">
                 <div>{`Question ${index + 1}`}</div>
                 <div>{question.name}</div>
+                <Button
+                  onClick={() => editQuestion(question.id)}
+                  style="secondary"
+                  label="Edit"
+                  iconPosition="left"
+                  icon={Edit}
+                />
                 <DeleteQuestion
                   question_id={question.id}
                   fetchQuestionDetails={fetchQuestionDetails}
