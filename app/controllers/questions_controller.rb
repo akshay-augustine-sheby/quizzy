@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class QuestionsController < ApplicationController
+  before_action :load_question, only: %i[destroy]
+
   def show
     @question = Question.where("quiz_id = ?", params[:id])
     if @question
@@ -21,6 +23,15 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def destroy
+    if @question.destroy
+      render status: :ok, json: { notice: "Question is successfully deleted" }
+    else
+      render status: :unprocessable_entity,
+        json: { error: @question.errors.full_messages.to_sentence }
+    end
+  end
+
   private
 
     def question_params
@@ -28,5 +39,12 @@ class QuestionsController < ApplicationController
         :name, :answer, :quiz_id,
         options_attributes: [ :name ]
       )
+    end
+
+    def load_question
+      @question = Question.find_by(id: params[:id])
+      unless @question
+        render status: :not_found, json: { error: "Question not found" }
+      end
     end
 end

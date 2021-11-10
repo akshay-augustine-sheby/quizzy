@@ -11,6 +11,7 @@ import optionsApi from "../../apis/options";
 import questionsApi from "../../apis/questions";
 import quizzesApi from "../../apis/quizzes";
 import PageLoader from "../PageLoader";
+import DeleteQuestion from "../Questions/DeleteQuestion";
 
 const ShowQuiz = ({ history }) => {
   const { slug } = useParams();
@@ -19,6 +20,7 @@ const ShowQuiz = ({ history }) => {
   const [pageLoading, setPageLoading] = useState(true);
   const [quizId, setQuizId] = useState("");
   const questionId = [];
+  const [options, setOptions] = useState({});
 
   const handleCreateQuestion = () => {
     history.push(`/quiz/${slug}/question/create`);
@@ -35,7 +37,7 @@ const ShowQuiz = ({ history }) => {
     }
   };
 
-  const fetchQuestionDetails = async () => {
+  const fetchQuestionDetails = async quizId => {
     try {
       //console.log(quizId)
       const response = await questionsApi.show(quizId);
@@ -49,10 +51,20 @@ const ShowQuiz = ({ history }) => {
 
   const fetchOptions = async id => {
     try {
+      setPageLoading(true);
       //console.log(id)
-      //const response =
-      await optionsApi.show(id);
+      const response = await optionsApi.show(id);
       //console.log(response)
+      setOptions({
+        ...options,
+        [id]: response.data.options.map(it => {
+          return it.name;
+        }),
+      });
+      //options2.push(response.data.options.map((it)=>{return (it.name)}))
+
+      //console.log(options["1"])
+      //console.log(Object.keys(options))
     } catch (error) {
       logger.error(error);
     } finally {
@@ -65,27 +77,29 @@ const ShowQuiz = ({ history }) => {
   }, []);
 
   useEffect(() => {
-    fetchQuestionDetails();
+    fetchQuestionDetails(quizId);
   }, [quizId]);
 
   useEffect(() => {
+    //setPageLoading(true);
     questions.map(question => {
       questionId.push(question.id);
     });
     questionId.map(id => {
       fetchOptions(id);
     });
-    //console.log(questionId)
-    //console.log(questions)
   }, [questions]);
 
+  //useEffect(()=>{
+  //console.log(options)
+  //},[options])
   if (pageLoading) {
     return (
       <div className="w-screen h-screen">
         <PageLoader />
       </div>
     );
-  } else if (either(isNil, isEmpty)(questions)) {
+  } else if (either(isNil, isEmpty)(questions, options)) {
     return (
       <Container>
         <div className="flex-col space-y-40 mt-10">
@@ -123,12 +137,18 @@ const ShowQuiz = ({ history }) => {
           />
         </div>
         <div className="flex-row space-y-10">
-          {questions.map((question, index) => (
+          {questions?.map((question, index) => (
             <div key={index}>
               <div className="flex space-x-10 ">
                 <div>{`Question ${index + 1}`}</div>
-                <div>{question["name"]}</div>
+                <div>{question.name}</div>
+                <DeleteQuestion
+                  question_id={question.id}
+                  fetchQuestionDetails={fetchQuestionDetails}
+                  quizId={quizId}
+                />
               </div>
+              <div></div>
             </div>
           ))}
         </div>
