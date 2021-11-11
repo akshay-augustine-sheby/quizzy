@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import { Plus, Edit } from "@bigbinary/neeto-icons";
+import { Plus, Edit, Checkmark, ExternalLink } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
 import { isNil, isEmpty, either } from "ramda";
 import { useParams } from "react-router-dom";
 
 import Container from "components/Container";
 
-import optionsApi from "../../apis/options";
 import questionsApi from "../../apis/questions";
 import quizzesApi from "../../apis/quizzes";
 import PageLoader from "../PageLoader";
@@ -19,7 +18,6 @@ const ShowQuiz = ({ history }) => {
   const [questions, setQuestions] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
   const [quizId, setQuizId] = useState("");
-  const questionId = [];
   const [options, setOptions] = useState({});
 
   const handleCreateQuestion = () => {
@@ -41,30 +39,9 @@ const ShowQuiz = ({ history }) => {
     try {
       //console.log(quizId)
       const response = await questionsApi.show(quizId);
-      setQuestions(response.data.questions);
-    } catch (error) {
-      logger.error(error);
-    } finally {
-      setPageLoading(false);
-    }
-  };
-
-  const fetchOptions = async id => {
-    try {
-      setPageLoading(true);
-      //console.log(id)
-      const response = await optionsApi.show(id);
       //console.log(response)
-      setOptions({
-        ...options,
-        [id]: response.data.options.map(it => {
-          return it.name;
-        }),
-      });
-      //options2.push(response.data.options.map((it)=>{return (it.name)}))
-
-      //console.log(options["1"])
-      //console.log(Object.keys(options))
+      setQuestions(response.data.questions);
+      setOptions(response.data.options);
     } catch (error) {
       logger.error(error);
     } finally {
@@ -84,19 +61,6 @@ const ShowQuiz = ({ history }) => {
     fetchQuestionDetails(quizId);
   }, [quizId]);
 
-  useEffect(() => {
-    //setPageLoading(true);
-    questions.map(question => {
-      questionId.push(question.id);
-    });
-    questionId.map(id => {
-      fetchOptions(id);
-    });
-  }, [questions]);
-
-  //useEffect(()=>{
-  //console.log(options)
-  //},[options])
   if (pageLoading) {
     return (
       <div className="w-screen h-screen">
@@ -128,38 +92,88 @@ const ShowQuiz = ({ history }) => {
 
   return (
     <Container>
-      <div className="flex-col space-y-40 mt-10">
+      <div className="flex-col space-y-20 mt-10">
         <div className="flex justify-between">
           <div className="text-3xl font-bold">{quiz.name}</div>
-          <Button
-            iconPosition="left"
-            label="Add questions"
-            size="default"
-            style="primary"
-            onClick={handleCreateQuestion}
-            icon={Plus}
-          />
+          <div className="flex space-x-2">
+            <Button
+              iconPosition="left"
+              label="Add questions"
+              size="default"
+              style="primary"
+              onClick={handleCreateQuestion}
+              icon={Plus}
+            />
+            <Button
+              iconPosition="left"
+              label="Publish"
+              size="default"
+              style="primary"
+              onClick={() => {}}
+              icon={ExternalLink}
+            />
+          </div>
         </div>
-        <div className="flex-row space-y-10">
+        <div className="flex-row space-y-12">
           {questions?.map((question, index) => (
-            <div key={index}>
+            <div key={index} className="space-y-3">
               <div className="flex space-x-10 ">
-                <div>{`Question ${index + 1}`}</div>
-                <div>{question.name}</div>
-                <Button
-                  onClick={() => editQuestion(question.id)}
-                  style="secondary"
-                  label="Edit"
-                  iconPosition="left"
-                  icon={Edit}
-                />
-                <DeleteQuestion
-                  question_id={question.id}
-                  fetchQuestionDetails={fetchQuestionDetails}
-                  quizId={quizId}
-                />
+                <div className="text-gray-600">{`Question ${index + 1}`}</div>
+                <div className="font-extrabold">{question.name}</div>
+                <div className="flex space-x-6">
+                  <Button
+                    onClick={() => editQuestion(question.id)}
+                    style="secondary"
+                    label="Edit"
+                    iconPosition="left"
+                    icon={Edit}
+                  />
+                  <DeleteQuestion
+                    question_id={question.id}
+                    fetchQuestionDetails={fetchQuestionDetails}
+                    quizId={quizId}
+                  />
+                </div>
               </div>
-              <div></div>
+              <div className="flex flex-col space-y-2">
+                {Object.keys(options).map(it => {
+                  //console.log(it)
+                  if (parseInt(it) === parseInt(question.id)) {
+                    //console.log(`it: ${it}`)
+                    //console.log(`question.id: ${question.id}`)
+                    //console.log(options[it].length)
+                    return options[it].map((option, index2) => {
+                      if (option === question.answer) {
+                        return (
+                          <div key={index2} className="flex space-x-10">
+                            <div className="text-gray-600">{`Option ${
+                              index2 + 1
+                            }`}</div>
+                            <div className="flex space-x-5">
+                              <div className="font-medium">{option}</div>
+                              <div className="flex space-x-2 text-green-500 font-medium">
+                                <Checkmark size={18} />
+                                <div>Correct answer</div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      }
+
+                      return (
+                        <div key={index2} className="flex space-x-10">
+                          <div className="text-gray-600">{`Option ${
+                            index2 + 1
+                          }`}</div>
+                          <div className="font-medium">{option}</div>
+                        </div>
+                      );
+                    });
+                  }
+
+                  return false;
+                })}
+              </div>
             </div>
           ))}
         </div>

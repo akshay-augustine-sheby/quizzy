@@ -4,9 +4,19 @@ class QuestionsController < ApplicationController
   before_action :load_question, only: %i[destroy update]
 
   def show
+    hash = {}
     @question = Question.where("quiz_id = ?", params[:id])
+    @question.each do |question|
+      @options = question.options
+      arr = []
+      @options.each do |option|
+        arr.push(option.name)
+      end
+      hash[question.id] = arr
+    end
+
     if @question
-      render status: :ok, json: { questions: @question }
+      render status: :ok, json: { questions: @question, options: hash }
     else
       render status: :not_found, json: { error: "Question not found" }
     end
