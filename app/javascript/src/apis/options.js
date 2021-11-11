@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const show = id => axios.get(`/options/${id}`);
+const show = questionId => axios.get(`/options/${questionId}`);
 
 const optionsApi = {
   show,

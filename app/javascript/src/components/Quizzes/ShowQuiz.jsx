@@ -50,6 +50,7 @@ const ShowQuiz = ({ history }) => {
   };
 
   const editQuestion = question_id => {
+    localStorage.setItem("slug", slug);
     history.push(`/question/${question_id}/edit`);
   };
 

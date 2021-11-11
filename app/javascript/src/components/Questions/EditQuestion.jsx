@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import FormQuestion from "./FormQuestion";
 
+import optionsApi from "../../apis/options";
 import questionsApi from "../../apis/questions";
 import PageLoader from "../PageLoader";
 
@@ -11,10 +12,8 @@ const EditQuestion = ({ history }) => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [options1, setOptions1] = useState([{ option: "" }, { option: "" }]);
-
+  const [optionsId, setOptionsId] = useState([]);
   const { question_id } = useParams();
-  //const [quiz, setQuiz] = useState([]);
-  //const [questionId, setQuestionId] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleChange = (id, e) => {
@@ -35,6 +34,17 @@ const EditQuestion = ({ history }) => {
     setOptions1(values);
   };
 
+  const fetchOptionsId = async question_id => {
+    try {
+      const response = await optionsApi.show(question_id);
+      setOptionsId(response.data.optionsId);
+    } catch (error) {
+      logger.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSubmit = async event => {
     event.preventDefault();
     try {
@@ -44,11 +54,17 @@ const EditQuestion = ({ history }) => {
           question: {
             name: question,
             answer: answer.value,
-            options_attributes: options1.map(it => {
+            options_attributes: options1.map((it, index) => {
+              if (optionsId[index] != undefined) {
+                return {
+                  id: optionsId[index],
+                  name: it.value,
+                  question_id: question_id,
+                };
+              }
+
               return {
-                id: it.id,
                 name: it.value,
-                _destroy: "1",
                 question_id: question_id,
               };
             }),
@@ -56,13 +72,17 @@ const EditQuestion = ({ history }) => {
         },
       });
       setLoading(false);
-      history.push("/");
+      const slug = localStorage.getItem("slug");
+      history.push(`/quiz/${slug}/show`);
     } catch (error) {
       logger.error(error);
       setLoading(false);
     }
   };
 
+  useEffect(() => {
+    fetchOptionsId(question_id);
+  }, []);
   useEffect(() => {
     setAnswer("");
   }, [options1]);
