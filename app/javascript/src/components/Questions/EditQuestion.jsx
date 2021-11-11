@@ -46,7 +46,10 @@ const EditQuestion = ({ history }) => {
             answer: answer.value,
             options_attributes: options1.map(it => {
               return {
+                id: it.id,
                 name: it.value,
+                _destroy: "1",
+                question_id: question_id,
               };
             }),
           },
@@ -80,7 +83,7 @@ const EditQuestion = ({ history }) => {
     <div>
       <FormQuestion
         type="update"
-        //quiz={quiz}
+        quiz="Edit Question"
         setQuestion={setQuestion}
         answer={answer}
         setAnswer={setAnswer}

@@ -56,7 +56,7 @@ class QuestionsController < ApplicationController
     def question_params
       params.require(:question).permit(
         :name, :answer, :quiz_id,
-        options_attributes: [ :name ]
+        options_attributes: [ :id, :name, :question_id ]
       )
     end
 

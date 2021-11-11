@@ -22,7 +22,9 @@ const FormQuestion = ({
   return (
     <Container>
       <div className="flex-col space-y-20 mt-10">
-        <div className="text-3xl font-bold">{quiz.quiz_name}</div>
+        <div className="text-3xl font-bold">
+          {quiz === "Edit Question" ? quiz : quiz.quiz_name}
+        </div>
         <form onSubmit={handleSubmit} className="space-y-3">
           <Input
             label="Question"

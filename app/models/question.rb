@@ -9,7 +9,8 @@ class Question < ApplicationRecord
   validate :option_atleast_2
   validate :option_atmost_4
 
-  accepts_nested_attributes_for :options, reject_if: proc { |attributes| attributes["name"].blank? }
+  accepts_nested_attributes_for :options, reject_if: proc { |attributes|
+ attributes["name"].blank? }, update_only: true, allow_destroy: true
 
   private
 
