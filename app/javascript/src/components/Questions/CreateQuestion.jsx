@@ -46,9 +46,9 @@ const QuestionCreate = ({ history }) => {
           name: question,
           answer: answer.value,
           quiz_id: quizId,
-          options_attributes: options.map(it => {
+          options_attributes: options.map(opt => {
             return {
-              name: it.option,
+              name: opt.option,
             };
           }),
         },

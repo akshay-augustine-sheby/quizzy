@@ -64,17 +64,17 @@ const EditQuestion = ({ history }) => {
           question: {
             name: question,
             answer: answer.value,
-            options_attributes: options.map((it, index) => {
+            options_attributes: options.map((opt, index) => {
               if (optionsId[index] != undefined) {
                 return {
                   id: optionsId[index],
-                  name: it.option,
+                  name: opt.option,
                   question_id: question_id,
                 };
               }
 
               return {
-                name: it.option,
+                name: opt.option,
                 question_id: question_id,
               };
             }),

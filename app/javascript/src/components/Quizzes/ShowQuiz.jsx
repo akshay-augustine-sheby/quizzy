@@ -170,13 +170,13 @@ const ShowQuiz = ({ history }) => {
                 </div>
               </div>
               <div className="flex flex-col space-y-2">
-                {Object.keys(options).map(it => {
-                  //console.log(it)
-                  if (parseInt(it) === parseInt(question.id)) {
-                    //console.log(`it: ${it}`)
+                {Object.keys(options).map(questionId => {
+                  //console.log(questionId)
+                  if (parseInt(questionId) === parseInt(question.id)) {
+                    //console.log(`questionId: ${questionId}`)
                     //console.log(`question.id: ${question.id}`)
-                    //console.log(options[it].length)
-                    return options[it].map((option, index2) => {
+                    //console.log(options[questionId].length)
+                    return options[questionId].map((option, index2) => {
                       if (option === question.answer) {
                         return (
                           <div key={index2} className="flex space-x-10">
