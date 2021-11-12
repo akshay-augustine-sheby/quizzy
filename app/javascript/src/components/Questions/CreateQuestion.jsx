@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 
-import FormQuestion from "./FormQuestion";
+import FormQuestion from "./Form";
 
 import questionsApi from "../../apis/questions";
 import quizzesApi from "../../apis/quizzes";
