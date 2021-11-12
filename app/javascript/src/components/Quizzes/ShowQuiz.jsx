@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import { Plus, Edit, Checkmark, ExternalLink } from "@bigbinary/neeto-icons";
+import {
+  Plus,
+  Edit,
+  Checkmark,
+  ExternalLink,
+  Copy,
+} from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
 import { isNil, isEmpty, either } from "ramda";
 import { useParams } from "react-router-dom";
@@ -126,15 +132,19 @@ const ShowQuiz = ({ history }) => {
           </div>
         </div>
         {url && (
-          <div className="flex space-x-2">
-            <Checkmark size={18} />
+          <div className="flex flex-row space-x-2 items-center">
+            <div className="text-green-500">
+              <Checkmark size={24} />
+            </div>
             <div className="font-semibold text-base">
               Published, your public link is -
             </div>
+            <Button label={url} style="link" />
             <Button
-              label={url}
-              onClick={function noRefCheck() {}}
-              style="link"
+              onClick={() => navigator.clipboard.writeText(url)}
+              size="large"
+              style="text"
+              icon={Copy}
             />
           </div>
         )}

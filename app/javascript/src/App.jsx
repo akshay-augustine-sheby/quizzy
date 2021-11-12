@@ -10,6 +10,7 @@ import Login from "components/Authentication/Login";
 import PrivateRoute from "components/Common/PrivateRoute";
 
 import PageLoader from "./components/PageLoader";
+import LoginUser from "./components/Publish/LoginUser";
 import QuestionCreate from "./components/Questions/CreateQuestion";
 import EditQuestion from "./components/Questions/EditQuestion";
 import Quizzes from "./components/Quizzes";
@@ -41,6 +42,7 @@ const App = () => {
     <Router>
       <ToastContainer />
       <Switch>
+        <Route exact path="/public/:slug" component={LoginUser} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/quiz/create" component={CreateQuiz} />
         <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
