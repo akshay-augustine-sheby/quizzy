@@ -1,21 +1,15 @@
 import React from "react";
 
-import { Delete } from "@bigbinary/neeto-icons";
+import { Delete, Warning } from "@bigbinary/neeto-icons";
 import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
 
-const ModalQuiz = ({
-  showModalExtraSmall,
-  setShowModalExtraSmall,
-  val,
-  deleteQuiz,
-}) => {
+const ModalQuiz = ({ showModal, setShowModal, val, deleteQuiz }) => {
   return (
-    <Modal
-      isOpen={showModalExtraSmall}
-      onClose={() => setShowModalExtraSmall(false)}
-      size="xs"
-    >
+    <Modal isOpen={showModal} onClose={() => setShowModal(false)} size="xs">
       <Modal.Header>
+        <div className="text-red-500">
+          <Warning size={60} />
+        </div>
         <Typography style="h2" className="text-red-500">
           Delete Confirmation
         </Typography>
@@ -33,7 +27,7 @@ const ModalQuiz = ({
           icon={Delete}
           iconPosition="left"
           onClick={() => {
-            setShowModalExtraSmall(false);
+            setShowModal(false);
             deleteQuiz(val);
           }}
         />
@@ -41,7 +35,7 @@ const ModalQuiz = ({
           style="text"
           size="large"
           label="Cancel"
-          onClick={() => setShowModalExtraSmall(false)}
+          onClick={() => setShowModal(false)}
         />
       </Modal.Footer>
     </Modal>
