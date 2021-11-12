@@ -87,8 +87,8 @@ const FormQuestion = ({
           <div className="p-4 mb-2">
             <Select
               defaultValue={{
-                label: `${answer}`,
-                value: { answer },
+                label: answer,
+                value: answer,
               }}
               isCreatable
               label="Correct answer"
