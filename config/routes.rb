@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     resources :quizzes, only: %i[index create update destroy show], param: :slug
     resources :questions, only: %i[show create destroy update]
     resources :options, only: %i[show]
-    resources :users, only: %i[index]
     resource :sessions, only: %i[create destroy]
   end
 
