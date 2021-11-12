@@ -7,7 +7,9 @@ import Button2 from "components/Button";
 import Container from "components/Container";
 
 const FormQuestion = ({
+  type,
   quiz,
+  question,
   setQuestion,
   answer,
   setAnswer,
@@ -21,7 +23,9 @@ const FormQuestion = ({
   return (
     <Container>
       <div className="flex-col space-y-20 mt-10">
-        <div className="text-3xl font-bold">{quiz.quiz_name}</div>
+        <div className="text-3xl font-bold">
+          {quiz === "Edit Question" ? quiz : quiz.name}
+        </div>
         <form onSubmit={handleSubmit} className="space-y-3">
           <Input
             label="Question"
@@ -29,6 +33,7 @@ const FormQuestion = ({
             size="small"
             type="text"
             className="w-3/5"
+            value={question}
             onChange={e => setQuestion(e.target.value)}
           />
           {options1.map((opt, id) => {
@@ -41,6 +46,7 @@ const FormQuestion = ({
                     size="small"
                     type="text"
                     className="w-3/5"
+                    value={options1[id].option}
                     onChange={e => handleChange(id, e)}
                   />
                 </div>
@@ -55,6 +61,7 @@ const FormQuestion = ({
                   size="small"
                   type="text"
                   className="w-3/5"
+                  value={options1[id].option}
                   onChange={e => handleChange(id, e)}
                 />
                 <Button
@@ -80,8 +87,8 @@ const FormQuestion = ({
           <div className="p-4 mb-2">
             <Select
               defaultValue={{
-                label: "Select an option",
-                value: "",
+                label: answer,
+                value: answer,
               }}
               isCreatable
               label="Correct answer"
@@ -89,16 +96,19 @@ const FormQuestion = ({
               options={options1.map(opt => {
                 //console.log(opt)
                 return {
-                  label: opt.value,
-                  value: opt.value,
+                  label: opt.option,
+                  value: opt.option,
                 };
               })}
               placeholder="Select an Option"
-              value={answer}
               onChange={val => setAnswer(val)}
             />
           </div>
-          <Button2 type="submit" buttonText="Submit" loading={loading} />
+          <Button2
+            type="submit"
+            buttonText={type === "update" ? "Update" : "Submit"}
+            loading={loading}
+          />
         </form>
       </div>
     </Container>

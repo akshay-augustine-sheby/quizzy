@@ -4,20 +4,16 @@ import { useParams } from "react-router-dom";
 
 import FormQuestion from "./FormQuestion";
 
+import optionsApi from "../../apis/options";
 import questionsApi from "../../apis/questions";
-import quizzesApi from "../../apis/quizzes";
 import PageLoader from "../PageLoader";
 
-const QuestionCreate = ({ history }) => {
+const EditQuestion = ({ history }) => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [options1, setOptions1] = useState([{ option: "" }, { option: "" }]);
-
-  const { slug } = useParams();
-  const [quiz, setQuiz] = useState([]);
-  const [quizId, setQuizId] = useState("");
-  //const [questionId, setQuestionId] = useState("");
-  const [pageLoading, setPageLoading] = useState(true);
+  const [optionsId, setOptionsId] = useState([]);
+  const { question_id } = useParams();
   const [loading, setLoading] = useState(false);
 
   const handleChange = (id, e) => {
@@ -38,22 +34,55 @@ const QuestionCreate = ({ history }) => {
     setOptions1(values);
   };
 
+  const fetchOptions = async question_id => {
+    try {
+      const response = await optionsApi.show(question_id);
+      //console.log(response)
+      setOptionsId(response.data.optionsId);
+      setQuestion(response.data.question[0].name);
+      setOptions1(
+        response.data.optionsName.map(name => {
+          return {
+            option: name,
+          };
+        })
+      );
+      setAnswer(response.data.question[0].answer);
+    } catch (error) {
+      logger.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      await questionsApi.create({
-        question: {
-          name: question,
-          answer: answer.value,
-          quiz_id: quizId,
-          options_attributes: options1.map(it => {
-            return {
-              name: it.option,
-            };
-          }),
+      await questionsApi.update({
+        question_id,
+        payload: {
+          question: {
+            name: question,
+            answer: answer.value,
+            options_attributes: options1.map((it, index) => {
+              if (optionsId[index] != undefined) {
+                return {
+                  id: optionsId[index],
+                  name: it.option,
+                  question_id: question_id,
+                };
+              }
+
+              return {
+                name: it.option,
+                question_id: question_id,
+              };
+            }),
+          },
         },
       });
       setLoading(false);
+      const slug = localStorage.getItem("slug");
       history.push(`/quiz/${slug}/show`);
     } catch (error) {
       logger.error(error);
@@ -61,33 +90,18 @@ const QuestionCreate = ({ history }) => {
     }
   };
 
-  const fetchQuizDetails = async () => {
-    try {
-      //console.log(slug)
-      const response = await quizzesApi.show(slug);
-      setQuiz(response.data.quiz);
-      setQuizId(response.data.quiz.id);
-      //console.log(response)
-    } catch (error) {
-      logger.error(error);
-    } finally {
-      setPageLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchQuizDetails();
+    fetchOptions(question_id);
   }, []);
-
   useEffect(() => {
     setAnswer("");
+    //console.log(options1)
   }, [options1]);
-
   //console.log(quiz)
   //console.log(question)
   //console.log(answer.value)
 
-  if (pageLoading) {
+  if (loading) {
     return (
       <div className="w-screen h-screen">
         <PageLoader />
@@ -98,7 +112,9 @@ const QuestionCreate = ({ history }) => {
   return (
     <div>
       <FormQuestion
-        quiz={quiz}
+        type="update"
+        quiz="Edit Question"
+        question={question}
         setQuestion={setQuestion}
         answer={answer}
         setAnswer={setAnswer}
@@ -113,4 +129,4 @@ const QuestionCreate = ({ history }) => {
   );
 };
 
-export default QuestionCreate;
+export default EditQuestion;
