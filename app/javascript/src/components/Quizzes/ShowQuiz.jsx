@@ -19,7 +19,6 @@ const ShowQuiz = ({ history }) => {
   const [pageLoading, setPageLoading] = useState(true);
   const [quizId, setQuizId] = useState("");
   const [options, setOptions] = useState({});
-  const [url, setUrl] = useState("");
 
   const handleCreateQuestion = () => {
     history.push(`/quiz/${slug}/question/create`);
@@ -34,13 +33,6 @@ const ShowQuiz = ({ history }) => {
     } finally {
       setPageLoading(false);
     }
-  };
-
-  const handlePublish = () => {
-    //console.log(window.location.origin)
-    const path = `${window.location.origin}/public/${slug}`;
-    setUrl(path);
-    //console.log(url)
   };
 
   const fetchQuestionDetails = async quizId => {
@@ -113,31 +105,16 @@ const ShowQuiz = ({ history }) => {
               onClick={handleCreateQuestion}
               icon={Plus}
             />
-            {!url && (
-              <Button
-                iconPosition="left"
-                label="Publish"
-                size="default"
-                style="primary"
-                onClick={handlePublish}
-                icon={ExternalLink}
-              />
-            )}
-          </div>
-        </div>
-        {url && (
-          <div className="flex space-x-2">
-            <Checkmark size={18} />
-            <div className="font-semibold text-base">
-              Published, your public link is -
-            </div>
             <Button
-              label={url}
-              onClick={function noRefCheck() {}}
-              style="link"
+              iconPosition="left"
+              label="Publish"
+              size="default"
+              style="primary"
+              onClick={() => {}}
+              icon={ExternalLink}
             />
           </div>
-        )}
+        </div>
         <div className="flex-row space-y-12">
           {questions?.map((question, index) => (
             <div key={index} className="space-y-3">

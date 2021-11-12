@@ -18,7 +18,7 @@ const EditQuestion = ({ history }) => {
 
   const handleChange = (id, e) => {
     const values = [...options1];
-    values[id].value = e.target.value;
+    values[id].option = e.target.value;
     setOptions1(values);
   };
 
@@ -34,10 +34,20 @@ const EditQuestion = ({ history }) => {
     setOptions1(values);
   };
 
-  const fetchOptionsId = async question_id => {
+  const fetchOptions = async question_id => {
     try {
       const response = await optionsApi.show(question_id);
+      //console.log(response)
       setOptionsId(response.data.optionsId);
+      setQuestion(response.data.question[0].name);
+      setOptions1(
+        response.data.optionsName.map(name => {
+          return {
+            option: name,
+          };
+        })
+      );
+      setAnswer(response.data.question[0].answer);
     } catch (error) {
       logger.error(error);
     } finally {
@@ -58,13 +68,13 @@ const EditQuestion = ({ history }) => {
               if (optionsId[index] != undefined) {
                 return {
                   id: optionsId[index],
-                  name: it.value,
+                  name: it.option,
                   question_id: question_id,
                 };
               }
 
               return {
-                name: it.value,
+                name: it.option,
                 question_id: question_id,
               };
             }),
@@ -81,12 +91,12 @@ const EditQuestion = ({ history }) => {
   };
 
   useEffect(() => {
-    fetchOptionsId(question_id);
+    fetchOptions(question_id);
   }, []);
   useEffect(() => {
     setAnswer("");
+    //console.log(options1)
   }, [options1]);
-
   //console.log(quiz)
   //console.log(question)
   //console.log(answer.value)
@@ -104,6 +114,7 @@ const EditQuestion = ({ history }) => {
       <FormQuestion
         type="update"
         quiz="Edit Question"
+        question={question}
         setQuestion={setQuestion}
         answer={answer}
         setAnswer={setAnswer}

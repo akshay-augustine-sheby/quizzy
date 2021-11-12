@@ -9,6 +9,7 @@ import Container from "components/Container";
 const FormQuestion = ({
   type,
   quiz,
+  question,
   setQuestion,
   answer,
   setAnswer,
@@ -32,6 +33,7 @@ const FormQuestion = ({
             size="small"
             type="text"
             className="w-3/5"
+            value={question}
             onChange={e => setQuestion(e.target.value)}
           />
           {options1.map((opt, id) => {
@@ -44,6 +46,7 @@ const FormQuestion = ({
                     size="small"
                     type="text"
                     className="w-3/5"
+                    value={options1[id].option}
                     onChange={e => handleChange(id, e)}
                   />
                 </div>
@@ -58,6 +61,7 @@ const FormQuestion = ({
                   size="small"
                   type="text"
                   className="w-3/5"
+                  value={options1[id].option}
                   onChange={e => handleChange(id, e)}
                 />
                 <Button
@@ -83,8 +87,8 @@ const FormQuestion = ({
           <div className="p-4 mb-2">
             <Select
               defaultValue={{
-                label: "Select an option",
-                value: "",
+                label: `${answer}`,
+                value: { answer },
               }}
               isCreatable
               label="Correct answer"
@@ -92,12 +96,11 @@ const FormQuestion = ({
               options={options1.map(opt => {
                 //console.log(opt)
                 return {
-                  label: opt.value,
-                  value: opt.value,
+                  label: opt.option,
+                  value: opt.option,
                 };
               })}
               placeholder="Select an Option"
-              value={answer}
               onChange={val => setAnswer(val)}
             />
           </div>
