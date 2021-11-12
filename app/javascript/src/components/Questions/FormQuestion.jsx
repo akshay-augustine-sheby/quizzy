@@ -13,7 +13,7 @@ const FormQuestion = ({
   setQuestion,
   answer,
   setAnswer,
-  options1,
+  options,
   handleChange,
   handleAdd,
   handleRemove,
@@ -36,7 +36,7 @@ const FormQuestion = ({
             value={question}
             onChange={e => setQuestion(e.target.value)}
           />
-          {options1.map((opt, id) => {
+          {options.map((opt, id) => {
             if (id <= 1) {
               return (
                 <div key={`${opt}-${id}`}>
@@ -46,7 +46,7 @@ const FormQuestion = ({
                     size="small"
                     type="text"
                     className="w-3/5"
-                    value={options1[id].option}
+                    value={options[id].option}
                     onChange={e => handleChange(id, e)}
                   />
                 </div>
@@ -61,7 +61,7 @@ const FormQuestion = ({
                   size="small"
                   type="text"
                   className="w-3/5"
-                  value={options1[id].option}
+                  value={options[id].option}
                   onChange={e => handleChange(id, e)}
                 />
                 <Button
@@ -76,7 +76,7 @@ const FormQuestion = ({
             );
           })}
 
-          {options1.length <= 3 && (
+          {options.length <= 3 && (
             <Button
               label="+ Add option"
               onClick={() => handleAdd()}
@@ -93,7 +93,7 @@ const FormQuestion = ({
               isCreatable
               label="Correct answer"
               name="ValueList"
-              options={options1.map(opt => {
+              options={options.map(opt => {
                 //console.log(opt)
                 return {
                   label: opt.option,
