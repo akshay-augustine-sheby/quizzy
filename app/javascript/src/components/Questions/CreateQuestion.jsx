@@ -22,7 +22,7 @@ const QuestionCreate = ({ history }) => {
 
   const handleChange = (id, e) => {
     const values = [...options1];
-    values[id].value = e.target.value;
+    values[id].option = e.target.value;
     setOptions1(values);
   };
 
@@ -48,7 +48,7 @@ const QuestionCreate = ({ history }) => {
           quiz_id: quizId,
           options_attributes: options1.map(it => {
             return {
-              name: it.value,
+              name: it.option,
             };
           }),
         },

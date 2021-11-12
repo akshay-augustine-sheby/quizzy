@@ -3,12 +3,15 @@
 class OptionsController < ApplicationController
   def show
     @options = Option.where("question_id = ?", params[:id])
-    arr_id = []
+    @question = Question.where("id = ?", params[:id])
+    optionsId = []
+    optionsName = []
     @options.each do |option|
-      arr_id.push(option.id)
+      optionsId.push(option.id)
+      optionsName.push(option.name)
     end
     if @options
-      render status: :ok, json: { optionsId: arr_id }
+      render status: :ok, json: { optionsId: optionsId, optionsName: optionsName, question: @question }
     else
       render status: :not_found, json: { error: "Option not found" }
     end
