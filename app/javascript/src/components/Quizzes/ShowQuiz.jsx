@@ -26,6 +26,7 @@ const ShowQuiz = ({ history }) => {
   const [quizId, setQuizId] = useState("");
   const [options, setOptions] = useState({});
   const [url, setUrl] = useState("");
+  const [copied, setCopied] = useState(false);
 
   const handleCreateQuestion = () => {
     history.push(`/quiz/${slug}/question/create`);
@@ -129,6 +130,16 @@ const ShowQuiz = ({ history }) => {
                 icon={ExternalLink}
               />
             )}
+            {url && (
+              <Button
+                disabled
+                iconPosition="left"
+                label="Published"
+                size="default"
+                style="primary"
+                icon={ExternalLink}
+              />
+            )}
           </div>
         </div>
         {url && (
@@ -140,12 +151,18 @@ const ShowQuiz = ({ history }) => {
               Published, your public link is -
             </div>
             <Button label={url} style="link" />
-            <Button
-              onClick={() => navigator.clipboard.writeText(url)}
-              size="large"
-              style="text"
-              icon={Copy}
-            />
+            {!copied && (
+              <Button
+                onClick={() => {
+                  navigator.clipboard.writeText(url);
+                  setCopied(true);
+                }}
+                size="large"
+                style="text"
+                icon={Copy}
+              />
+            )}
+            {copied && <div className="text-green-500 italic">URL copied!</div>}
           </div>
         )}
         <div className="flex-row space-y-12">
