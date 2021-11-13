@@ -77,3 +77,1314 @@ Migrating to MakeLastNameNotNullable (20211101132041)
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/public/rtyrt" for 127.0.0.1 at 2021-11-13 18:26:15 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 12 pending migrations:
+
+20211102052847_add_role_to_users.rb
+20211102061509_add_password_digest_to_user.rb
+20211102113951_add_authentication_token_to_users.rb
+20211103195237_create_quizzes.rb
+20211104071551_make_quiz_name_not_nullable.rb
+20211104110602_add_slug_to_quiz.rb
+20211106193124_create_questions.rb
+20211107103127_create_options.rb
+20211108080017_add_option1_to_questions.rb
+20211108080223_add_option2_to_questions.rb
+20211109080712_remove_options_from_questions.rb
+20211109155421_change_column_name.rb
+
+
+):
+  
+activerecord (6.1.4.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.4.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/quiz/rtyrt/show" for 127.0.0.1 at 2021-11-13 18:26:26 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 12 pending migrations:
+
+20211102052847_add_role_to_users.rb
+20211102061509_add_password_digest_to_user.rb
+20211102113951_add_authentication_token_to_users.rb
+20211103195237_create_quizzes.rb
+20211104071551_make_quiz_name_not_nullable.rb
+20211104110602_add_slug_to_quiz.rb
+20211106193124_create_questions.rb
+20211107103127_create_options.rb
+20211108080017_add_option1_to_questions.rb
+20211108080223_add_option2_to_questions.rb
+20211109080712_remove_options_from_questions.rb
+20211109155421_change_column_name.rb
+
+
+):
+  
+activerecord (6.1.4.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.4.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRoleToUsers (20211102052847)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "role" integer DEFAULT 0 NOT NULL[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102052847"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUser (20211102061509)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar NOT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "role" integer DEFAULT 0 NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "ausers" ("id","first_name","last_name","email","created_at","updated_at","role")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at","role" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar NOT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "role" integer DEFAULT 0 NOT NULL, "password_digest" varchar NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","first_name","last_name","email","created_at","updated_at","role")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at","role" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102061509"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddAuthenticationTokenToUsers (20211102113951)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "authentication_token" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102113951"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateQuizzes (20211103195237)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "quiz_name" text, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211103195237"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to MakeQuizNameNotNullable (20211104071551)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquizzes_on_user_id" ON "aquizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquizzes" ("id","quiz_name","user_id","created_at","updated_at")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at" FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "quizzes" ("id","quiz_name","user_id","created_at","updated_at")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at" FROM "aquizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211104071551"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSlugToQuiz (20211104110602)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "quizzes" ADD "slug" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_quizzes_on_slug" ON "quizzes" ("slug")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aquizzes_on_slug" ON "aquizzes" ("slug")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquizzes_on_user_id" ON "aquizzes" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aquizzes" ("id","quiz_name","user_id","created_at","updated_at","slug")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at","slug" FROM "quizzes"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_quizzes_on_slug" ON "quizzes" ("slug")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "quizzes" ("id","quiz_name","user_id","created_at","updated_at","slug")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at","slug" FROM "aquizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211104110602"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateQuestions (20211106193124)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211106193124"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOptions (20211107103127)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "options" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "option" text NOT NULL, "question_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_919a0dabf9"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_options_on_question_id" ON "options" ("question_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211107103127"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddOption1ToQuestions (20211108080017)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "questions" ADD "option1" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option1")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1" FROM "questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at","option1")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211108080017"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddOption2ToQuestions (20211108080223)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "questions" ADD "option2" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, "option2" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option1","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1","option2" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, "option2" varchar NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at","option1","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1","option2" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211108080223"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveOptionsFromQuestions (20211109080712)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, "option2" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option1","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1","option2" FROM "questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option2" varchar NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option2" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option2" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option2" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211109080712"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to ChangeColumnName (20211109155421)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquizzes" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aquizzes_on_slug" ON "aquizzes" ("slug")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquizzes_on_user_id" ON "aquizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquizzes" ("id","name","user_id","created_at","updated_at","slug")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at","slug" FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_quizzes_on_slug" ON "quizzes" ("slug")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("id","name","user_id","created_at","updated_at","slug")
+                     SELECT "id","name","user_id","created_at","updated_at","slug" FROM "aquizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aquizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","name","answer","quiz_id","created_at","updated_at")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","name","answer","quiz_id","created_at","updated_at")
+                     SELECT "id","name","answer","quiz_id","created_at","updated_at" FROM "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aoptions" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "question_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aoptions_on_question_id" ON "aoptions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aoptions" ("id","name","question_id","created_at","updated_at")
+                     SELECT "id","option","question_id","created_at","updated_at" FROM "options"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "options"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "options" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "question_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_919a0dabf9"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_options_on_question_id" ON "options" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "options" ("id","name","question_id","created_at","updated_at")
+                     SELECT "id","name","question_id","created_at","updated_at" FROM "aoptions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aoptions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211109155421"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/quiz/rtyrt/show" for 127.0.0.1 at 2021-11-13 18:27:17 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/rtyrt/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3501)
+Completed 200 OK in 29ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 10064)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2021-11-13 18:27:18 +0530
+Started GET "/quizzes/rtyrt" for 127.0.0.1 at 2021-11-13 18:27:18 +0530
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"questions"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2098)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"rtyrt"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+Filter chain halted as :authenticate_user_using_x_auth_token rendered or redirected
+Completed 401 Unauthorized in 12ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 6071)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-13 18:27:20 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2643)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3269)
+
+
+Started GET "/quizzes" for 127.0.0.1 at 2021-11-13 18:27:20 +0530
+Processing by QuizzesController#index as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+Filter chain halted as :authenticate_user_using_x_auth_token rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 888)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2021-11-13 18:27:26 +0530
+Processing by SessionsController#create as JSON
+  Parameters: {"login"=>{"email"=>"sam@example.com", "password"=>"[FILTERED]"}, "session"=>{"login"=>{"email"=>"sam@example.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 1237)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-13 18:27:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 2628)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 3171)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2021-11-13 18:27:35 +0530
+Processing by SessionsController#create as JSON
+  Parameters: {"login"=>{"email"=>"sam@example.com", "password"=>"[FILTERED]"}, "session"=>{"login"=>{"email"=>"sam@example.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 401 Unauthorized in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 882)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-13 18:27:37 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2568)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3085)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20211101131302)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211101131302"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to MakeEmailNotNullable (20211101131747)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","first_name","last_name","email","created_at","updated_at")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","first_name","last_name","email","created_at","updated_at")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211101131747"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to MakeFirstNameNotNullable (20211101131948)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","first_name","last_name","email","created_at","updated_at")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at" FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar DEFAULT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","first_name","last_name","email","created_at","updated_at")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211101131948"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to MakeLastNameNotNullable (20211101132041)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar DEFAULT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","first_name","last_name","email","created_at","updated_at")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar NOT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","first_name","last_name","email","created_at","updated_at")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211101132041"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddRoleToUsers (20211102052847)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "role" integer DEFAULT 0 NOT NULL[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102052847"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUser (20211102061509)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar NOT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "role" integer DEFAULT 0 NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","first_name","last_name","email","created_at","updated_at","role")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at","role" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "first_name" varchar NOT NULL, "last_name" varchar NOT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "role" integer DEFAULT 0 NOT NULL, "password_digest" varchar NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","first_name","last_name","email","created_at","updated_at","role")
+                     SELECT "id","first_name","last_name","email","created_at","updated_at","role" FROM "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102061509"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddAuthenticationTokenToUsers (20211102113951)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "authentication_token" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102113951"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateQuizzes (20211103195237)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "quiz_name" text, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211103195237"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to MakeQuizNameNotNullable (20211104071551)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquizzes_on_user_id" ON "aquizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquizzes" ("id","quiz_name","user_id","created_at","updated_at")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at" FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "quizzes" ("id","quiz_name","user_id","created_at","updated_at")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at" FROM "aquizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211104071551"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddSlugToQuiz (20211104110602)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "quizzes" ADD "slug" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_quizzes_on_slug" ON "quizzes" ("slug")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aquizzes_on_slug" ON "aquizzes" ("slug")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquizzes_on_user_id" ON "aquizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquizzes" ("id","quiz_name","user_id","created_at","updated_at","slug")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at","slug" FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer NOT NULL PRIMARY KEY, "quiz_name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_quizzes_on_slug" ON "quizzes" ("slug")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "quizzes" ("id","quiz_name","user_id","created_at","updated_at","slug")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at","slug" FROM "aquizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211104110602"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateQuestions (20211106193124)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211106193124"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateOptions (20211107103127)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "options" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "option" text NOT NULL, "question_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_919a0dabf9"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_options_on_question_id" ON "options" ("question_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211107103127"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddOption1ToQuestions (20211108080017)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "questions" ADD "option1" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option1")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at","option1")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211108080017"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddOption2ToQuestions (20211108080223)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "questions" ADD "option2" varchar[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, "option2" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option1","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1","option2" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, "option2" varchar NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at","option1","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1","option2" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211108080223"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveOptionsFromQuestions (20211109080712)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option1" varchar NOT NULL, "option2" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option1","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option1","option2" FROM "questions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option2" varchar NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option2" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "option2" varchar NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","question","answer","quiz_id","created_at","updated_at","option2")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at","option2" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "question" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","question","answer","quiz_id","created_at","updated_at")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at" FROM "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211109080712"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to ChangeColumnName (20211109155421)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquizzes" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_aquizzes_on_slug" ON "aquizzes" ("slug")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquizzes_on_user_id" ON "aquizzes" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquizzes" ("id","name","user_id","created_at","updated_at","slug")
+                     SELECT "id","quiz_name","user_id","created_at","updated_at","slug" FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "quizzes" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "slug" varchar NOT NULL, CONSTRAINT "fk_rails_7a0b1343a8"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_quizzes_on_user_id" ON "quizzes" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_quizzes_on_slug" ON "quizzes" ("slug")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "quizzes" ("id","name","user_id","created_at","updated_at","slug")
+                     SELECT "id","name","user_id","created_at","updated_at","slug" FROM "aquizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aquestions" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aquestions_on_quiz_id" ON "aquestions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aquestions" ("id","name","answer","quiz_id","created_at","updated_at")
+                     SELECT "id","question","answer","quiz_id","created_at","updated_at" FROM "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "questions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "answer" text NOT NULL, "quiz_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0238c45a86"
+FOREIGN KEY ("quiz_id")
+  REFERENCES "quizzes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_questions_on_quiz_id" ON "questions" ("quiz_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("id","name","answer","quiz_id","created_at","updated_at")
+                     SELECT "id","name","answer","quiz_id","created_at","updated_at" FROM "aquestions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aquestions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aoptions" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "question_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_aoptions_on_question_id" ON "aoptions" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aoptions" ("id","name","question_id","created_at","updated_at")
+                     SELECT "id","option","question_id","created_at","updated_at" FROM "options"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "options"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "options" ("id" integer NOT NULL PRIMARY KEY, "name" text NOT NULL, "question_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_919a0dabf9"
+FOREIGN KEY ("question_id")
+  REFERENCES "questions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_options_on_question_id" ON "options" ("question_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "options" ("id","name","question_id","created_at","updated_at")
+                     SELECT "id","name","question_id","created_at","updated_at" FROM "aoptions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aoptions"[0m
+  [1m[35m (1.8ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211109155421"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-13 13:02:00.009968"], ["updated_at", "2021-11-13 13:02:00.009968"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ lib/tasks/setup.rake:28:in `create_user!'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/setup.rake:28:in `create_user!'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ lib/tasks/setup.rake:28:in `create_user!'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-13 13:02:00.290260"], ["updated_at", "2021-11-13 13:02:00.290260"], ["role", 1], ["password_digest", "$2a$12$sJntf3.jpmk2AWetcXDT7u98d528JbGT9MrYDy0ohWlSZL6KLN9bC"], ["authentication_token", "2SQDs24EXsemeDaepAh1mqHT"]]
+  ↳ lib/tasks/setup.rake:28:in `create_user!'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/setup.rake:28:in `create_user!'
+Started GET "/login" for 127.0.0.1 at 2021-11-13 18:32:14 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3517)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 8206)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2021-11-13 18:32:20 +0530
+Processing by SessionsController#create as JSON
+  Parameters: {"login"=>{"email"=>"sam@example.com", "password"=>"[FILTERED]"}, "session"=>{"login"=>{"email"=>"sam@example.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering sessions/create.json.jbuilder
+  Rendered sessions/create.json.jbuilder (Duration: 0.7ms | Allocations: 191)
+Completed 200 OK in 307ms (Views: 2.5ms | ActiveRecord: 1.5ms | Allocations: 11104)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-13 18:32:20 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2631)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3214)
+
+
+Started GET "/quizzes" for 127.0.0.1 at 2021-11-13 18:32:20 +0530
+Processing by QuizzesController#index as JSON
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/quizzes_controller.rb:8:in `index'
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 6637)
+
+
+Started GET "/quiz/create" for 127.0.0.1 at 2021-11-13 18:32:23 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/create"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2635)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 3222)
+
+
+Started POST "/quizzes/" for 127.0.0.1 at 2021-11-13 18:32:29 +0530
+Processing by QuizzesController#create as JSON
+  Parameters: {"quiz"=>{"name"=>"Science quiz"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/quizzes_controller.rb:14:in `create'
+  [1m[36mQuiz Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:14:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'science-quiz$|science-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/quiz.rb:21:in `set_slug'
+  [1m[36mQuiz Create (0.4ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Science quiz"], ["user_id", 1], ["created_at", "2021-11-13 13:02:29.056935"], ["updated_at", "2021-11-13 13:02:29.056935"], ["slug", "science-quiz"]]
+  ↳ app/controllers/quizzes_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/quizzes_controller.rb:14:in `create'
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 31123)
+
+
+Started GET "/quizzes" for 127.0.0.1 at 2021-11-13 18:32:29 +0530
+Processing by QuizzesController#index as JSON
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/quizzes_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1674)
+
+
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-13 18:32:32 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.5ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 2304)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2021-11-13 18:32:32 +0530
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"questions"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1850)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-13 18:32:32 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 3176)
+
+
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-13 18:32:35 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.5ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.7ms | Allocations: 1892)
+
+
+Started POST "/questions/" for 127.0.0.1 at 2021-11-13 18:33:06 +0530
+Processing by QuestionsController#create as JSON
+  Parameters: {"question"=>{"name"=>"Are you happy?", "answer"=>"sno", "quiz_id"=>1, "options_attributes"=>[{"name"=>"yes"}, {"name"=>"no"}, {"name"=>"sno"}, {"name"=>"nos"}]}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Are you happy?"], ["answer", "sno"], ["quiz_id", 1], ["created_at", "2021-11-13 13:03:06.254490"], ["updated_at", "2021-11-13 13:03:06.254490"]]
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "yes"], ["question_id", 1], ["created_at", "2021-11-13 13:03:06.256236"], ["updated_at", "2021-11-13 13:03:06.256236"]]
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "no"], ["question_id", 1], ["created_at", "2021-11-13 13:03:06.257582"], ["updated_at", "2021-11-13 13:03:06.257582"]]
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "sno"], ["question_id", 1], ["created_at", "2021-11-13 13:03:06.259174"], ["updated_at", "2021-11-13 13:03:06.259174"]]
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "nos"], ["question_id", 1], ["created_at", "2021-11-13 13:03:06.260384"], ["updated_at", "2021-11-13 13:03:06.260384"]]
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/questions_controller.rb:27:in `create'
+Completed 200 OK in 52ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 17983)
+
+
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-13 18:33:06 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1674)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2021-11-13 18:33:06 +0530
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"questions"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 941)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-13 18:33:06 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/questions_controller.rb:12:in `block in show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 2326)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:33:23 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 2626)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 3157)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:41:23 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: a9af47e09235f2b10753
+Version: webpack 4.46.0
+Time: 7150ms
+Built at: 13/11/2021 18:41:32
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2e58e0f6b04d38c28224.js   8.38 MiB  application  [emitted] [immutable]  application
+js/application-2e58e0f6b04d38c28224.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2e58e0f6b04d38c28224.js js/application-2e58e0f6b04d38c28224.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.02 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 288 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/src/constants/index.js] 288 bytes {application} [built]
+[./app/javascript/src/helpers/storage.js] 1020 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 438 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9052.7ms | Allocations: 4326)
+Completed 200 OK in 9055ms (Views: 9053.5ms | Allocations: 5184)
+
+
+Started GET "/quiz/science-quiz/show" for 127.0.0.1 at 2021-11-13 18:41:35 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/science-quiz/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2568)
+Completed 200 OK in 16ms (Views: 15.1ms | Allocations: 3131)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2021-11-13 18:41:36 +0530
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"questions"}
+Completed 500 Internal Server Error in 2ms (Allocations: 940)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-13 18:41:36 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 14021)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-13 18:41:36 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/questions_controller.rb:12:in `block in show'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 10035)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:42:14 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: ca1985630b1b1fe2fa37
+Version: webpack 4.46.0
+Time: 7024ms
+Built at: 13/11/2021 18:42:22
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-49c66ba03aac0a5f9f56.js   8.38 MiB  application  [emitted] [immutable]  application
+js/application-49c66ba03aac0a5f9f56.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-49c66ba03aac0a5f9f56.js js/application-49c66ba03aac0a5f9f56.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.02 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 288 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/src/constants/index.js] 288 bytes {application} [built]
+[./app/javascript/src/helpers/storage.js] 1020 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 438 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8307.5ms | Allocations: 4233)
+Completed 200 OK in 8310ms (Views: 8308.5ms | Allocations: 5090)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:42:58 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 8cef890f1293b5754147
+Version: webpack 4.46.0
+Time: 7051ms
+Built at: 13/11/2021 18:43:06
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-aff1e35a0cf43bd7f692.js   8.38 MiB  application  [emitted] [immutable]  application
+js/application-aff1e35a0cf43bd7f692.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-aff1e35a0cf43bd7f692.js js/application-aff1e35a0cf43bd7f692.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.02 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 288 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/src/constants/index.js] 288 bytes {application} [built]
+[./app/javascript/src/helpers/storage.js] 1020 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 438 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8399.7ms | Allocations: 4234)
+Completed 200 OK in 8402ms (Views: 8401.6ms | Allocations: 5083)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:43:14 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2568)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 3155)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:50:40 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: a3cb6616e401e2b903a9
+Version: webpack 4.46.0
+Time: 7125ms
+Built at: 13/11/2021 18:50:48
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-929309629ff5161f2b2d.js   8.39 MiB  application  [emitted] [immutable]  application
+js/application-929309629ff5161f2b2d.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-929309629ff5161f2b2d.js js/application-929309629ff5161f2b2d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.02 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 288 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/src/constants/index.js] 288 bytes {application} [built]
+[./app/javascript/src/helpers/storage.js] 1020 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 438 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8282.6ms | Allocations: 4236)
+Completed 200 OK in 8284ms (Views: 8283.4ms | Allocations: 5095)
+
+
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-13 18:50:49 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 14207)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-13 18:51:33 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 67cb5ff18e1691136df9
+Version: webpack 4.46.0
+Time: 7174ms
+Built at: 13/11/2021 18:51:42
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-23f1e38b0c3222d8ccdb.js   8.39 MiB  application  [emitted] [immutable]  application
+js/application-23f1e38b0c3222d8ccdb.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-23f1e38b0c3222d8ccdb.js js/application-23f1e38b0c3222d8ccdb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.02 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 288 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/src/constants/index.js] 288 bytes {application} [built]
+[./app/javascript/src/helpers/storage.js] 1020 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 438 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8542.5ms | Allocations: 4233)
+Completed 200 OK in 8545ms (Views: 8544.1ms | Allocations: 5074)
+
+
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-13 18:51:42 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 2.3ms | Allocations: 14163)
+
+
