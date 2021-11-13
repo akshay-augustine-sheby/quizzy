@@ -1,1 +1,3 @@
-# quizzy-by-akshay-augustine-sheby
+# README
+
+Application URL: https://quizzy-akshay-sheby-production.herokuapp.com/
