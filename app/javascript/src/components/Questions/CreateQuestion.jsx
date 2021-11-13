@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 
-import FormQuestion from "./FormQuestion";
+import FormQuestion from "./Form";
 
 import questionsApi from "../../apis/questions";
 import quizzesApi from "../../apis/quizzes";
@@ -11,7 +11,7 @@ import PageLoader from "../PageLoader";
 const QuestionCreate = ({ history }) => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
-  const [options1, setOptions1] = useState([{ option: "" }, { option: "" }]);
+  const [options, setOptions] = useState([{ option: "" }, { option: "" }]);
 
   const { slug } = useParams();
   const [quiz, setQuiz] = useState([]);
@@ -21,21 +21,21 @@ const QuestionCreate = ({ history }) => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (id, e) => {
-    const values = [...options1];
+    const values = [...options];
     values[id].option = e.target.value;
-    setOptions1(values);
+    setOptions(values);
   };
 
   const handleAdd = () => {
-    const values = [...options1];
+    const values = [...options];
     values.push({ option: "" });
-    setOptions1(values);
+    setOptions(values);
   };
 
   const handleRemove = id => {
-    const values = [...options1];
+    const values = [...options];
     values.splice(id, 1);
-    setOptions1(values);
+    setOptions(values);
   };
 
   const handleSubmit = async event => {
@@ -46,9 +46,9 @@ const QuestionCreate = ({ history }) => {
           name: question,
           answer: answer.value,
           quiz_id: quizId,
-          options_attributes: options1.map(it => {
+          options_attributes: options.map(opt => {
             return {
-              name: it.option,
+              name: opt.option,
             };
           }),
         },
@@ -81,7 +81,7 @@ const QuestionCreate = ({ history }) => {
 
   useEffect(() => {
     setAnswer("");
-  }, [options1]);
+  }, [options]);
 
   //console.log(quiz)
   //console.log(question)
@@ -102,7 +102,7 @@ const QuestionCreate = ({ history }) => {
         setQuestion={setQuestion}
         answer={answer}
         setAnswer={setAnswer}
-        options1={options1}
+        options={options}
         handleChange={handleChange}
         handleAdd={handleAdd}
         handleRemove={handleRemove}

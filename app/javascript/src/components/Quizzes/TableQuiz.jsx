@@ -4,10 +4,10 @@ import { Edit, Delete } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
 import { useTable } from "react-table";
 
-import ModalQuiz from "./ModalQuiz";
+import ModalQuiz from "./Modal";
 
 const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
-  const [showModalExtraSmall, setShowModalExtraSmall] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [val, setVal] = useState("");
 
   const columns = useMemo(
@@ -35,7 +35,7 @@ const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
             />
             <Button
               onClick={() => {
-                setShowModalExtraSmall(true);
+                setShowModal(true);
                 setVal(value);
               }}
               style="secondary"
@@ -108,9 +108,9 @@ const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
         </tbody>
       </table>
       <ModalQuiz
-        showModalExtraSmall={showModalExtraSmall}
+        showModal={showModal}
         val={val}
-        setShowModalExtraSmall={setShowModalExtraSmall}
+        setShowModal={setShowModal}
         deleteQuiz={deleteQuiz}
       />
     </div>

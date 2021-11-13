@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import { Plus, Edit, Checkmark, ExternalLink } from "@bigbinary/neeto-icons";
+import {
+  Plus,
+  Edit,
+  Checkmark,
+  ExternalLink,
+  Copy,
+} from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
 import { isNil, isEmpty, either } from "ramda";
 import { useParams } from "react-router-dom";
@@ -19,6 +25,8 @@ const ShowQuiz = ({ history }) => {
   const [pageLoading, setPageLoading] = useState(true);
   const [quizId, setQuizId] = useState("");
   const [options, setOptions] = useState({});
+  const [url, setUrl] = useState("");
+  const [copied, setCopied] = useState(false);
 
   const handleCreateQuestion = () => {
     history.push(`/quiz/${slug}/question/create`);
@@ -33,6 +41,13 @@ const ShowQuiz = ({ history }) => {
     } finally {
       setPageLoading(false);
     }
+  };
+
+  const handlePublish = () => {
+    //console.log(window.location.origin)
+    const path = `${window.location.origin}/public/${slug}`;
+    setUrl(path);
+    //console.log(url)
   };
 
   const fetchQuestionDetails = async quizId => {
@@ -105,16 +120,51 @@ const ShowQuiz = ({ history }) => {
               onClick={handleCreateQuestion}
               icon={Plus}
             />
-            <Button
-              iconPosition="left"
-              label="Publish"
-              size="default"
-              style="primary"
-              onClick={() => {}}
-              icon={ExternalLink}
-            />
+            {!url && (
+              <Button
+                iconPosition="left"
+                label="Publish"
+                size="default"
+                style="primary"
+                onClick={handlePublish}
+                icon={ExternalLink}
+              />
+            )}
+            {url && (
+              <Button
+                disabled
+                iconPosition="left"
+                label="Published"
+                size="default"
+                style="primary"
+                icon={ExternalLink}
+              />
+            )}
           </div>
         </div>
+        {url && (
+          <div className="flex flex-row space-x-2 items-center">
+            <div className="text-green-500">
+              <Checkmark size={24} />
+            </div>
+            <div className="font-semibold text-base">
+              Published, your public link is -
+            </div>
+            <Button label={url} style="link" />
+            {!copied && (
+              <Button
+                onClick={() => {
+                  navigator.clipboard.writeText(url);
+                  setCopied(true);
+                }}
+                size="large"
+                style="text"
+                icon={Copy}
+              />
+            )}
+            {copied && <div className="text-green-500 italic">URL copied!</div>}
+          </div>
+        )}
         <div className="flex-row space-y-12">
           {questions?.map((question, index) => (
             <div key={index} className="space-y-3">
@@ -137,13 +187,13 @@ const ShowQuiz = ({ history }) => {
                 </div>
               </div>
               <div className="flex flex-col space-y-2">
-                {Object.keys(options).map(it => {
-                  //console.log(it)
-                  if (parseInt(it) === parseInt(question.id)) {
-                    //console.log(`it: ${it}`)
+                {Object.keys(options).map(questionId => {
+                  //console.log(questionId)
+                  if (parseInt(questionId) === parseInt(question.id)) {
+                    //console.log(`questionId: ${questionId}`)
                     //console.log(`question.id: ${question.id}`)
-                    //console.log(options[it].length)
-                    return options[it].map((option, index2) => {
+                    //console.log(options[questionId].length)
+                    return options[questionId].map((option, index2) => {
                       if (option === question.answer) {
                         return (
                           <div key={index2} className="flex space-x-10">

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { useParams } from "react-router-dom";
 
-import FormQuestion from "./FormQuestion";
+import FormQuestion from "./Form";
 
 import optionsApi from "../../apis/options";
 import questionsApi from "../../apis/questions";
@@ -11,27 +11,27 @@ import PageLoader from "../PageLoader";
 const EditQuestion = ({ history }) => {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
-  const [options1, setOptions1] = useState([{ option: "" }, { option: "" }]);
+  const [options, setOptions] = useState([{ option: "" }, { option: "" }]);
   const [optionsId, setOptionsId] = useState([]);
   const { question_id } = useParams();
   const [loading, setLoading] = useState(false);
 
   const handleChange = (id, e) => {
-    const values = [...options1];
+    const values = [...options];
     values[id].option = e.target.value;
-    setOptions1(values);
+    setOptions(values);
   };
 
   const handleAdd = () => {
-    const values = [...options1];
+    const values = [...options];
     values.push({ option: "" });
-    setOptions1(values);
+    setOptions(values);
   };
 
   const handleRemove = id => {
-    const values = [...options1];
+    const values = [...options];
     values.splice(id, 1);
-    setOptions1(values);
+    setOptions(values);
   };
 
   const fetchOptions = async question_id => {
@@ -40,7 +40,7 @@ const EditQuestion = ({ history }) => {
       //console.log(response)
       setOptionsId(response.data.optionsId);
       setQuestion(response.data.question[0].name);
-      setOptions1(
+      setOptions(
         response.data.optionsName.map(name => {
           return {
             option: name,
@@ -64,17 +64,17 @@ const EditQuestion = ({ history }) => {
           question: {
             name: question,
             answer: answer.value,
-            options_attributes: options1.map((it, index) => {
+            options_attributes: options.map((opt, index) => {
               if (optionsId[index] != undefined) {
                 return {
                   id: optionsId[index],
-                  name: it.option,
+                  name: opt.option,
                   question_id: question_id,
                 };
               }
 
               return {
-                name: it.option,
+                name: opt.option,
                 question_id: question_id,
               };
             }),
@@ -95,8 +95,8 @@ const EditQuestion = ({ history }) => {
   }, []);
   useEffect(() => {
     setAnswer("");
-    //console.log(options1)
-  }, [options1]);
+    //console.log(options)
+  }, [options]);
   //console.log(quiz)
   //console.log(question)
   //console.log(answer.value)
@@ -118,7 +118,7 @@ const EditQuestion = ({ history }) => {
         setQuestion={setQuestion}
         answer={answer}
         setAnswer={setAnswer}
-        options1={options1}
+        options={options}
         handleChange={handleChange}
         handleAdd={handleAdd}
         handleRemove={handleRemove}

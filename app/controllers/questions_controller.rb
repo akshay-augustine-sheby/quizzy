@@ -22,20 +22,6 @@ class QuestionsController < ApplicationController
     end
   end
 
-  def index
-    @question = Question.find_by(id: question_params[:id])
-    @options = @question.options
-    arr_id = []
-    @options.each do |option|
-      arr_id.push(option.id)
-    end
-    if @question
-      render status: :ok, json: { optionsId: arr_id }
-    else
-      render status: :not_found, json: { error: "Question not found" }
-    end
-  end
-
   def create
     @question = Question.new(question_params)
     if @question.save
