@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import Button from "components/Button";
 
 import quizzesApi from "../../apis/quizzes";
+import usersApi from "../../apis/users";
 
 const LoginUser = () => {
   const [firstName, setFirstName] = useState("");
@@ -30,7 +31,20 @@ const LoginUser = () => {
     }
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async event => {
+    event.preventDefault();
+    try {
+      setLoading(true);
+      await usersApi.create({
+        user: { first_name: firstName, last_name: lastName, email },
+      });
+      setLoading(false);
+    } catch (error) {
+      logger.error(error);
+      setLoading(false);
+    }
+  };
+
   return (
     <div>
       <div className="text-5xl font-bold border-b-2 px-12">Quizzy</div>

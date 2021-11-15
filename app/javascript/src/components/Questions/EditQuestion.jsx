@@ -28,10 +28,21 @@ const EditQuestion = ({ history }) => {
     setOptions(values);
   };
 
-  const handleRemove = id => {
-    const values = [...options];
-    values.splice(id, 1);
-    setOptions(values);
+  const handleRemove = async id => {
+    try {
+      if (optionsId[id]) {
+        await optionsApi.destroy(optionsId[id]);
+        const values = [...options];
+        values.splice(id, 1);
+        setOptions(values);
+      } else {
+        const values = [...options];
+        values.splice(id, 1);
+        setOptions(values);
+      }
+    } catch (error) {
+      logger.error(error);
+    }
   };
 
   const fetchOptions = async question_id => {

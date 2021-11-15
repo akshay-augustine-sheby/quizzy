@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_09_155421) do
+ActiveRecord::Schema.define(version: 2021_11_14_050422) do
 
   create_table "options", force: :cascade do |t|
     t.text "name", null: false
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2021_11_09_155421) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "role", default: 0, null: false
-    t.string "password_digest", null: false
+    t.string "password_digest"
     t.string "authentication_token"
   end
 
