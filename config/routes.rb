@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     resource :sessions, only: %i[create destroy]
   end
 
+  namespace :public do
+    resources :quizzes, only: %i[show], param: :slug
+  end
+
   root to: "home#index"
   get "*path", to: "home#index", via: :all
 end

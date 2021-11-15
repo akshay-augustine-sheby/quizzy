@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 import Button from "components/Button";
 
-import quizzesApi from "../../apis/quizzes";
+import publicQuizzesApi from "../../apis/publicQuizzes";
 import usersApi from "../../apis/users";
 
 const LoginUser = () => {
@@ -22,7 +22,7 @@ const LoginUser = () => {
 
   const fetchQuiz = async slug => {
     try {
-      const response = await quizzesApi.show(slug);
+      const response = await publicQuizzesApi.show(slug);
       setQuizName(response.data.quiz.name);
     } catch (error) {
       logger.error(error);
