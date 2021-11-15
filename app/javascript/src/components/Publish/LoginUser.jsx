@@ -8,7 +8,7 @@ import Button from "components/Button";
 import publicQuizzesApi from "../../apis/publicQuizzes";
 import usersApi from "../../apis/users";
 
-const LoginUser = () => {
+const LoginUser = ({ history }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -50,6 +50,7 @@ const LoginUser = () => {
         },
       });
       setLoading(false);
+      history.push(`/public/${slug}/attempt/new`);
     } catch (error) {
       logger.error(error);
       setLoading(false);

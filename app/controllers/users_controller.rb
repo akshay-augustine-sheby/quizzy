@@ -2,13 +2,17 @@
 
 class UsersController < ApplicationController
   def create
-    @user = User.new(user_params.merge(role: "standard", password: "welcome", password_confirmation: "welcome"))
-    if @user.save
-      render status: :ok,
-        json: { notice: "User is successfully entered the quiz" }
+    @user = User.find_by(email: user_params[:email].downcase)
+    if @user.present?
+      render status: :ok, json: { notice: "User already present" }
     else
-      errors = @user.errors.full_messages.to_sentence
-      render status: :unprocessable_entity, json: { error: errors }
+      @user1 = User.new(user_params.merge(role: "standard", password: "welcome", password_confirmation: "welcome"))
+      if @user1.save
+        render status: :ok, json: { notice: "User is successfully entered the quiz" }
+      else
+        errors = @user.errors.full_messages.to_sentence
+        render status: :unprocessable_entity, json: { error: errors }
+      end
     end
   end
 
