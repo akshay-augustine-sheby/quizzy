@@ -12,7 +12,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_14_050422) do
+ActiveRecord::Schema.define(version: 2021_11_15_072753) do
+
+  create_table "attempts", force: :cascade do |t|
+    t.boolean "submitted", null: false
+    t.integer "quiz_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["quiz_id"], name: "index_attempts_on_quiz_id"
+    t.index ["user_id"], name: "index_attempts_on_user_id"
+  end
 
   create_table "options", force: :cascade do |t|
     t.text "name", null: false
@@ -52,6 +62,8 @@ ActiveRecord::Schema.define(version: 2021_11_14_050422) do
     t.string "authentication_token"
   end
 
+  add_foreign_key "attempts", "quizzes"
+  add_foreign_key "attempts", "users"
   add_foreign_key "options", "questions"
   add_foreign_key "questions", "quizzes"
   add_foreign_key "quizzes", "users"
