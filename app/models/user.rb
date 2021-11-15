@@ -5,12 +5,12 @@ class User < ApplicationRecord
   enum role: { standard: 0, administrator: 1 }
 
   has_many :quizzes
-  has_many :attempts, dependent: :destroy
+  has_one :attempt, dependent: :destroy
 
   has_secure_password
   has_secure_token :authentication_token
 
-  accepts_nested_attributes_for :attempts
+  accepts_nested_attributes_for :attempt
 
   validates :first_name, presence: true, length: { maximum: Constants::MAX_NAME_LENGTH }
   validates :last_name, presence: true, length: { maximum: Constants::MAX_NAME_LENGTH }

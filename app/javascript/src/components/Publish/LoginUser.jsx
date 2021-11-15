@@ -13,6 +13,7 @@ const LoginUser = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [quizName, setQuizName] = useState("");
+  const [quizId, setQuizId] = useState("");
   const [loading, setLoading] = useState(false);
   const { slug } = useParams();
 
@@ -24,6 +25,8 @@ const LoginUser = () => {
     try {
       const response = await publicQuizzesApi.show(slug);
       setQuizName(response.data.quiz.name);
+      //console.log(response.data.quiz.id)
+      setQuizId(response.data.quiz.id);
     } catch (error) {
       logger.error(error);
     } finally {
@@ -36,7 +39,15 @@ const LoginUser = () => {
     try {
       setLoading(true);
       await usersApi.create({
-        user: { first_name: firstName, last_name: lastName, email },
+        user: {
+          first_name: firstName,
+          last_name: lastName,
+          email,
+          attempt_attributes: {
+            submitted: false,
+            quiz_id: quizId,
+          },
+        },
       });
       setLoading(false);
     } catch (error) {

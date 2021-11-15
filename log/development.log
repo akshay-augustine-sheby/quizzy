@@ -7864,3 +7864,261 @@ FOREIGN KEY ("user_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:21:55 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaksdasshay@gmail.com"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaksdasshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Akshay Augustine"], ["last_name", "Sheby"], ["email", "kizhakkelaksdasshay@gmail.com"], ["created_at", "2021-11-15 07:51:55.688862"], ["updated_at", "2021-11-15 07:51:55.688862"], ["password_digest", "$2a$12$41wTFkdUwd2KuPaMzUSobuSbJ9IUf0Oj/WgrL5bWzJ35v5UauIu.6"], ["authentication_token", "5YNLp1TByAWDsB9PmH5tUk2r"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 200 OK in 288ms (Views: 0.5ms | ActiveRecord: 2.2ms | Allocations: 11437)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-15 13:22:57 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 436)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: ac6250d8b047f2c86ccf
+Version: webpack 4.46.0
+Time: 7140ms
+Built at: 15/11/2021 13:23:05
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a2f305d731c0b36dd9c5.js   8.39 MiB  application  [emitted] [immutable]  application
+js/application-a2f305d731c0b36dd9c5.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a2f305d731c0b36dd9c5.js js/application-a2f305d731c0b36dd9c5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.11 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 440 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8540.1ms | Allocations: 5137)
+Completed 200 OK in 8560ms (Views: 8559.5ms | ActiveRecord: 0.0ms | Allocations: 7806)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-15 13:23:06 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 6641)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:23:10 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"sckizhakkelakshay@gmail.com", "attempts_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+Completed 500 Internal Server Error in 302ms (ActiveRecord: 0.0ms | Allocations: 3978)
+
+
+  
+NoMethodError (undefined method `[]' for false:FalseClass):
+  
+app/controllers/users_controller.rb:5:in `create'
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-15 13:30:46 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2736)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 3589)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-15 13:30:47 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 6566)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:30:56 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakksasaelakshay@gmail.com", "attempts_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+Completed 500 Internal Server Error in 298ms (ActiveRecord: 0.0ms | Allocations: 7326)
+
+
+  
+NameError (uninitialized constant User::Attempts):
+  
+app/controllers/users_controller.rb:5:in `create'
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-15 13:35:33 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 2657)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 3258)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-15 13:35:33 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1031)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:35:37 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkedslakshay@gmail.com", "attempts_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms | Allocations: 1973)
+
+
+  
+NameError (uninitialized constant User::Attempts):
+  
+app/controllers/users_controller.rb:5:in `create'
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-15 13:37:44 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2736)
+Completed 200 OK in 11ms (Views: 10.8ms | Allocations: 3583)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-15 13:37:44 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 6965)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:37:47 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakassskelakshay@gmail.com", "attempts_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+[31mUnpermitted parameter: :attempts_attributes[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakassskelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Akshay Augustine"], ["last_name", "Sheby"], ["email", "kizhakassskelakshay@gmail.com"], ["created_at", "2021-11-15 08:07:48.168911"], ["updated_at", "2021-11-15 08:07:48.168911"], ["password_digest", "$2a$12$3Omnudhds.7bbgZ7HBYqPujSNgTFBkNVC9BiEa3utSmm.Luz7RGKi"], ["authentication_token", "TgTgZM19L3BFzu9HsL1skHSY"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 200 OK in 301ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 8083)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-15 13:39:19 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 6ea6a3bee734b98d02b1
+Version: webpack 4.46.0
+Time: 7147ms
+Built at: 15/11/2021 13:39:28
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0de0558ebd49b407184a.js   8.39 MiB  application  [emitted] [immutable]  application
+js/application-0de0558ebd49b407184a.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0de0558ebd49b407184a.js js/application-0de0558ebd49b407184a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.11 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/src/common/logger.js] 235 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 440 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8457.6ms | Allocations: 12534)
+Completed 200 OK in 8459ms (Views: 8458.5ms | Allocations: 13387)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-15 13:39:28 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 6936)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:39:33 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"alkizhakkelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alkizhakkelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Akshay Augustine"], ["last_name", "Sheby"], ["email", "alkizhakkelakshay@gmail.com"], ["created_at", "2021-11-15 08:09:33.395867"], ["updated_at", "2021-11-15 08:09:33.395867"], ["password_digest", "$2a$12$9UWePpGIelwqM3K8xrdCyOYE48C2ggWCBbmrXx4UpjtQ4Jmww8nh6"], ["authentication_token", "1GBmbrXjZE79LachLbCxpLwH"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mAttempt Create (0.2ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 13], ["created_at", "2021-11-15 08:09:33.399437"], ["updated_at", "2021-11-15 08:09:33.399437"]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 200 OK in 316ms (Views: 0.2ms | ActiveRecord: 4.4ms | Allocations: 16873)
+
+
+  [1m[36mAttempt Load (1.5ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users/" for 127.0.0.1 at 2021-11-15 13:42:01 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"alkizhakkelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alkizhakkelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `create'
+Completed 422 Unprocessable Entity in 310ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 5879)
+
+
