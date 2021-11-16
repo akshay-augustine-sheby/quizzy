@@ -4,17 +4,19 @@ import { isNil, isEmpty, either } from "ramda";
 
 import Button from "components/Button";
 
+import attemptsApi from "../../apis/attempts";
 import publicQuestionsApi from "../../apis/publicQuestions";
 import PublicNavBar from "../NavBar/PublicNavBar";
 import PageLoader from "../PageLoader";
 
-const AttemptQuiz = ({ quizName, quizId }) => {
+const AttemptQuiz = ({ quizName, quizId, attemptId }) => {
   const [loading, setLoading] = useState(true);
   const [questionIds, setQuestionIds] = useState([]);
   const [questions, setQuestions] = useState([]);
   const [options, setOptions] = useState({});
   //const [optionsId, setOptionsId] = useState({});
   const [userAnswers, setUserAnswers] = useState({});
+  const [attempt_id, setAttempt_id] = useState("");
 
   const fetchQuestionDetails = async quizId => {
     try {
@@ -32,29 +34,36 @@ const AttemptQuiz = ({ quizName, quizId }) => {
     }
   };
 
-  const handleSubmit = () => {
-    //event.preventDefault();
-    //try {
-    //  questionId.map((question_id)=>{
-    //    await attemptAnswersApi.create({ attempt_answer: { attempt_id: attemptId,
-    //                                                      question_id: question_id,
-    //                                                      answer: userAnswers[question_id] } });
-    //    setLoading(false);
-    //  })
-    //history.push("/");
-    //} catch (error) {
-    //  logger.error(error);
-    //  setLoading(false);
-    //}
+  const handleSubmit = async event => {
+    event.preventDefault();
+    try {
+      await attemptsApi.update({
+        attempt_id,
+        payload: {
+          attempt: {
+            submitted: true,
+            attempt_answers_attributes: questionIds.map(question_id => {
+              return {
+                question_id: question_id,
+                answer: userAnswers[question_id],
+              };
+            }),
+          },
+        },
+      });
+      setLoading(false);
+      //history.push("/");
+    } catch (error) {
+      logger.error(error);
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
     fetchQuestionDetails(quizId);
+    setAttempt_id(attemptId);
+    //console.log(attemptId)
   }, []);
-
-  //useEffect(()=>{
-  //  console.log(userAnswers)
-  //},[userAnswers])
 
   if (loading) {
     return (

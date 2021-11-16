@@ -3,7 +3,8 @@
 class Attempt < ApplicationRecord
   belongs_to :quiz
   belongs_to :user
-  has_one :attempt_answer, dependent: :destroy
+  has_many :attempt_answers, dependent: :destroy
 
+  accepts_nested_attributes_for :attempt_answers
   # validates :submitted, presence: true
 end

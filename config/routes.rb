@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :options, only: %i[show destroy]
     resources :users, only: %i[create]
     resource :sessions, only: %i[create destroy]
+    resources :attempts, only: %i[update]
   end
 
   namespace :public do
