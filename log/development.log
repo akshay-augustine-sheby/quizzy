@@ -14925,3 +14925,1342 @@ FOREIGN KEY ("question_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 08:42:16 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 989)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: ef0bc8a58f987628bc58
+Version: webpack 4.46.0
+Time: 7242ms
+Built at: 16/11/2021 08:42:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-380c124dadbc62d827c1.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-380c124dadbc62d827c1.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-380c124dadbc62d827c1.js js/application-380c124dadbc62d827c1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.19 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8546.4ms | Allocations: 6141)
+Completed 200 OK in 8559ms (Views: 8550.5ms | ActiveRecord: 0.0ms | Allocations: 10295)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:42:25 +0530
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 08:42:25 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (1.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+Processing by HomeController#index as JSON
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 1.7ms | Allocations: 8756)
+
+
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1946)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 08:42:25 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 14687)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 08:42:32 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2703)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 3268)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:42:32 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1005)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:42:37 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.3ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.9ms | Allocations: 9565)
+
+
+  
+NoMethodError (undefined method `submitted' for nil:NilClass):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:42:52 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.3ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 4572)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:42:53 +0530
+Processing by Public::QuizzesController#show as JSON
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 08:42:53 +0530
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 908)
+
+
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 876)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 08:42:53 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2768)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 08:43:00 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 2674)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 3154)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:43:00 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 880)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:43:05 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakasAAkelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakasaakelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakasAAkelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.6ms | Allocations: 7074)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 08:44:58 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2772)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 3573)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:44:59 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 6927)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:45:06 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelabakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelabakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelabakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 422 Unprocessable Entity in 307ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 17022)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 08:46:05 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2772)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 3585)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:46:05 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (1.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 3.6ms | Allocations: 6855)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:46:11 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelabkshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelabkshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelabkshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Akshay Augustine"], ["last_name", "Sheby"], ["email", "kizhakkelabkshay@gmail.com"], ["created_at", "2021-11-16 03:16:11.611976"], ["updated_at", "2021-11-16 03:16:11.611976"], ["password_digest", "$2a$12$cPG.J6le0zSsy3bkg2X7qOzEoj4GfwlM0Qc0P6hKnd/ZDjXCx/h2O"], ["authentication_token", "4scZJNNTDUqgJd7xMTSDzPKP"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mAttempt Create (0.3ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 18], ["created_at", "2021-11-16 03:16:11.614035"], ["updated_at", "2021-11-16 03:16:11.614035"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 313ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 16933)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:46:11 +0530
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 08:46:11 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 1147)
+
+
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 890)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 08:46:11 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 13228)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 08:48:46 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2772)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 3575)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:48:47 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.5ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 6925)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:48:50 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.1ms | Allocations: 8843)
+
+
+  
+NoMethodError (undefined method `submitted' for nil:NilClass):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 08:48:54 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 4527)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 08:48:54 +0530
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 08:48:54 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 869)
+
+
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 2003)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 08:48:54 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 11659)
+
+
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 09:05:49 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: a4e6c9ea4b56503d2db0
+Version: webpack 4.46.0
+Time: 6965ms
+Built at: 16/11/2021 09:05:58
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a54e5b6ec4db88409303.js    8.4 MiB  application  [emitted] [immutable]  application
+js/application-a54e5b6ec4db88409303.js.map   9.01 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a54e5b6ec4db88409303.js js/application-a54e5b6ec4db88409303.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.19 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [optional] [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+WARNING in ./app/javascript/src/components/Publish/AttemptQuiz.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/javascript/src/components/Publish/AttemptQuiz.jsx: Unexpected reserved word 'await'. (57:8)
+
+  55 |     try {
+  56 |       questionId.map((question_id)=>{
+> 57 |         await attemptAnswersApi.create({ attempt_answer: { attempt_id: attemptId,
+     |         ^
+  58 |                                                           question_id: question_id,
+  59 |                                                           answer: userAnswers[question_id] } });
+  60 |         setLoading(false);
+    at Object._raise (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:541:17)
+    at Object.raiseWithData (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:534:17)
+    at Object.raise (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:495:17)
+    at Object.checkReservedWord (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:12895:12)
+    at Object.parseIdentifierName (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:12849:12)
+    at Object.parseIdentifier (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:12823:23)
+    at Object.parseExprAtom (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11950:27)
+    at Object.parseExprAtom (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:7463:20)
+    at Object.parseExprSubscripts (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11541:23)
+    at Object.parseUpdate (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11521:21)
+    at Object.parseMaybeUnary (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11496:23)
+    at Object.parseMaybeUnaryOrPrivate (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11310:61)
+    at Object.parseExprOps (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11317:23)
+    at Object.parseMaybeConditional (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11287:23)
+    at Object.parseMaybeAssign (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11250:21)
+    at Object.parseExpressionBase (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11186:23)
+    at /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11180:39
+    at Object.allowInAnd (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13074:12)
+    at Object.parseExpression (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11180:17)
+    at Object.parseStatementContent (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13418:23)
+    at Object.parseStatement (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13285:17)
+    at Object.parseBlockOrModuleBlockBody (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13874:25)
+    at Object.parseBlockBody (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13865:10)
+    at Object.parseBlock (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13849:10)
+    at Object.parseFunctionBody (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:12728:24)
+    at Object.parseArrowExpression (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:12700:10)
+    at Object.parseParenAndDistinguishExpression (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:12276:12)
+    at Object.parseExprAtom (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11848:23)
+    at Object.parseExprAtom (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:7463:20)
+    at Object.parseExprSubscripts (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11541:23)
+ @ ./app/javascript/src sync ^\.\/.*$ ./components/Publish/AttemptQuiz.jsx
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 8283.6ms | Allocations: 4353)
+Completed 200 OK in 8285ms (Views: 8284.5ms | Allocations: 5148)
+
+
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 09:06:49 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: acec78caa559f99a0111
+Version: webpack 4.46.0
+Time: 7465ms
+Built at: 16/11/2021 09:06:58
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-de160d323a4f14beb6f2.js   8.42 MiB  application  [emitted] [immutable]  application
+js/application-de160d323a4f14beb6f2.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-de160d323a4f14beb6f2.js js/application-de160d323a4f14beb6f2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.19 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8941.0ms | Allocations: 4354)
+Completed 200 OK in 8943ms (Views: 8942.3ms | Allocations: 5163)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 09:06:58 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 09:06:58 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.5ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 1.3ms | Allocations: 6626)
+
+
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 940)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 09:06:58 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 10968)
+
+
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 09:59:38 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2772)
+Completed 200 OK in 11ms (Views: 10.7ms | Allocations: 3571)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 09:59:39 +0530
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 09:59:39 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 2ms (Allocations: 966)
+
+
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.8ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 137ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 93064)
+
+
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 09:59:39 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 500 Internal Server Error in 16ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 11231)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/public/questions_controller.rb:27:in `show'
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 09:59:41 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 60)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2679)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 3206)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 09:59:41 +0530
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 09:59:41 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 1127)
+
+
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 872)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 09:59:41 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 500 Internal Server Error in 10ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 2840)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/public/questions_controller.rb:27:in `show'
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 10:00:13 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2772)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 3559)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:00:13 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 10:00:13 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+Processing by HomeController#index as JSON
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 953)
+
+
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 7382)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 10:00:13 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 500 Internal Server Error in 13ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 11848)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/public/questions_controller.rb:27:in `show'
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 10:01:00 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 534)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3730)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 8562)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:01:01 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Started GET "/public/questions/" for 127.0.0.1 at 2021-11-16 10:01:01 +0530
+Completed 200 OK in 28ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 8421)
+
+
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"public/questions"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1881)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 10:01:01 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 500 Internal Server Error in 18ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 14545)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/public/questions_controller.rb:27:in `show'
+Started GET "/quiz/science-quiz/show" for 127.0.0.1 at 2021-11-16 10:02:08 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/science-quiz/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2703)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 3326)
+
+
+Started GET "/questions/" for 127.0.0.1 at 2021-11-16 10:02:09 +0530
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:02:09 +0530
+Processing by HomeController#index as JSON
+  Parameters: {"path"=>"questions"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 939)
+
+
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 10042)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-16 10:02:09 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/questions_controller.rb:12:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/questions_controller.rb:12:in `block in show'
+Completed 500 Internal Server Error in 5ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 4151)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/questions_controller.rb:21:in `show'
+Started GET "/quiz/science-quiz/show" for 127.0.0.1 at 2021-11-16 10:03:26 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/science-quiz/show"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2773)
+Completed 200 OK in 11ms (Views: 10.9ms | Allocations: 3622)
+
+
+Started GET "/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:03:26 +0530
+Started GET "/questions/" for 127.0.0.1 at 2021-11-16 10:03:26 +0530
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+Processing by HomeController#index as JSON
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `authenticate_user_using_x_auth_token'
+  Parameters: {"path"=>"questions"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1002)
+
+
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/quizzes_controller.rb:56:in `load_quiz'
+  
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/akshayaugustinesheby/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.4.1/app/views"
+):
+  
+app/controllers/home_controller.rb:5:in `index'
+Completed 200 OK in 135ms (Views: 0.6ms | ActiveRecord: 2.5ms | Allocations: 88966)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-16 10:03:26 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/questions_controller.rb:12:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/questions_controller.rb:12:in `block in show'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 12293)
+
+
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 10:17:40 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 6fa7730c04c0bcf64110
+Version: webpack 4.46.0
+Time: 7361ms
+Built at: 16/11/2021 10:17:48
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-574128fa9c7863ef631f.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-574128fa9c7863ef631f.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-574128fa9c7863ef631f.js js/application-574128fa9c7863ef631f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.19 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8754.1ms | Allocations: 4450)
+Completed 200 OK in 8756ms (Views: 8754.9ms | Allocations: 5259)
+
+
+Started GET "/public/questions/undefined" for 127.0.0.1 at 2021-11-16 10:17:49 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/questions_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = 'undefined')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 3689)
+
+
+Started GET "/public/science-quiz/attempt/new" for 127.0.0.1 at 2021-11-16 10:18:45 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz/attempt/new"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 546c2f6a38eaa5457791
+Version: webpack 4.46.0
+Time: 7381ms
+Built at: 16/11/2021 10:18:53
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-246142acb2a434a2913d.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-246142acb2a434a2913d.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-246142acb2a434a2913d.js js/application-246142acb2a434a2913d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.19 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8770.7ms | Allocations: 4355)
+Completed 200 OK in 8772ms (Views: 8771.6ms | Allocations: 5163)
+
+
+Started GET "/public/questions/undefined" for 127.0.0.1 at 2021-11-16 10:18:54 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/questions_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = 'undefined')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 3695)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:19:19 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2692)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 3233)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:19:19 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 6172)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:19:44 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 7b8e16a2ffd85b1c1c3d
+Version: webpack 4.46.0
+Time: 7217ms
+Built at: 16/11/2021 10:19:52
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-975ffd14433cb25ddbe4.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-975ffd14433cb25ddbe4.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-975ffd14433cb25ddbe4.js js/application-975ffd14433cb25ddbe4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.95 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8580.1ms | Allocations: 4374)
+Completed 200 OK in 8582ms (Views: 8581.0ms | Allocations: 5177)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:19:52 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 37ms (Views: 2.4ms | ActiveRecord: 3.9ms | Allocations: 6851)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 10:19:59 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 36ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 11485)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:21:46 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 2ad1785df7a9045ae8dc
+Version: webpack 4.46.0
+Time: 7333ms
+Built at: 16/11/2021 10:21:55
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ba274cf4a2a2b61a768d.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-ba274cf4a2a2b61a768d.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ba274cf4a2a2b61a768d.js js/application-ba274cf4a2a2b61a768d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.95 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8707.7ms | Allocations: 4357)
+Completed 200 OK in 8710ms (Views: 8709.1ms | Allocations: 5150)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:21:55 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 6855)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 10:22:00 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 31ms (Views: 0.2ms | ActiveRecord: 3.1ms | Allocations: 11061)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:23:26 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 1668f17cc2c2f0e8bb89
+Version: webpack 4.46.0
+Time: 7187ms
+Built at: 16/11/2021 10:23:34
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b5d778da49bb2364c2d5.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-b5d778da49bb2364c2d5.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b5d778da49bb2364c2d5.js js/application-b5d778da49bb2364c2d5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.95 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8578.0ms | Allocations: 4354)
+Completed 200 OK in 8580ms (Views: 8579.1ms | Allocations: 5149)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:23:35 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 33ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 6861)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 10:23:39 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 11121)
+
+
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 10:23:39 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 11145)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:23:43 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2693)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 3238)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:23:43 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 912)
+
+
+Started GET "/public/questions/undefined" for 127.0.0.1 at 2021-11-16 10:23:46 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"undefined"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = 'undefined')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 856)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 10:24:06 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhaksasakelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhaksasakelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhaksasakelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Akshay Augustine"], ["last_name", "Sheby"], ["email", "kizhaksasakelakshay@gmail.com"], ["created_at", "2021-11-16 04:54:06.883165"], ["updated_at", "2021-11-16 04:54:06.883165"], ["password_digest", "$2a$12$.JjFbwdzba4naww19enpZujJLPzUYNor1WD0A6mk129QexfP.fy4C"], ["authentication_token", "K7dFpMB9x9FkqVmSo2VnoXLk"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mAttempt Create (0.5ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 19], ["created_at", "2021-11-16 04:54:06.886391"], ["updated_at", "2021-11-16 04:54:06.886391"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 310ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 7996)
+
+
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 10:24:06 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.0ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2129)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:24:17 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 2628)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 3096)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:24:17 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 860)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:24:41 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 6001d8fe29be5c8b1e34
+Version: webpack 4.46.0
+Time: 7250ms
+Built at: 16/11/2021 10:24:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5230603be697c373b9bb.js   8.41 MiB  application  [emitted] [immutable]  application
+js/application-5230603be697c373b9bb.js.map   9.02 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5230603be697c373b9bb.js js/application-5230603be697c373b9bb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.31 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.95 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuestions.js] 313 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 443 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8621.1ms | Allocations: 12856)
+Completed 200 OK in 8624ms (Views: 8623.2ms | Allocations: 13651)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:24:50 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+  [1m[36mQuiz Load (0.5ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 6924)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 10:24:56 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (0.3ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 2.1ms | Allocations: 8886)
+
+
+  
+NoMethodError (undefined method `submitted' for nil:NilClass):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users/" for 127.0.0.1 at 2021-11-16 10:25:00 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"Akshay Augustine", "last_name"=>"Sheby", "email"=>"kizhakkelaakshay@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kizhakkelaakshay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mAttempt Load (1.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ? LIMIT ?[0m  [["user_id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 4521)
+
+
+Started GET "/public/questions/1" for 127.0.0.1 at 2021-11-16 10:25:00 +0530
+Processing by Public::QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/public/questions_controller.rb:10:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/questions_controller.rb:16:in `block in show'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 11149)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-16 10:25:17 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 2693)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 3230)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-16 10:25:17 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:5:in `show'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 906)
+
+

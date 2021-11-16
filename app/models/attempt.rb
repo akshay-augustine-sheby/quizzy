@@ -5,5 +5,5 @@ class Attempt < ApplicationRecord
   belongs_to :user
   has_one :attempt_answer, dependent: :destroy
 
-  validates :submitted, presence: true
+  # validates :submitted, presence: true
 end

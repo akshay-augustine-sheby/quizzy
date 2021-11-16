@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @user = User.find_by(email: user_params[:email].downcase)
     if @user.present?
       if @user.attempt.submitted == false
-        render status: :ok, json: { notice: "User already present", attemptId: @user.attempt.id }
+        render status: :ok, json: { notice: "Welcome to the Quiz", attemptId: @user.attempt.id }
       else
         # @user.attempt.submitted == true && @user.attempt.quiz_id != quiz_id then create new attempt
         render status: :unprocessable_entity, json: { error: "Quiz already submitted" }
@@ -13,9 +13,9 @@ class UsersController < ApplicationController
     else
       @user1 = User.new(user_params.merge(role: "standard", password: "welcome", password_confirmation: "welcome"))
       if @user1.save
-        render status: :ok, json: { notice: "User is successfully entered the quiz", attemptId: @user1.attempt.id }
+        render status: :ok, json: { notice: "Welcome to the Quiz", attemptId: @user1.attempt.id }
       else
-        errors = @user.errors.full_messages.to_sentence
+        errors = @user1.errors.full_messages.to_sentence
         render status: :unprocessable_entity, json: { error: errors }
       end
     end
