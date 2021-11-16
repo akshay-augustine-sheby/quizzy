@@ -20,6 +20,7 @@ const AttemptQuiz = () => {
   const [options, setOptions] = useState({});
   //const [optionsId, setOptionsId] = useState({});
   const [userAnswers, setUserAnswers] = useState({});
+  //const attemptId = JSON.parse(localStorage.getItem("attemptId"));
 
   const fetchQuizDetails = async slug => {
     try {
@@ -49,13 +50,20 @@ const AttemptQuiz = () => {
     }
   };
 
+  const handleSubmit = () => {};
+
   useEffect(() => {
     fetchQuizDetails(slug);
+    //console.log(attemptId)
   }, []);
 
   useEffect(() => {
     fetchQuestionDetails(quizId);
   }, [quizId]);
+
+  //useEffect(()=>{
+  //  console.log(userAnswers)
+  //},[userAnswers])
 
   if (loading) {
     return (
@@ -83,8 +91,8 @@ const AttemptQuiz = () => {
     <div>
       <PublicNavBar />
       <div className="flex flex-col justify-center items-center space-y-20 mt-10">
-        <form>
-          <div>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-10">
             <div className="text-3xl font-bold">{quizName}</div>
           </div>
           <div className="flex-row space-y-12">
@@ -92,44 +100,43 @@ const AttemptQuiz = () => {
               <div key={index} className="space-y-3">
                 <div className="flex space-x-10 ">
                   <div className="text-gray-600">{`Question ${index + 1}`}</div>
-                  <div className="font-extrabold">{question}</div>
-                </div>
+                  <div className="flex flex-col space-y-3">
+                    <div className="font-extrabold">{question}</div>
+                    <div className="flex flex-col space-y-2">
+                      {Object.keys(options).map(questionId => {
+                        if (
+                          parseInt(questionId) === parseInt(questionIds[index])
+                        ) {
+                          return options[questionId].map((option, index2) => {
+                            return (
+                              <div
+                                key={index2}
+                                className="flex flex-col justify-start items-start space-x-10"
+                              >
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name={questionId}
+                                    value={option}
+                                    checked={userAnswers[questionId] === option}
+                                    onChange={e =>
+                                      setUserAnswers({
+                                        ...userAnswers,
+                                        [questionId]: e.target.value,
+                                      })
+                                    }
+                                  />
+                                  {`  ${option}`}
+                                </label>
+                              </div>
+                            );
+                          });
+                        }
 
-                <div className="flex flex-col space-y-2">
-                  {Object.keys(options).map(questionId => {
-                    //console.log(questionId)
-                    if (parseInt(questionId) === parseInt(questionIds[index])) {
-                      //console.log(`questionId: ${questionId}`)
-                      //console.log(`question.id: ${question.id}`)
-                      //console.log(options[questionId].length)
-                      return options[questionId].map((option, index2) => {
-                        return (
-                          <div key={index2} className="flex space-x-10">
-                            <div className="text-gray-600">{`Option ${
-                              index2 + 1
-                            }`}</div>
-                            <label>
-                              <input
-                                type="radio"
-                                name={questionId}
-                                value={option}
-                                checked={userAnswers[questionId] === option}
-                                onChange={e =>
-                                  setUserAnswers({
-                                    ...userAnswers,
-                                    [questionId]: e.target.value,
-                                  })
-                                }
-                              />
-                              {`  ${option}`}
-                            </label>
-                          </div>
-                        );
-                      });
-                    }
-
-                    return false;
-                  })}
+                        return false;
+                      })}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}

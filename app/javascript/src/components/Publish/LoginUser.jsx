@@ -38,7 +38,7 @@ const LoginUser = ({ history }) => {
     event.preventDefault();
     try {
       setLoading(true);
-      await usersApi.create({
+      const response = await usersApi.create({
         user: {
           first_name: firstName,
           last_name: lastName,
@@ -49,6 +49,12 @@ const LoginUser = ({ history }) => {
           },
         },
       });
+      //console.log(response)
+      //setAttemptId(response.data.attemptId)
+      localStorage.setItem(
+        "attemptId",
+        JSON.stringify(response.data.attemptId)
+      );
       setLoading(false);
       history.push(`/public/${slug}/attempt/new`);
     } catch (error) {
