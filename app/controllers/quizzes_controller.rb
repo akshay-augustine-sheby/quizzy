@@ -39,8 +39,18 @@ class QuizzesController < ApplicationController
   end
 
   def show
+    hash_name = {}
+    @questions = @quiz.questions
+    @questions.each do |question|
+      @options = question.options
+      arr_name = []
+      @options.each do |option|
+        arr_name.push(option.name)
+      end
+      hash_name[question.id] = arr_name
+    end
     if @quiz
-      render status: :ok, json: { quiz: @quiz }
+      render status: :ok, json: { quiz: @quiz, questions: @questions, options: hash_name }
     else
       render status: :not_found, json: { error: "Quiz not found" }
     end
