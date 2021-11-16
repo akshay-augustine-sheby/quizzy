@@ -5,7 +5,7 @@ class QuizzesController < ApplicationController
   before_action :load_quiz, only: %i[update destroy show]
 
   def index
-    quizzes = @current_user.quizzes.all.as_json(only: %i[name slug user_id])
+    quizzes = @current_user.quizzes.all.order("created_at DESC").as_json(only: %i[name slug user_id])
     render status: :ok, json: { quizzes: quizzes }
   end
 
@@ -40,16 +40,16 @@ class QuizzesController < ApplicationController
 
   def show
     hash_name = {}
-    @questions = @quiz.questions
-    @questions.each do |question|
-      @options = question.options
-      arr_name = []
-      @options.each do |option|
-        arr_name.push(option.name)
-      end
-      hash_name[question.id] = arr_name
-    end
     if @quiz
+      @questions = @quiz.questions
+      @questions.each do |question|
+        @options = question.options
+        arr_name = []
+        @options.each do |option|
+          arr_name.push(option.name)
+        end
+        hash_name[question.id] = arr_name
+      end
       render status: :ok, json: { quiz: @quiz, questions: @questions, options: hash_name }
     else
       render status: :not_found, json: { error: "Quiz not found" }

@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import Button from "components/Button";
 
 import AttemptQuiz from "./AttemptQuiz";
+import ErrorPage from "./ErrorPage";
 
 import publicQuizzesApi from "../../apis/publicQuizzes";
 import usersApi from "../../apis/users";
@@ -18,7 +19,11 @@ const LoginUser = () => {
   const [quizId, setQuizId] = useState("");
   const [loading, setLoading] = useState(false);
   const [attemptId, setAttemptId] = useState("");
+  const [questionIds, setQuestionIds] = useState([]);
+  const [questions, setQuestions] = useState([]);
+  const [options, setOptions] = useState({});
   const [login, setLogin] = useState(false);
+  const [error, setError] = useState(false);
   const { slug } = useParams();
 
   useEffect(() => {
@@ -31,7 +36,13 @@ const LoginUser = () => {
       setQuizName(response.data.quiz.name);
       //console.log(response.data.quiz.id)
       setQuizId(response.data.quiz.id);
+      setQuestionIds(response.data.id);
+      setQuestions(response.data.name);
+      setOptions(response.data.options);
+      //setOptionsId(response.data.optionsId);
+      setLoading(false);
     } catch (error) {
+      setError(true);
       logger.error(error);
     } finally {
       setLoading(false);
@@ -62,47 +73,56 @@ const LoginUser = () => {
       setLoading(false);
     }
   };
-
-  if (!login) {
-    return (
-      <div>
-        <div className="text-5xl font-bold border-b-2 px-12">Quizzy</div>
-        <div className="flex items-center justify-center">
-          <form onSubmit={handleSubmit} className="space-y-4 py-40 w-1/4">
-            <div className="text-2xl font-bold">Welcome to {quizName}</div>
-            <Input
-              label="First Name"
-              placeholder=""
-              size="small"
-              type="text"
-              value={firstName}
-              onChange={e => setFirstName(e.target.value)}
-            />
-            <Input
-              label="Last Name"
-              placeholder=""
-              size="small"
-              type="text"
-              value={lastName}
-              onChange={e => setLastName(e.target.value)}
-            />
-            <Input
-              label="Email"
-              placeholder=""
-              size="small"
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-            />
-            <Button type="submit" buttonText="Next" loading={loading} />
-          </form>
+  if (!error) {
+    if (!login) {
+      return (
+        <div>
+          <div className="text-5xl font-bold border-b-2 px-12">Quizzy</div>
+          <div className="flex items-center justify-center">
+            <form onSubmit={handleSubmit} className="space-y-4 py-40 w-1/4">
+              <div className="text-2xl font-bold">Welcome to {quizName}</div>
+              <Input
+                label="First Name"
+                placeholder=""
+                size="small"
+                type="text"
+                value={firstName}
+                onChange={e => setFirstName(e.target.value)}
+              />
+              <Input
+                label="Last Name"
+                placeholder=""
+                size="small"
+                type="text"
+                value={lastName}
+                onChange={e => setLastName(e.target.value)}
+              />
+              <Input
+                label="Email"
+                placeholder=""
+                size="small"
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+              />
+              <Button type="submit" buttonText="Next" loading={loading} />
+            </form>
+          </div>
         </div>
-      </div>
+      );
+    }
+
+    return (
+      <AttemptQuiz
+        quizName={quizName}
+        attemptId={attemptId}
+        questionIds={questionIds}
+        questions={questions}
+        options={options}
+      />
     );
   }
 
-  return (
-    <AttemptQuiz quizName={quizName} quizId={quizId} attemptId={attemptId} />
-  );
+  return <ErrorPage />;
 };
 export default LoginUser;

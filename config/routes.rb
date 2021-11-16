@@ -13,7 +13,6 @@ Rails.application.routes.draw do
 
   namespace :public do
     resources :quizzes, only: %i[show], param: :slug
-    resources :questions, only: %i[show]
   end
 
   root to: "home#index"

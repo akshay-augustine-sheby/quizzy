@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { isNil, isEmpty, either } from "ramda";
 
@@ -7,38 +7,25 @@ import Button from "components/Button";
 import Result from "./Result";
 
 import attemptsApi from "../../apis/attempts";
-import publicQuestionsApi from "../../apis/publicQuestions";
 import PublicNavBar from "../NavBar/PublicNavBar";
 import PageLoader from "../PageLoader";
 
-const AttemptQuiz = ({ quizName, quizId, attemptId }) => {
-  const [loading, setLoading] = useState(true);
-  const [questionIds, setQuestionIds] = useState([]);
-  const [questions, setQuestions] = useState([]);
-  const [options, setOptions] = useState({});
+const AttemptQuiz = ({
+  quizName,
+  attemptId,
+  questionIds,
+  questions,
+  options,
+}) => {
+  const [loading, setLoading] = useState(false);
   //const [optionsId, setOptionsId] = useState({});
-  const [userAnswers, setUserAnswers] = useState({});
   const [attempt_id, setAttempt_id] = useState("");
+  const [userAnswers, setUserAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
-
-  const fetchQuestionDetails = async quizId => {
-    try {
-      //console.log(quizId)
-      const response = await publicQuestionsApi.show(quizId);
-      //console.log(response)
-      setQuestionIds(response.data.id);
-      setQuestions(response.data.name);
-      setOptions(response.data.options);
-      //setOptionsId(response.data.optionsId);
-    } catch (error) {
-      logger.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleSubmit = async event => {
     event.preventDefault();
+    setAttempt_id(attemptId);
     try {
       await attemptsApi.update({
         attempt_id,
@@ -63,11 +50,6 @@ const AttemptQuiz = ({ quizName, quizId, attemptId }) => {
     }
   };
 
-  useEffect(() => {
-    fetchQuestionDetails(quizId);
-    setAttempt_id(attemptId);
-    //console.log(attemptId)
-  }, []);
   if (!submitted) {
     if (loading) {
       return (

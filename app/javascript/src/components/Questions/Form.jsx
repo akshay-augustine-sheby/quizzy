@@ -28,7 +28,7 @@ const FormQuestion = ({
         </div>
         <form onSubmit={handleSubmit} className="space-y-3">
           <Input
-            label="Question"
+            label="Question*"
             placeholder=""
             size="small"
             type="text"
@@ -41,7 +41,7 @@ const FormQuestion = ({
               return (
                 <div key={`${opt}-${id}`}>
                   <Input
-                    label={`Option ${id + 1}`}
+                    label={`Option ${id + 1}*`}
                     placeholder=""
                     size="small"
                     type="text"
@@ -54,7 +54,10 @@ const FormQuestion = ({
             }
 
             return (
-              <div key={`${opt}-${id}`}>
+              <div
+                className="flex flex-row w-3/5 space-x-2 place-items-end align-bottom justify-end"
+                key={`${opt}-${id}`}
+              >
                 <Input
                   label={`Option ${id + 1}`}
                   placeholder=""
@@ -64,14 +67,14 @@ const FormQuestion = ({
                   value={options[id].option}
                   onChange={e => handleChange(id, e)}
                 />
-                <Button
-                  label="Remove"
-                  onClick={() => handleRemove(id)}
-                  style="danger"
-                  className="h-1"
-                  icon={CloseCircle}
-                  iconPosition="left"
-                />
+                <div className="h-full">
+                  <Button
+                    onClick={() => handleRemove(id)}
+                    style="danger"
+                    size="large"
+                    icon={CloseCircle}
+                  />
+                </div>
               </div>
             );
           })}
@@ -84,15 +87,13 @@ const FormQuestion = ({
             />
           )}
 
-          <div className="p-4 mb-2">
+          <div className="">
             <Select
-              defaultValue={{
-                label: answer,
-                value: answer,
-              }}
               isCreatable
-              label="Correct answer"
+              label="Correct answer*"
+              value={answer}
               name="ValueList"
+              className="w-3/5"
               options={options.map(opt => {
                 //console.log(opt)
                 return {
