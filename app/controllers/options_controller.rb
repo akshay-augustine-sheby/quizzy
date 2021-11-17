@@ -17,6 +17,16 @@ class OptionsController < ApplicationController
     end
   end
 
+  def destroy
+    @option = Option.find_by(id: params[:id])
+    if @option.destroy
+      render status: :ok, json: {}
+    else
+      render status: :unprocessable_entity,
+        json: { error: @option.errors.full_messages.to_sentence }
+    end
+  end
+
   private
 
     def option_params

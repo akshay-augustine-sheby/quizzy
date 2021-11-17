@@ -13,7 +13,6 @@ import { useParams } from "react-router-dom";
 
 import Container from "components/Container";
 
-import questionsApi from "../../apis/questions";
 import quizzesApi from "../../apis/quizzes";
 import PageLoader from "../PageLoader";
 import DeleteQuestion from "../Questions/DeleteQuestion";
@@ -31,11 +30,14 @@ const ShowQuiz = ({ history }) => {
   const handleCreateQuestion = () => {
     history.push(`/quiz/${slug}/question/create`);
   };
+
   const fetchQuizDetails = async () => {
     try {
       const response = await quizzesApi.show(slug);
       setQuiz(response.data.quiz);
       setQuizId(response.data.quiz.id);
+      setQuestions(response.data.questions);
+      setOptions(response.data.options);
     } catch (error) {
       logger.error(error);
     } finally {
@@ -50,20 +52,6 @@ const ShowQuiz = ({ history }) => {
     //console.log(url)
   };
 
-  const fetchQuestionDetails = async quizId => {
-    try {
-      //console.log(quizId)
-      const response = await questionsApi.show(quizId);
-      //console.log(response)
-      setQuestions(response.data.questions);
-      setOptions(response.data.options);
-    } catch (error) {
-      logger.error(error);
-    } finally {
-      setPageLoading(false);
-    }
-  };
-
   const editQuestion = question_id => {
     localStorage.setItem("slug", slug);
     history.push(`/question/${question_id}/edit`);
@@ -72,10 +60,6 @@ const ShowQuiz = ({ history }) => {
   useEffect(() => {
     fetchQuizDetails();
   }, []);
-
-  useEffect(() => {
-    fetchQuestionDetails(quizId);
-  }, [quizId]);
 
   if (pageLoading) {
     return (
@@ -181,7 +165,7 @@ const ShowQuiz = ({ history }) => {
                   />
                   <DeleteQuestion
                     question_id={question.id}
-                    fetchQuestionDetails={fetchQuestionDetails}
+                    fetchQuizDetails={fetchQuizDetails}
                     quizId={quizId}
                   />
                 </div>
