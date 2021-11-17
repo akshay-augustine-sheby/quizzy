@@ -3,6 +3,15 @@
 class QuestionsController < ApplicationController
   before_action :load_question, only: %i[destroy update]
 
+  def show
+    @questions = Question.where("quiz_id = ?", params[:id])
+    if @questions
+      render status: :ok, json: { questions: @questions }
+    else
+      render status: :not_found, json: { error: "Question not found" }
+    end
+  end
+
   def create
     @question = Question.new(question_params)
     if @question.save

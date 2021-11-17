@@ -119,6 +119,7 @@ const LoginUser = () => {
         questionIds={questionIds}
         questions={questions}
         options={options}
+        quizId={quizId}
       />
     );
   }

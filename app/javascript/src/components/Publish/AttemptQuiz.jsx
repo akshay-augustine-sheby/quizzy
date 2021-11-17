@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { isNil, isEmpty, either } from "ramda";
 
@@ -16,6 +16,7 @@ const AttemptQuiz = ({
   questionIds,
   questions,
   options,
+  quizId,
 }) => {
   const [loading, setLoading] = useState(false);
   //const [optionsId, setOptionsId] = useState({});
@@ -23,9 +24,11 @@ const AttemptQuiz = ({
   const [userAnswers, setUserAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    setAttempt_id(attemptId);
+  }, []);
   const handleSubmit = async event => {
     event.preventDefault();
-    setAttempt_id(attemptId);
     try {
       await attemptsApi.update({
         attempt_id,
@@ -139,6 +142,13 @@ const AttemptQuiz = ({
     );
   }
 
-  return <Result quizName={quizName} />;
+  return (
+    <Result
+      quizName={quizName}
+      options={options}
+      userAnswers={userAnswers}
+      quizId={quizId}
+    />
+  );
 };
 export default AttemptQuiz;
