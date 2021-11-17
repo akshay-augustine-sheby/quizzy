@@ -148,6 +148,7 @@ const AttemptQuiz = ({
       options={options}
       userAnswers={userAnswers}
       quizId={quizId}
+      attempt_id={attempt_id}
     />
   );
 };

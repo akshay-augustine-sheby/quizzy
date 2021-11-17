@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 
 import { Checkmark } from "@bigbinary/neeto-icons";
 
+import attemptsApi from "../../apis/attempts";
 import questionsApi from "../../apis/questions";
 import PublicNavBar from "../NavBar/PublicNavBar";
 import PageLoader from "../PageLoader";
 
-const Result = ({ quizName, options, userAnswers, quizId }) => {
+const Result = ({ quizName, options, userAnswers, quizId, attempt_id }) => {
   const [questions, setQuestions] = useState([]);
-  const [count, setCount] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [correct, setCorrect] = useState(0);
+  const [incorrect, setIncorrect] = useState(0);
   const fetchAnswers = async () => {
     try {
       const response = await questionsApi.show(quizId);
@@ -21,20 +23,49 @@ const Result = ({ quizName, options, userAnswers, quizId }) => {
     }
   };
 
-  const fetchCorrectCount = () => {
+  const fetchCount = () => {
+    let flag = 0;
     questions.map(question => {
       if (userAnswers[question.id] === question.answer) {
-        setCount(count => count + 1);
+        flag = 1;
+        setCorrect(correct => correct + 1);
       }
     });
+    if (flag === 0) {
+      setIncorrect(questions.length);
+    }
+  };
+
+  const updateAnswers = async () => {
+    try {
+      await attemptsApi.update({
+        attempt_id,
+        payload: {
+          attempt: {
+            correct_answers_count: correct,
+            incorrect_answers_count: incorrect,
+          },
+        },
+      });
+    } catch (error) {
+      logger.error(error);
+    }
   };
 
   useEffect(() => {
     fetchAnswers();
   }, []);
   useEffect(() => {
-    fetchCorrectCount();
+    fetchCount();
   }, [questions]);
+
+  useEffect(() => {
+    setIncorrect(questions.length - correct);
+  }, [correct]);
+
+  useEffect(() => {
+    updateAnswers();
+  }, [incorrect]);
 
   if (loading) {
     return (
@@ -56,8 +87,8 @@ const Result = ({ quizName, options, userAnswers, quizId }) => {
             Thank you for taking the quiz, here are your results.
           </div>
           <div className="text-xl text-center">
-            You have submitted {count} correct and {questions.length - count}{" "}
-            incorrect answers.
+            You have submitted {correct} correct and {incorrect} incorrect
+            answers.
           </div>
         </div>
         <div className="flex-row space-y-12">
