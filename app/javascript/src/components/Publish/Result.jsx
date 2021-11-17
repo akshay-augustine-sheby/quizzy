@@ -7,6 +7,7 @@ import PublicNavBar from "../NavBar/PublicNavBar";
 
 const Result = ({ quizName, options, userAnswers, quizId }) => {
   const [questions, setQuestions] = useState([]);
+  const [count, setCount] = useState(0);
   const fetchAnswers = async () => {
     try {
       const response = await questionsApi.show(quizId);
@@ -16,18 +17,35 @@ const Result = ({ quizName, options, userAnswers, quizId }) => {
     }
   };
 
+  const fetchCorrectCount = () => {
+    questions.map(question => {
+      if (userAnswers[question.id] === question.answer) {
+        setCount(count => count + 1);
+      }
+    });
+  };
+
   useEffect(() => {
     fetchAnswers();
   }, []);
+  useEffect(() => {
+    fetchCorrectCount();
+  }, [questions]);
   return (
     <div>
       <PublicNavBar />
-      <div className="flex flex-col justify-center items-center space-y-20 mt-10">
+      <div className="flex flex-col justify-center items-center space-y-5 mt-10">
         <div>
           <div className="text-3xl font-bold">{quizName}</div>
         </div>
-        <div className="text-xl text-center">
-          Thank you for taking the quiz.
+        <div className="flex flex-col space-y-1 mb-10">
+          <div className="text-xl text-center">
+            Thank you for taking the quiz, here are your results.
+          </div>
+          <div className="text-xl text-center">
+            You have submitted {count} correct and {questions.length - count}{" "}
+            incorrect answers.
+          </div>
         </div>
         <div className="flex-row space-y-12">
           {questions?.map((question, index) => (
