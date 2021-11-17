@@ -29678,3 +29678,1266 @@ Processing by Public::QuizzesController#show as JSON
 Completed 404 Not Found in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 786)
 
 
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:38 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 617)
+[Webpacker] Compiling...
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:42 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 52)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 3a3148483753aa1a846b
+Version: webpack 4.46.0
+Time: 7727ms
+Built at: 17/11/2021 13:08:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-269d80c97afd0125526f.js   8.43 MiB  application  [emitted] [immutable]  application
+js/application-269d80c97afd0125526f.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-269d80c97afd0125526f.js js/application-269d80c97afd0125526f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9003.9ms | Allocations: 10428)
+Completed 200 OK in 9013ms (Views: 9007.6ms | ActiveRecord: 0.0ms | Allocations: 15185)
+
+
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 3a3148483753aa1a846b
+Version: webpack 4.46.0
+Time: 7081ms
+Built at: 17/11/2021 13:08:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-269d80c97afd0125526f.js   8.43 MiB  application  [emitted] [immutable]  application
+js/application-269d80c97afd0125526f.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-269d80c97afd0125526f.js js/application-269d80c97afd0125526f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8173.6ms | Allocations: 7444)
+Completed 200 OK in 8175ms (Views: 8174.2ms | ActiveRecord: 0.0ms | Allocations: 8030)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:50 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 41ms (Views: 0.6ms | ActiveRecord: 1.9ms | Allocations: 22741)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:52 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2718)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 3271)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:52 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 12ms (Views: 0.9ms | ActiveRecord: 1.0ms | Allocations: 2763)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:53 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2653)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 3138)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:53 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 1.0ms | Allocations: 2746)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:54 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2653)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 3125)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:08:54 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 2730)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:39 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 1c915b70312d102d4514
+Version: webpack 4.46.0
+Time: 7267ms
+Built at: 17/11/2021 13:10:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8f7897d22550d994a830.js   8.43 MiB  application  [emitted] [immutable]  application
+js/application-8f7897d22550d994a830.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8f7897d22550d994a830.js js/application-8f7897d22550d994a830.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8635.9ms | Allocations: 4401)
+Completed 200 OK in 8637ms (Views: 8636.7ms | Allocations: 5209)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:48 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 28ms (Views: 0.5ms | ActiveRecord: 2.2ms | Allocations: 18686)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:50 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 2717)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 3248)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:50 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 1.2ms | Allocations: 2747)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:50 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 2652)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 3128)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:51 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 32ms (Views: 18.9ms | ActiveRecord: 1.0ms | Allocations: 2718)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:51 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2652)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 3115)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:51 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 17ms (Views: 2.4ms | ActiveRecord: 1.2ms | Allocations: 2719)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:52 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2652)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:10:52 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 2730)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:14:59 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: e6b9a775f401393d8b12
+Version: webpack 4.46.0
+Time: 7177ms
+Built at: 17/11/2021 13:15:08
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8a0eb25f531a7a23855a.js   8.43 MiB  application  [emitted] [immutable]  application
+js/application-8a0eb25f531a7a23855a.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8a0eb25f531a7a23855a.js js/application-8a0eb25f531a7a23855a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8426.8ms | Allocations: 4402)
+Completed 200 OK in 8428ms (Views: 8427.6ms | Allocations: 5201)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:08 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 2.1ms | Allocations: 18724)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:10 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 2717)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 3254)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:10 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 1.1ms | Allocations: 2747)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:11 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2652)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:11 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 0.9ms | Allocations: 2720)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:11 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2652)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 3114)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:15:12 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 1.0ms | Allocations: 2726)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-17 13:15:23 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"alan", "last_name"=>"sheby", "email"=>"alan@gmail.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alan@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "alan"], ["last_name", "sheby"], ["email", "alan@gmail.com"], ["created_at", "2021-11-17 07:45:23.395978"], ["updated_at", "2021-11-17 07:45:23.395978"], ["password_digest", "$2a$12$iID0xkykyOp7JAHG7SIB0O0pJu3tCMXoFJl40nEIsDuFV/AR3ujP2"], ["authentication_token", "wkMQUFtjDcwobGRpw2CdEv19"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mAttempt Create (0.2ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 54], ["created_at", "2021-11-17 07:45:23.398127"], ["updated_at", "2021-11-17 07:45:23.398127"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 320ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 18333)
+
+
+Started PUT "/attempts/42" for 127.0.0.1 at 2021-11-17 13:15:29 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"submitted"=>true, "attempt_answers_attributes"=>[{"question_id"=>1, "answer"=>"yes"}, {"question_id"=>2, "answer"=>"das"}]}, "id"=>"42"}
+  [1m[36mAttempt Load (0.6ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:5:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mAttempt Update (0.4ms)[0m  [1m[33mUPDATE "attempts" SET "submitted" = ?, "updated_at" = ? WHERE "attempts"."id" = ?[0m  [["submitted", 1], ["updated_at", "2021-11-17 07:45:29.270757"], ["id", 42]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mAttemptAnswer Create (0.5ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "yes"], ["attempt_id", 42], ["question_id", 1], ["created_at", "2021-11-17 07:45:29.272723"], ["updated_at", "2021-11-17 07:45:29.272723"]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "das"], ["attempt_id", 42], ["question_id", 2], ["created_at", "2021-11-17 07:45:29.274872"], ["updated_at", "2021-11-17 07:45:29.274872"]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+Completed 200 OK in 38ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 15074)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-17 13:15:29 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1587)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:20:14 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 8096e775edf2c7b0991a
+Version: webpack 4.46.0
+Time: 7156ms
+Built at: 17/11/2021 13:20:22
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c919e3375075c2a288a1.js   8.44 MiB  application  [emitted] [immutable]  application
+js/application-c919e3375075c2a288a1.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c919e3375075c2a288a1.js js/application-c919e3375075c2a288a1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+WARNING in ./app/javascript/src/components/PageLoader.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/app/javascript/src/components/PageLoader.jsx: Identifier 'PageLoader' has already been declared. (4:6)
+
+  2 | import { PageLoader } from "@bigbinary/neetoui/v2";
+  3 |
+> 4 | const PageLoader = () => {
+    |       ^
+  5 |   return (
+  6 |     <div className="py-10">
+  7 |       <PageLoader color="#9041c7" />
+    at Object._raise (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:541:17)
+    at Object.raiseWithData (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:534:17)
+    at Object.raise (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:495:17)
+    at ScopeHandler.checkRedeclarationInScope (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:1690:12)
+    at ScopeHandler.declareName (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:1656:12)
+    at Object.checkLVal (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:11046:24)
+    at Object.parseVarId (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13977:10)
+    at Object.parseVar (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13952:12)
+    at Object.parseVarStatement (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13769:10)
+    at Object.parseStatementContent (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13354:21)
+    at Object.parseStatement (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13285:17)
+    at Object.parseBlockOrModuleBlockBody (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13874:25)
+    at Object.parseBlockBody (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13865:10)
+    at Object.parseProgram (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13207:10)
+    at Object.parseTopLevel (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:13198:25)
+    at Object.parse (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:14957:10)
+    at parse (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/parser/lib/index.js:15009:38)
+    at parser (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/core/lib/parser/index.js:52:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/core/lib/transformation/index.js:29:50)
+    at run.next (<anonymous>)
+    at Function.transform (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/core/lib/transform.js:25:41)
+    at transform.next (<anonymous>)
+    at step (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/gensync/index.js:261:32)
+    at /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/gensync/index.js:223:11)
+    at /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/gensync/index.js:189:28
+    at /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/node_modules/@babel/core/lib/gensync-utils/async.js:74:7
+ @ ./app/javascript/src sync ^\.\/.*$ ./components/PageLoader.jsx
+ @ ./app/javascript/packs/application.js
+
+  Rendered layout layouts/application.html.erb (Duration: 8275.2ms | Allocations: 12906)
+Completed 200 OK in 8276ms (Views: 8276.0ms | Allocations: 13709)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:20:24 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2652)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 3178)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:16 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 78f23443bbd307f3e48c
+Version: webpack 4.46.0
+Time: 7183ms
+Built at: 17/11/2021 13:21:24
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e27b40e0c49dc3c0c589.js   8.43 MiB  application  [emitted] [immutable]  application
+js/application-e27b40e0c49dc3c0c589.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e27b40e0c49dc3c0c589.js js/application-e27b40e0c49dc3c0c589.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8484.6ms | Allocations: 4402)
+Completed 200 OK in 8486ms (Views: 8485.3ms | Allocations: 5207)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:25 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuiz Load (0.8ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 37ms (Views: 0.5ms | ActiveRecord: 3.4ms | Allocations: 18729)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:26 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2717)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 3264)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:27 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (1.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 22ms (Views: 1.0ms | ActiveRecord: 2.2ms | Allocations: 2741)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:28 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2652)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3123)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:28 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.6ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 1.7ms | Allocations: 2728)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:29 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2652)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3110)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:29 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 15ms (Views: 0.8ms | ActiveRecord: 1.2ms | Allocations: 2716)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:30 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 2652)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 3112)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:30 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 2723)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:31 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2652)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3127)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:31 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 17ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 2724)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:32 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2652)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 3122)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:32 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 2725)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:33 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2652)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 3125)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:33 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 13ms (Views: 1.0ms | ActiveRecord: 1.0ms | Allocations: 2716)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:34 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2652)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 3124)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:34 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 1.1ms | Allocations: 2722)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:35 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 2652)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 3124)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:21:35 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 18ms (Views: 1.7ms | ActiveRecord: 2.7ms | Allocations: 2723)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-17 13:21:43 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"dsda", "last_name"=>"sdas", "email"=>"daas@fsdfs.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "daas@fsdfs.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "daas@fsdfs.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "dsda"], ["last_name", "sdas"], ["email", "daas@fsdfs.com"], ["created_at", "2021-11-17 07:51:43.783691"], ["updated_at", "2021-11-17 07:51:43.783691"], ["password_digest", "$2a$12$EktZro3toiTPHk0vALBqbOQjEzf7u8hU9ctWlbpNjMoy7Y4.jL6x6"], ["authentication_token", "hgce7aaRJBcoNWA9M4Adgtk4"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mAttempt Create (0.4ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 55], ["created_at", "2021-11-17 07:51:43.785851"], ["updated_at", "2021-11-17 07:51:43.785851"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 317ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 17166)
+
+
+Started PUT "/attempts/43" for 127.0.0.1 at 2021-11-17 13:21:47 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"submitted"=>true, "attempt_answers_attributes"=>[{"question_id"=>1}, {"question_id"=>2}]}, "id"=>"43"}
+  [1m[36mAttempt Load (0.3ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:5:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+Completed 422 Unprocessable Entity in 29ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 14632)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:33 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 28a0ee6d90660588ff38
+Version: webpack 4.46.0
+Time: 7055ms
+Built at: 17/11/2021 13:23:41
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2909a96e71120300b72a.js   8.43 MiB  application  [emitted] [immutable]  application
+js/application-2909a96e71120300b72a.js.map   9.03 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2909a96e71120300b72a.js js/application-2909a96e71120300b72a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.44 KiB {application} [built]
+[./app/javascript/src/App.jsx] 5.89 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 369 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 445 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8423.4ms | Allocations: 12903)
+Completed 200 OK in 8425ms (Views: 8424.3ms | Allocations: 13714)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:42 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuiz Load (0.6ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 95ms (Views: 0.4ms | ActiveRecord: 2.9ms | Allocations: 18686)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:43 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2717)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 3261)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:44 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 15ms (Views: 1.2ms | ActiveRecord: 1.1ms | Allocations: 2751)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:44 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 2652)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 3112)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:45 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 1.0ms | Allocations: 2716)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:45 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 2652)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:45 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 1.2ms | Allocations: 2730)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:46 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 2652)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 3109)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:46 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 14ms (Views: 1.1ms | ActiveRecord: 1.1ms | Allocations: 2712)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:46 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2652)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:47 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (1.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 15ms (Views: 1.0ms | ActiveRecord: 2.1ms | Allocations: 2737)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:47 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2652)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 3123)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:47 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 1.0ms | Allocations: 2720)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:47 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2652)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3108)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:47 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (1.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.4ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.5ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 2.6ms | Allocations: 2720)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:47 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2652)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 3116)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:48 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 13ms (Views: 1.2ms | ActiveRecord: 1.0ms | Allocations: 2722)
+
+
+Started GET "/public/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:48 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/science-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2652)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 3120)
+
+
+Started GET "/public/quizzes/science-quiz" for 127.0.0.1 at 2021-11-17 13:23:48 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"science-quiz"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "science-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.3ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.9ms | Allocations: 2720)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-17 13:23:59 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"sdas", "last_name"=>"sdas", "email"=>"dads@dsdfs.com", "attempt_attributes"=>{"submitted"=>false, "quiz_id"=>1}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dads@dsdfs.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dads@dsdfs.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "sdas"], ["last_name", "sdas"], ["email", "dads@dsdfs.com"], ["created_at", "2021-11-17 07:54:00.256645"], ["updated_at", "2021-11-17 07:54:00.256645"], ["password_digest", "$2a$12$caILkitxupkE0T6fjElFN.fDQ5Nmo8wCKpyNhZVKpvxiv3k0fHsTq"], ["authentication_token", "aHqxJDT61ASVQgrZTzz2yH1B"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 56], ["created_at", "2021-11-17 07:54:00.257958"], ["updated_at", "2021-11-17 07:54:00.257958"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Completed 200 OK in 311ms (Views: 0.1ms | ActiveRecord: 3.1ms | Allocations: 17163)
+
+
+Started PUT "/attempts/44" for 127.0.0.1 at 2021-11-17 13:24:04 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"submitted"=>true, "attempt_answers_attributes"=>[{"question_id"=>1, "answer"=>"no"}, {"question_id"=>2, "answer"=>"das"}]}, "id"=>"44"}
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:5:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mAttempt Update (0.4ms)[0m  [1m[33mUPDATE "attempts" SET "submitted" = ?, "updated_at" = ? WHERE "attempts"."id" = ?[0m  [["submitted", 1], ["updated_at", "2021-11-17 07:54:04.557847"], ["id", 44]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mAttemptAnswer Create (0.5ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "no"], ["attempt_id", 44], ["question_id", 1], ["created_at", "2021-11-17 07:54:04.560003"], ["updated_at", "2021-11-17 07:54:04.560003"]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "das"], ["attempt_id", 44], ["question_id", 2], ["created_at", "2021-11-17 07:54:04.562140"], ["updated_at", "2021-11-17 07:54:04.562140"]]
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `update'
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 14819)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-17 13:24:04 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1553)
+
+

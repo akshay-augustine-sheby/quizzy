@@ -4,16 +4,20 @@ import { Checkmark } from "@bigbinary/neeto-icons";
 
 import questionsApi from "../../apis/questions";
 import PublicNavBar from "../NavBar/PublicNavBar";
+import PageLoader from "../PageLoader";
 
 const Result = ({ quizName, options, userAnswers, quizId }) => {
   const [questions, setQuestions] = useState([]);
   const [count, setCount] = useState(0);
+  const [loading, setLoading] = useState(true);
   const fetchAnswers = async () => {
     try {
       const response = await questionsApi.show(quizId);
       setQuestions(response.data.questions);
+      setLoading(false);
     } catch (error) {
       logger.error(error);
+      setLoading(false);
     }
   };
 
@@ -31,6 +35,15 @@ const Result = ({ quizName, options, userAnswers, quizId }) => {
   useEffect(() => {
     fetchCorrectCount();
   }, [questions]);
+
+  if (loading) {
+    return (
+      <div className="w-screen h-screen">
+        <PageLoader />
+      </div>
+    );
+  }
+
   return (
     <div>
       <PublicNavBar />

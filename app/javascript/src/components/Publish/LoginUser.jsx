@@ -10,6 +10,7 @@ import ErrorPage from "./ErrorPage";
 
 import publicQuizzesApi from "../../apis/publicQuizzes";
 import usersApi from "../../apis/users";
+import PageLoader from "../PageLoader";
 
 const LoginUser = () => {
   const [firstName, setFirstName] = useState("");
@@ -17,7 +18,7 @@ const LoginUser = () => {
   const [email, setEmail] = useState("");
   const [quizName, setQuizName] = useState("");
   const [quizId, setQuizId] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [attemptId, setAttemptId] = useState("");
   const [questionIds, setQuestionIds] = useState([]);
   const [questions, setQuestions] = useState([]);
@@ -73,7 +74,13 @@ const LoginUser = () => {
       setLoading(false);
     }
   };
-  if (!error) {
+  if (loading) {
+    return (
+      <div className="w-screen h-screen">
+        <PageLoader />
+      </div>
+    );
+  } else if (!error) {
     if (!login) {
       return (
         <div>
