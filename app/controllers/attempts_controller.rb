@@ -19,7 +19,6 @@ class AttemptsController < ApplicationController
 
   def update
     @attempt = Attempt.find_by(id: params[:id])
-    puts "printed: #{attempt_params}"
     if @attempt.update(attempt_params)
       render status: :ok, json: {}
     else
