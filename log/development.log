@@ -52388,3 +52388,659 @@ Processing by AttemptsController#index as JSON
 Completed 200 OK in 44ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 28097)
 
 
+Started GET "/public/solar-system-quiz" for 127.0.0.1 at 2021-11-18 15:22:58 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/solar-system-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 670)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: 6714664c11fe1ca7a839
+Version: webpack 4.46.0
+Time: 7264ms
+Built at: 18/11/2021 15:23:06
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e1dc9ab386c6466b73b5.js   8.45 MiB  application  [emitted] [immutable]  application
+js/application-e1dc9ab386c6466b73b5.js.map   9.04 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e1dc9ab386c6466b73b5.js js/application-e1dc9ab386c6466b73b5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.63 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.16 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 449 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 447 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8583.2ms | Allocations: 5665)
+Completed 200 OK in 8593ms (Views: 8586.9ms | ActiveRecord: 0.0ms | Allocations: 10518)
+
+
+Started GET "/public/quizzes/solar-system-quiz" for 127.0.0.1 at 2021-11-18 15:23:07 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"solar-system-quiz"}
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "solar-system-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 3]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 4]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.0ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 5]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 38ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 23389)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-18 15:23:14 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"ada", "last_name"=>"df", "email"=>"das@dsfs.com", "attempts_attributes"=>[{"submitted"=>false, "quiz_id"=>2}]}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "das@dsfs.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "das@dsfs.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "ada"], ["last_name", "df"], ["email", "das@dsfs.com"], ["created_at", "2021-11-18 09:53:15.302665"], ["updated_at", "2021-11-18 09:53:15.302665"], ["password_digest", "$2a$12$D6TX9JAKO4VMucsNLFqX8eKrmOb.bh2iAowdPpQXYrsu2DeSpAeeS"], ["authentication_token", "ALMRwVQRULq1Kwbp2drjvkoM"]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mAttempt Create (0.9ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 2], ["user_id", 17], ["created_at", "2021-11-18 09:53:15.304448"], ["updated_at", "2021-11-18 09:53:15.304448"]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ?[0m  [["user_id", 17]]
+  ↳ app/controllers/users_controller.rb:29:in `create'
+Completed 200 OK in 298ms (Views: 0.1ms | ActiveRecord: 3.4ms | Allocations: 20194)
+
+
+Started PUT "/attempts/20" for 127.0.0.1 at 2021-11-18 15:23:17 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"submitted"=>true, "attempt_answers_attributes"=>[{"question_id"=>3, "answer"=>"gdfdfgfd"}, {"question_id"=>4}, {"question_id"=>5}]}, "id"=>"20"}
+  [1m[36mAttempt Load (0.5ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 422 Unprocessable Entity in 38ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 16068)
+
+
+Started PUT "/attempts/20" for 127.0.0.1 at 2021-11-18 15:23:30 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"submitted"=>true, "attempt_answers_attributes"=>[{"question_id"=>3, "answer"=>"gdfdfgfd"}, {"question_id"=>4, "answer"=>"gfgg"}, {"question_id"=>5, "answer"=>"bfg"}]}, "id"=>"20"}
+  [1m[36mAttempt Load (0.3ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.5ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttempt Update (0.4ms)[0m  [1m[33mUPDATE "attempts" SET "submitted" = ?, "updated_at" = ? WHERE "attempts"."id" = ?[0m  [["submitted", 1], ["updated_at", "2021-11-18 09:53:30.656566"], ["id", 20]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttemptAnswer Create (0.3ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "gdfdfgfd"], ["attempt_id", 20], ["question_id", 3], ["created_at", "2021-11-18 09:53:30.658614"], ["updated_at", "2021-11-18 09:53:30.658614"]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttemptAnswer Create (0.2ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "gfgg"], ["attempt_id", 20], ["question_id", 4], ["created_at", "2021-11-18 09:53:30.660532"], ["updated_at", "2021-11-18 09:53:30.660532"]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "bfg"], ["attempt_id", 20], ["question_id", 5], ["created_at", "2021-11-18 09:53:30.662155"], ["updated_at", "2021-11-18 09:53:30.662155"]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 3.2ms | Allocations: 10937)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2021-11-18 15:23:30 +0530
+Started PUT "/attempts/20" for 127.0.0.1 at 2021-11-18 15:23:30 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"correct_answers_count"=>0, "incorrect_answers_count"=>0}, "id"=>"20"}
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttempt Update (0.3ms)[0m  [1m[33mUPDATE "attempts" SET "updated_at" = ?, "correct_answers_count" = ?, "incorrect_answers_count" = ? WHERE "attempts"."id" = ?[0m  [["updated_at", "2021-11-18 09:53:30.689259"], ["correct_answers_count", 0], ["incorrect_answers_count", 0], ["id", 20]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 4610)
+
+
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '2')[0m
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1708)
+
+
+Started PUT "/attempts/20" for 127.0.0.1 at 2021-11-18 15:23:30 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"correct_answers_count"=>2, "incorrect_answers_count"=>1}, "id"=>"20"}
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttempt Update (0.3ms)[0m  [1m[33mUPDATE "attempts" SET "updated_at" = ?, "correct_answers_count" = ?, "incorrect_answers_count" = ? WHERE "attempts"."id" = ?[0m  [["updated_at", "2021-11-18 09:53:30.720782"], ["correct_answers_count", 2], ["incorrect_answers_count", 1], ["id", 20]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 4452)
+
+
+Started GET "/quiz/reports" for 127.0.0.1 at 2021-11-18 15:23:40 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/reports"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2737)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 3288)
+
+
+Started GET "/attempts" for 127.0.0.1 at 2021-11-18 15:23:41 +0530
+Processing by AttemptsController#index as JSON
+  [1m[36mAttempt Load (0.6ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" ORDER BY created_at DESC[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `map'
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+Completed 200 OK in 57ms (Views: 0.7ms | ActiveRecord: 4.5ms | Allocations: 29992)
+
+
+Started GET "/quiz/reports" for 127.0.0.1 at 2021-11-18 15:26:16 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"quiz/reports"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 89)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/akshayaugustinesheby/quizzy-by-akshay-augustine-sheby/public/packs
+[Webpacker] warning ../package.json: No license field
+
+[Webpacker] Hash: f1a99085d5c49b3aa030
+Version: webpack 4.46.0
+Time: 7354ms
+Built at: 18/11/2021 15:26:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-aaf3e37b38d4313a877b.js   8.45 MiB  application  [emitted] [immutable]  application
+js/application-aaf3e37b38d4313a877b.js.map   9.04 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-aaf3e37b38d4313a877b.js js/application-aaf3e37b38d4313a877b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 313 bytes {application} [built]
+[./app/javascript/packs/application.js] 398 bytes {application} [built]
+[./app/javascript/src sync recursive ^\.\/.*$] ./app/javascript/src sync ^\.\/.*$ 2.63 KiB {application} [built]
+[./app/javascript/src/App.jsx] 6.16 KiB {application} [optional] [built]
+[./app/javascript/src/Sample.js] 181 bytes {application} [optional] [built]
+[./app/javascript/src/apis/attempts.js] 449 bytes {application} [built]
+[./app/javascript/src/apis/auth.js] 365 bytes {application} [built]
+[./app/javascript/src/apis/axios.js] 2.61 KiB {application} [built]
+[./app/javascript/src/apis/options.js] 399 bytes {application} [built]
+[./app/javascript/src/apis/publicQuizzes.js] 301 bytes {application} [built]
+[./app/javascript/src/apis/questions.js] 826 bytes {application} [built]
+[./app/javascript/src/apis/quizzes.js] 743 bytes {application} [built]
+[./app/javascript/src/apis/users.js] 276 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+    + 447 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 8747.4ms | Allocations: 13452)
+Completed 200 OK in 8749ms (Views: 8748.2ms | Allocations: 14304)
+
+
+Started GET "/attempts" for 127.0.0.1 at 2021-11-18 15:26:26 +0530
+Processing by AttemptsController#index as JSON
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/attempts_controller.rb:5:in `index'
+  [1m[36mAttempt Load (0.7ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" ORDER BY created_at DESC[0m
+  ↳ app/controllers/attempts_controller.rb:6:in `map'
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+  [1m[36mCACHE Quiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:9:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:10:in `block in index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:11:in `block in index'
+Completed 200 OK in 140ms (Views: 0.5ms | ActiveRecord: 5.5ms | Allocations: 47265)
+
+
+Started GET "/public/solar-system-quiz" for 127.0.0.1 at 2021-11-18 15:26:27 +0530
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"public/solar-system-quiz"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 2742)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 3287)
+
+
+Started GET "/public/quizzes/solar-system-quiz" for 127.0.0.1 at 2021-11-18 15:26:28 +0530
+Processing by Public::QuizzesController#show as JSON
+  Parameters: {"slug"=>"solar-system-quiz"}
+  [1m[36mQuiz Load (1.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."slug" = ? LIMIT ?[0m  [["slug", "solar-system-quiz"], ["LIMIT", 1]]
+  ↳ app/controllers/public/quizzes_controller.rb:9:in `show'
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 2]]
+  ↳ app/controllers/public/quizzes_controller.rb:12:in `show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 3]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 4]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+  [1m[36mOption Load (0.2ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 5]]
+  ↳ app/controllers/public/quizzes_controller.rb:18:in `block in show'
+Completed 200 OK in 31ms (Views: 0.5ms | ActiveRecord: 3.0ms | Allocations: 13801)
+
+
+Started POST "/users/" for 127.0.0.1 at 2021-11-18 15:26:34 +0530
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"first_name"=>"sda", "last_name"=>"dsf", "email"=>"da@dsa.com", "attempts_attributes"=>[{"submitted"=>false, "quiz_id"=>2}]}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "da@dsa.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "da@dsa.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "sda"], ["last_name", "dsf"], ["email", "da@dsa.com"], ["created_at", "2021-11-18 09:56:35.224966"], ["updated_at", "2021-11-18 09:56:35.224966"], ["password_digest", "$2a$12$aQ5rQIVYzu3hOzvrde8Jzugvi8NvyaRxfh.1akdgFFH0f63w2f/T6"], ["authentication_token", "JAZB5grUVPZurqQZKmS96eGm"]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mAttempt Create (0.4ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 2], ["user_id", 18], ["created_at", "2021-11-18 09:56:35.227491"], ["updated_at", "2021-11-18 09:56:35.227491"]]
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:28:in `create'
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."user_id" = ?[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:29:in `create'
+Completed 200 OK in 314ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 9722)
+
+
+Started PUT "/attempts/21" for 127.0.0.1 at 2021-11-18 15:26:39 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"submitted"=>true, "attempt_answers_attributes"=>[{"question_id"=>3, "answer"=>"gdfdfgfd"}, {"question_id"=>4, "answer"=>"gfgg"}, {"question_id"=>5, "answer"=>"bfg"}]}, "id"=>"21"}
+  [1m[36mAttempt Load (0.5ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttempt Update (0.4ms)[0m  [1m[33mUPDATE "attempts" SET "submitted" = ?, "updated_at" = ? WHERE "attempts"."id" = ?[0m  [["submitted", 1], ["updated_at", "2021-11-18 09:56:39.248577"], ["id", 21]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttemptAnswer Create (0.2ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "gdfdfgfd"], ["attempt_id", 21], ["question_id", 3], ["created_at", "2021-11-18 09:56:39.250487"], ["updated_at", "2021-11-18 09:56:39.250487"]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "gfgg"], ["attempt_id", 21], ["question_id", 4], ["created_at", "2021-11-18 09:56:39.252441"], ["updated_at", "2021-11-18 09:56:39.252441"]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "bfg"], ["attempt_id", 21], ["question_id", 5], ["created_at", "2021-11-18 09:56:39.253915"], ["updated_at", "2021-11-18 09:56:39.253915"]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 200 OK in 45ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 16732)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2021-11-18 15:26:39 +0530
+Started PUT "/attempts/21" for 127.0.0.1 at 2021-11-18 15:26:39 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"2"}
+Processing by AttemptsController#update as JSON
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '2')[0m
+  Parameters: {"attempt"=>{"correct_answers_count"=>0, "incorrect_answers_count"=>0}, "id"=>"21"}
+  ↳ app/controllers/questions_controller.rb:9:in `show'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms | Allocations: 2151)
+
+
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttempt Update (0.4ms)[0m  [1m[33mUPDATE "attempts" SET "updated_at" = ?, "correct_answers_count" = ?, "incorrect_answers_count" = ? WHERE "attempts"."id" = ?[0m  [["updated_at", "2021-11-18 09:56:39.288672"], ["correct_answers_count", 0], ["incorrect_answers_count", 0], ["id", 21]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 6010)
+
+
+Started PUT "/attempts/21" for 127.0.0.1 at 2021-11-18 15:26:39 +0530
+Processing by AttemptsController#update as JSON
+  Parameters: {"attempt"=>{"correct_answers_count"=>2, "incorrect_answers_count"=>1}, "id"=>"21"}
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:21:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mAttempt Update (0.3ms)[0m  [1m[33mUPDATE "attempts" SET "updated_at" = ?, "correct_answers_count" = ?, "incorrect_answers_count" = ? WHERE "attempts"."id" = ?[0m  [["updated_at", "2021-11-18 09:56:39.306484"], ["correct_answers_count", 2], ["incorrect_answers_count", 1], ["id", 21]]
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/attempts_controller.rb:23:in `update'
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 4314)
+
+

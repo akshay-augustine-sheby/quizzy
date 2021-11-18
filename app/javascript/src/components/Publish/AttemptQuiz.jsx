@@ -7,6 +7,7 @@ import Button from "components/Button";
 import Result from "./Result";
 
 import attemptsApi from "../../apis/attempts";
+import Toastr from "../Common/Toastr";
 import PublicNavBar from "../NavBar/PublicNavBar";
 import PageLoader from "../PageLoader";
 
@@ -30,6 +31,7 @@ const AttemptQuiz = ({
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await attemptsApi.update({
         attempt_id,
         payload: {
@@ -45,6 +47,7 @@ const AttemptQuiz = ({
         },
       });
       setLoading(false);
+      Toastr.success("Quiz submitted successfully");
       setSubmitted(true);
       //history.push("/");
     } catch (error) {
