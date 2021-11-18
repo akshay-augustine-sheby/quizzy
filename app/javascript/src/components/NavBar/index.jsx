@@ -25,6 +25,9 @@ const NavBar = () => {
       logger.error(error);
     }
   };
+  const handleReport = () => {
+    window.location.href = "/quiz/reports";
+  };
 
   return (
     <nav className="bg-white shadow">
@@ -42,7 +45,16 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex items-center justify-end gap-x-4">
-            <Link to="/">Reports</Link>
+            <a
+              onClick={handleReport}
+              className="inline-flex items-center px-1 pt-1 text-sm
+              leading-5 text-bb-gray-600 text-opacity-50
+              transition duration-150 ease-in-out border-b-2
+              border-transparent hover:text-bb-gray-600 focus:outline-none
+              focus:text-bb-gray-700 cursor-pointer"
+            >
+              Reports
+            </a>
             <span
               className="inline-flex items-center px-2 pt-1 text-sm
               font-regular leading-5 text-bb-gray-600 text-opacity-50

@@ -25,7 +25,7 @@ const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
         Header: "",
         accessor: "slug",
         Cell: ({ value }) => (
-          <div className="space-x-1 px-1 py-2">
+          <div className="flex flex-row align-middle justify-around px-1 py-2">
             <Button
               onClick={() => editQuiz(value)}
               style="secondary"

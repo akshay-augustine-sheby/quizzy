@@ -59,10 +59,12 @@ const LoginUser = () => {
           first_name: firstName,
           last_name: lastName,
           email,
-          attempt_attributes: {
-            submitted: false,
-            quiz_id: quizId,
-          },
+          attempts_attributes: [
+            {
+              submitted: false,
+              quiz_id: quizId,
+            },
+          ],
         },
       });
       //console.log(response)
