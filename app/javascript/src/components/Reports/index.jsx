@@ -37,7 +37,7 @@ const Reports = () => {
 
   return (
     <Container>
-      <div className="flex-col space-y-5 mt-10">
+      <div className="flex-col space-y-5 mt-10 mb-12">
         <div className="flex justify-between">
           <div className="text-3xl font-bold ">Reports</div>
           <Button

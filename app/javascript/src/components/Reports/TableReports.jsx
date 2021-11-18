@@ -50,7 +50,7 @@ const TableReports = ({ reportData }) => {
                 <th
                   key={column.id}
                   {...column.getHeaderProps()}
-                  className="border bg-gray-400 border-gray-400"
+                  className="border bg-gray-400 border-gray-400 p-2"
                 >
                   {column.render("Header")}
                 </th>
@@ -72,7 +72,7 @@ const TableReports = ({ reportData }) => {
                     <td
                       key={cell.id}
                       {...cell.getCellProps()}
-                      className="border px-3 border-gray-400 font-medium cursor-pointer"
+                      className="border px-3 border-gray-400 font-medium p-3"
                     >
                       {cell.render("Cell")}
                     </td>
