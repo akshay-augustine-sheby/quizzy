@@ -47,7 +47,7 @@ const AttemptQuiz = ({
         },
       });
       setLoading(false);
-      Toastr.success("Quiz submitted successfully");
+      Toastr.success("Quiz submitted successfully ");
       setSubmitted(true);
       //history.push("/");
     } catch (error) {
