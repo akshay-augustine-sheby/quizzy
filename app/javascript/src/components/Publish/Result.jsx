@@ -24,15 +24,18 @@ const Result = ({ quizName, options, userAnswers, quizId, attempt_id }) => {
   };
 
   const fetchCount = () => {
-    let flag = 0;
+    let flagA = 0;
+    let count = 0;
     questions.map(question => {
       if (userAnswers[question.id] === question.answer) {
-        flag = 1;
-        setCorrect(correct => correct + 1);
+        flagA = 1;
+        count = count + 1;
       }
     });
-    if (flag === 0) {
+    if (flagA === 0) {
       setIncorrect(questions.length);
+    } else {
+      setCorrect(count);
     }
   };
 
@@ -43,7 +46,7 @@ const Result = ({ quizName, options, userAnswers, quizId, attempt_id }) => {
         payload: {
           attempt: {
             correct_answers_count: correct,
-            incorrect_answers_count: incorrect,
+            incorrect_answers_count: questions.length - correct,
           },
         },
       });
@@ -60,12 +63,8 @@ const Result = ({ quizName, options, userAnswers, quizId, attempt_id }) => {
   }, [questions]);
 
   useEffect(() => {
-    setIncorrect(questions.length - correct);
-  }, [correct]);
-
-  useEffect(() => {
     updateAnswers();
-  }, [incorrect]);
+  }, [correct, incorrect]);
 
   if (loading) {
     return (
@@ -87,8 +86,8 @@ const Result = ({ quizName, options, userAnswers, quizId, attempt_id }) => {
             Thank you for taking the quiz, here are your results.
           </div>
           <div className="text-xl text-center">
-            You have submitted {correct} correct and {incorrect} incorrect
-            answers.
+            You have submitted {correct} correct and{" "}
+            {questions.length - correct} incorrect answers.
           </div>
         </div>
         <div className="flex-row space-y-12">
