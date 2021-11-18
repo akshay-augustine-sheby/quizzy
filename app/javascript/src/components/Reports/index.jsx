@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Download } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
+import { isNil, isEmpty, either } from "ramda";
 
 import TableReports from "./TableReports";
 
@@ -32,6 +33,14 @@ const Reports = () => {
       <div className="w-screen h-screen">
         <PageLoader />
       </div>
+    );
+  } else if (either(isNil, isEmpty)(reportData)) {
+    return (
+      <Container>
+        <div className="text-xl text-center align-text-middle mt-40">
+          <div>No quiz reports are available now.</div>
+        </div>
+      </Container>
     );
   }
 
