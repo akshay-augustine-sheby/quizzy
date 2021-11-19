@@ -17,6 +17,7 @@ const Quizzes = ({ history }) => {
 
   const fetchQuizzes = async () => {
     try {
+      setLoading(true);
       const response = await quizzesApi.list();
       setQuizzes(response.data.quizzes);
     } catch (error) {
@@ -34,7 +35,6 @@ const Quizzes = ({ history }) => {
     try {
       await quizzesApi.destroy(slug);
       await fetchQuizzes();
-      window.location.href = "/";
     } catch (error) {
       logger.error(error);
     }
