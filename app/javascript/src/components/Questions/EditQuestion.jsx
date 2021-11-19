@@ -47,6 +47,7 @@ const EditQuestion = ({ history }) => {
 
   const fetchOptions = async question_id => {
     try {
+      setLoading(true);
       const response = await optionsApi.show(question_id);
       //console.log(response)
       setOptionsId(response.data.optionsId);

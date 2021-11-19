@@ -16,6 +16,7 @@ const EditQuiz = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await quizzesApi.update({
         slug,
         payload: { quiz: { name: quiz } },
