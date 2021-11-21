@@ -22,7 +22,7 @@ class QuizzesController < ApplicationController
 
   def update
     if @quiz.update(quiz_params)
-      render status: :ok, json: { notice: "Quiz is successfully updated" }
+      render status: :ok, json: {}
     else
       render status: :unprocessable_entity,
         json: { error: @quiz.errors.full_messages.to_sentence }

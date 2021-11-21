@@ -107,7 +107,7 @@ const ShowQuiz = ({ history }) => {
 
   return (
     <Container>
-      <div className="flex-col space-y-20 mt-10">
+      <div className="flex-col space-y-10 mt-10 mb-10">
         <div className="flex justify-between">
           <div className="text-3xl font-bold">{quiz.name}</div>
           <div className="flex space-x-2">
