@@ -18,8 +18,7 @@ class ReportsController < ApplicationController
         job_id = params[:job_id]
         job_status = Sidekiq::Status.get_all(job_id).symbolize_keys
         render status: :ok, json: {
-          status: job_status[:status],
-          percentage: job_status[:pct_complete]
+          status: job_status[:status]
         }
       end
     end
@@ -28,7 +27,7 @@ class ReportsController < ApplicationController
   def export_download
     job_id = params[:id]
     exported_file_name = "reports_export_#{job_id}.xlsx"
-    filename = "ReportData_#{DateTime.now.strftime("%Y%m%d_%H%M%S")}"
+    filename = "ReportData_#{DateTime.now.strftime("%Y%m%d_%H%M%S")}.xlsx"
     respond_to do |format|
       format.xlsx do
         send_file Rails.root.join("tmp", exported_file_name), type: :xlsx, filename: filename
