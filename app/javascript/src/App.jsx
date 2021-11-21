@@ -9,6 +9,7 @@ import { initializeLogger } from "common/logger";
 import Login from "components/Authentication/Login";
 import PrivateRoute from "components/Common/PrivateRoute";
 
+import ErrorBoundary from "./components/ErrorBoundary";
 import PageLoader from "./components/PageLoader";
 import LoginUser from "./components/Publish/LoginUser";
 import QuestionCreate from "./components/Questions/CreateQuestion";
@@ -60,6 +61,7 @@ const App = () => {
           path="/quiz/:slug/question/create"
           component={QuestionCreate}
         />
+        <Route exact component={ErrorBoundary} />
         <PrivateRoute
           path="/"
           redirectRoute="/login"
