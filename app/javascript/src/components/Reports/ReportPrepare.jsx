@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Download } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
-import HashLoader from "react-spinners/HashLoader";
+import { PageLoader } from "@bigbinary/neetoui/v2";
 
 import reportsApi from "../../apis/reports";
 
@@ -49,13 +49,9 @@ const ReportPrepare = ({ jobId }) => {
   }
 
   return (
-    <div className="flex flex-col space-y-4 text-xl text-center align-text-middle align-middle justify-between mt-40">
+    <div className="flex flex-col space-y-5 text-xl text-center align-text-middle align-middle justify-between mt-40">
       <div>
-        <HashLoader
-          color={"#9041c7"}
-          loading={status !== "complete"}
-          size={40}
-        />
+        <PageLoader color="#9041c7" />
       </div>
       <div>Your report is being prepared for downloading</div>
     </div>

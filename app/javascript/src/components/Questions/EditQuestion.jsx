@@ -15,6 +15,7 @@ const EditQuestion = ({ history }) => {
   const [optionsId, setOptionsId] = useState([]);
   const { question_id } = useParams();
   const [loading, setLoading] = useState(false);
+  //const [deleteIds, setDeleteIds] = useState([])
 
   const handleChange = (id, e) => {
     const values = [...options];
@@ -32,6 +33,7 @@ const EditQuestion = ({ history }) => {
     try {
       if (optionsId[id]) {
         await optionsApi.destroy(optionsId[id]);
+        setAnswer("");
         const values = [...options];
         values.splice(id, 1);
         setOptions(values);
