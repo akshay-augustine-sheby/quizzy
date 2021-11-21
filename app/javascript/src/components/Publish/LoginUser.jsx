@@ -34,14 +34,19 @@ const LoginUser = () => {
   const fetchQuiz = async slug => {
     try {
       const response = await publicQuizzesApi.show(slug);
-      setQuizName(response.data.quiz.name);
-      //console.log(response.data.quiz.id)
-      setQuizId(response.data.quiz.id);
-      setQuestionIds(response.data.id);
-      setQuestions(response.data.name);
-      setOptions(response.data.options);
-      //setOptionsId(response.data.optionsId);
-      setLoading(false);
+      if (response.data.quiz.published === false) {
+        setError(true);
+        setLoading(false);
+      } else {
+        setQuizName(response.data.quiz.name);
+        //console.log(response.data.quiz.id)
+        setQuizId(response.data.quiz.id);
+        setQuestionIds(response.data.id);
+        setQuestions(response.data.name);
+        setOptions(response.data.options);
+        //setOptionsId(response.data.optionsId);
+        setLoading(false);
+      }
     } catch (error) {
       setError(true);
       logger.error(error);

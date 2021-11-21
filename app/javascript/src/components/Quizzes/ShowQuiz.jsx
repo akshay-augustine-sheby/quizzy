@@ -23,6 +23,7 @@ const ShowQuiz = ({ history }) => {
   const [questions, setQuestions] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
   const [quizId, setQuizId] = useState("");
+  const [published, setPublished] = useState(false);
   const [options, setOptions] = useState({});
   const [url, setUrl] = useState("");
   const [copied, setCopied] = useState(false);
@@ -36,6 +37,7 @@ const ShowQuiz = ({ history }) => {
       const response = await quizzesApi.show(slug);
       setQuiz(response.data.quiz);
       setQuizId(response.data.quiz.id);
+      setPublished(response.data.quiz.published);
       setQuestions(response.data.questions);
       setOptions(response.data.options);
     } catch (error) {
@@ -45,11 +47,18 @@ const ShowQuiz = ({ history }) => {
     }
   };
 
-  const handlePublish = () => {
-    //console.log(window.location.origin)
-    const path = `${window.location.origin}/public/${slug}`;
-    setUrl(path);
-    //console.log(url)
+  const handlePublish = async event => {
+    event.preventDefault();
+    try {
+      await quizzesApi.update({
+        slug,
+        payload: { quiz: { published: true } },
+      });
+      const path = `${window.location.origin}/public/${slug}`;
+      setUrl(path);
+    } catch (error) {
+      logger.error(error);
+    }
   };
 
   const editQuestion = question_id => {
@@ -60,6 +69,12 @@ const ShowQuiz = ({ history }) => {
   useEffect(() => {
     fetchQuizDetails();
   }, []);
+  useEffect(() => {
+    if (published === true) {
+      const path = `${window.location.origin}/public/${slug}`;
+      setUrl(path);
+    }
+  }, [published]);
 
   if (pageLoading) {
     return (
