@@ -40,7 +40,6 @@ const Login = () => {
         setEmail={setEmail}
         setPassword={setPassword}
         loading={loading}
-        disabled={loading}
         handleSubmit={handleSubmit}
       />
     </div>

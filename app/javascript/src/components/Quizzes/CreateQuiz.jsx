@@ -14,6 +14,7 @@ const CreateQuiz = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await quizzesApi.create({ quiz: { name: quiz } });
       setLoading(false);
       history.push("/");

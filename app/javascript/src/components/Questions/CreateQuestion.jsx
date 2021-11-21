@@ -41,6 +41,7 @@ const QuestionCreate = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await questionsApi.create({
         question: {
           name: question,

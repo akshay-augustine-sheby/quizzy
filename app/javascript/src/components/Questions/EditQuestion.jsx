@@ -72,6 +72,7 @@ const EditQuestion = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await questionsApi.update({
         question_id,
         payload: {

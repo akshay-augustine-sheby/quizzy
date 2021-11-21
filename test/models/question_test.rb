@@ -31,7 +31,7 @@ class QuestionTest < ActiveSupport::TestCase
 
   def test_atleast_2_options_should_be_present
     @question = Question.new(
-      name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
+      name: "Sample Question", answer: "optionA", quiz_id: @quiz.id,
       options_attributes: [{ name: "optionA" }, { name: "optionB" }])
     assert @question.valid?
   end
