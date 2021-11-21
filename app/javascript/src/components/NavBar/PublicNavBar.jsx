@@ -10,7 +10,7 @@ const publicNavBar = () => {
           <div className="flex px-2 lg:px-0">
             <div className="hidden lg:flex">
               <Link
-                to="/"
+                to=""
                 className="inline-flex items-center px-1 pt-1 mr-3
                           font-bold text-4xl leading-5"
               >

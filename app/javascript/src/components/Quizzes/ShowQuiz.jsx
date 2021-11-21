@@ -28,7 +28,7 @@ const ShowQuiz = ({ history }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCreateQuestion = () => {
-    history.push(`/quiz/${slug}/question/create`);
+    history.push(`/quizzes/${slug}/question/create`);
   };
 
   const fetchQuizDetails = async () => {
@@ -54,7 +54,7 @@ const ShowQuiz = ({ history }) => {
 
   const editQuestion = question_id => {
     localStorage.setItem("slug", slug);
-    history.push(`/question/${question_id}/edit`);
+    history.push(`/questions/${question_id}/edit`);
   };
 
   useEffect(() => {

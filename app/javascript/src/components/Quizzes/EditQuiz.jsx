@@ -22,7 +22,7 @@ const EditQuiz = ({ history }) => {
         payload: { quiz: { name: quiz } },
       });
       setLoading(false);
-      history.push("/");
+      history.push("/quizzes");
     } catch (error) {
       logger.error(error);
       setLoading(false);

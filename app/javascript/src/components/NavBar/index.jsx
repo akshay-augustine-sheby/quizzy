@@ -26,7 +26,7 @@ const NavBar = () => {
     }
   };
   const handleReport = () => {
-    window.location.href = "/quiz/reports";
+    window.location.href = "/reports";
   };
 
   return (

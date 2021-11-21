@@ -28,7 +28,7 @@ const Quizzes = ({ history }) => {
   };
 
   const handleCreateQuiz = () => {
-    window.location.href = "/quiz/create";
+    history.push("/quizzes/create");
   };
 
   const deleteQuiz = async slug => {
@@ -41,11 +41,11 @@ const Quizzes = ({ history }) => {
   };
 
   const editQuiz = slug => {
-    history.push(`/quiz/${slug}/edit`);
+    history.push(`/quizzes/${slug}/edit`);
   };
 
   const showQuiz = slug => {
-    history.push(`/quiz/${slug}/show`);
+    history.push(`/quizzes/${slug}/show`);
     logger.log(slug);
   };
 

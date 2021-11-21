@@ -2,11 +2,12 @@ import React from "react";
 
 import { Warning } from "@bigbinary/neeto-icons";
 
-import Container from "./Container";
+import PublicNavBar from "./NavBar/PublicNavBar";
 
 const ErrorBoundary = () => {
   return (
-    <Container>
+    <div>
+      <PublicNavBar />
       <div className="flex flex-col justify-center items-center place-items-center align-middle space-y-10 mt-10">
         <div className="text-red-500">
           <Warning size={96} />
@@ -15,7 +16,7 @@ const ErrorBoundary = () => {
           Something went wrong
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 export default ErrorBoundary;

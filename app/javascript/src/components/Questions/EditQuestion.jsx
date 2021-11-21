@@ -98,7 +98,7 @@ const EditQuestion = ({ history }) => {
       });
       setLoading(false);
       const slug = localStorage.getItem("slug");
-      history.push(`/quiz/${slug}/show`);
+      history.push(`/quizzes/${slug}/show`);
     } catch (error) {
       logger.error(error);
       setLoading(false);
