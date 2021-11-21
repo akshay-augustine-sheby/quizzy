@@ -9,7 +9,6 @@ Rails.application.routes.draw do
     resources :users, only: %i[create]
     resource :sessions, only: %i[create destroy]
     resources :attempts, only: %i[index update]
-    resources :reports, only: %i[export export_status export_download]
   end
 
   namespace :public do
@@ -17,5 +16,8 @@ Rails.application.routes.draw do
   end
 
   root to: "home#index"
+  get "/export" => "reports#export"
+  get "/export_status" => "reports#export_status"
+  get "/export_download" => "reports#export_download"
   get "*path", to: "home#index", via: :all
 end
