@@ -4,15 +4,18 @@ import { Download } from "@bigbinary/neeto-icons";
 import { Button } from "@bigbinary/neetoui/v2";
 import { isNil, isEmpty, either } from "ramda";
 
+import ReportPrepare from "./ReportPrepare";
 import TableReports from "./TableReports";
 
 import attemptsApi from "../../apis/attempts";
+import reportsApi from "../../apis/reports";
 import Container from "../Container";
 import PageLoader from "../PageLoader";
 
 const Reports = () => {
   const [loading, setLoading] = useState(true);
   const [reportData, setReportData] = useState([]);
+  const [jobId, setJobId] = useState("");
   const fetchReports = async () => {
     try {
       const response = await attemptsApi.list();
@@ -24,9 +27,21 @@ const Reports = () => {
       setLoading(false);
     }
   };
+  const handleExport = async () => {
+    try {
+      setLoading(true);
+      const response = await reportsApi.exportReport();
+      //console.log(response)
+      setJobId(response.data.jid);
+    } catch (error) {
+      logger.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     fetchReports();
-    //dsa
   }, []);
 
   if (loading) {
@@ -43,6 +58,12 @@ const Reports = () => {
         </div>
       </Container>
     );
+  } else if (jobId !== "") {
+    return (
+      <Container>
+        <ReportPrepare jobId={jobId} />
+      </Container>
+    );
   }
 
   return (
@@ -55,7 +76,7 @@ const Reports = () => {
             label="Download"
             size="default"
             style="primary"
-            onClick={() => {}}
+            onClick={handleExport}
             icon={Download}
           />
         </div>
