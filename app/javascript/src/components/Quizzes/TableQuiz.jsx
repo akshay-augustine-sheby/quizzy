@@ -61,7 +61,7 @@ const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
     <div className="">
       <table
         {...getTableProps()}
-        className="border border-collapse w-full border-black shadow-lg"
+        className="border border-collapse w-full border-black shadow-lg mb-10"
       >
         <thead>
           {headerGroups.map(headerGroup => (
