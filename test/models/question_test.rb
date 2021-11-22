@@ -3,9 +3,6 @@
 require "test_helper"
 
 class QuestionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
   def setup
     @user = User.create!(
       first_name: "Sam", last_name: "Smith", email: "sam@example.com", password: "welcome",
@@ -56,15 +53,5 @@ class QuestionTest < ActiveSupport::TestCase
                             { name: "optionE" }])
     assert_not @question.valid?
     assert_includes @question.errors.full_messages, "Too many options, maximum only 4 options allowed"
-  end
-
-  def test_options_should_be_unique
-    @question = Question.new(
-      name: "Sample Question", answer: "optionA", quiz_id: @quiz.id,
-      options_attributes: [{ name: "optionA" },
-                            { name: "optionA" },
-                            { name: "optionB" }])
-    assert_not @question.valid?
-    assert_includes @question.errors.full_messages, "Options must be unique"
   end
 end

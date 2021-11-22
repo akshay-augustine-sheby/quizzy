@@ -37,7 +37,7 @@ const TableReports = ({ reportData }) => {
     <div>
       <table
         {...getTableProps()}
-        className="border border-collapse w-full border-black"
+        className="border border-collapse w-full border-black shadow-lg mb-10"
       >
         <thead>
           {headerGroups.map(headerGroup => (
