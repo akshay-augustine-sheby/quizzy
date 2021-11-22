@@ -16737,3 +16737,1797 @@ Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 4831
 Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 9426)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (5.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (6.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (5.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (6.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (6.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (7.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (5.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (5.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (2.8ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------
+AttemptAnswerTest: test_all_answers_are_correct
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:41:30.242560"], ["updated_at", "2021-11-22 10:41:30.242560"], ["password_digest", "$2a$04$O2louvaxDJYoTybAwfOlwO9P7i/xbWabmyZNyBYQ3BhIiYzm/n2qW"], ["authentication_token", "fU9i2C5LeNUxDWf6MwGDTA3w"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:41:30.255434"], ["updated_at", "2021-11-22 10:41:30.255434"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:41:30.364725"], ["updated_at", "2021-11-22 10:41:30.364725"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:41:30.365308"], ["updated_at", "2021-11-22 10:41:30.365308"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:41:30.365664"], ["updated_at", "2021-11-22 10:41:30.365664"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:41:30.365952"], ["updated_at", "2021-11-22 10:41:30.365952"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:41:30.366235"], ["updated_at", "2021-11-22 10:41:30.366235"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:41:30.367822"], ["updated_at", "2021-11-22 10:41:30.367822"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:41:30.368155"], ["updated_at", "2021-11-22 10:41:30.368155"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:41:30.368441"], ["updated_at", "2021-11-22 10:41:30.368441"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:41:30.380749"], ["updated_at", "2021-11-22 10:41:30.380749"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:41:30.381308"], ["updated_at", "2021-11-22 10:41:30.381308"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:41:30.381792"], ["updated_at", "2021-11-22 10:41:30.381792"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (3.7ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (4.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (4.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (1.3ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (2.3ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (2.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+AttemptAnswerTest: test_attempt_is_invalid
+------------------------------------------
+----------------------------------------
+  [1m[36mTruncate Tables (2.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (3.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:16.476666"], ["updated_at", "2021-11-22 10:43:16.476666"], ["password_digest", "$2a$04$iXxNLOnD/1had6P62I0eiepXO7l7jauyYpqKdvEWY/Dt2j83hgaFq"], ["authentication_token", "LwDfKLjKvy5rW7BCazPzHv6v"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:16.476666"], ["updated_at", "2021-11-22 10:43:16.476666"], ["password_digest", "$2a$04$tJKRRGlWQY26/3HJrNmqyujk..iSvMRBGP.BZLZVI0Bojehv.Hu5q"], ["authentication_token", "nMJmDqvhr8PmHM6krcjD1Uag"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:16.489473"], ["updated_at", "2021-11-22 10:43:16.489473"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:16.489480"], ["updated_at", "2021-11-22 10:43:16.489480"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:16.599716"], ["updated_at", "2021-11-22 10:43:16.599716"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.600431"], ["updated_at", "2021-11-22 10:43:16.600431"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.600785"], ["updated_at", "2021-11-22 10:43:16.600785"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.601089"], ["updated_at", "2021-11-22 10:43:16.601089"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.601375"], ["updated_at", "2021-11-22 10:43:16.601375"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:16.602863"], ["updated_at", "2021-11-22 10:43:16.602863"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:16.602858"], ["updated_at", "2021-11-22 10:43:16.602858"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:43:16.603445"], ["updated_at", "2021-11-22 10:43:16.603445"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.603584"], ["updated_at", "2021-11-22 10:43:16.603584"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:43:16.603749"], ["updated_at", "2021-11-22 10:43:16.603749"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.603955"], ["updated_at", "2021-11-22 10:43:16.603955"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.604256"], ["updated_at", "2021-11-22 10:43:16.604256"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.604552"], ["updated_at", "2021-11-22 10:43:16.604552"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:16.606223"], ["updated_at", "2021-11-22 10:43:16.606223"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:43:16.606767"], ["updated_at", "2021-11-22 10:43:16.606767"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:43:16.607054"], ["updated_at", "2021-11-22 10:43:16.607054"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:43:16.616239"], ["updated_at", "2021-11-22 10:43:16.616239"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:43:16.616825"], ["updated_at", "2021-11-22 10:43:16.616825"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:43:16.617215"], ["updated_at", "2021-11-22 10:43:16.617215"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (3.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (4.4ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[36mTruncate Tables (3.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+AttemptAnswerTest: test_attempt_is_valid
+------------------------------------------
+----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:24.211895"], ["updated_at", "2021-11-22 10:43:24.211895"], ["password_digest", "$2a$04$GefH5XWmdvVjjhhuMQW1IurLqNrthS6LLRBVRDi5iOdwu2WpL9oQS"], ["authentication_token", "obM5AUUuxczCuxVcUvDL5fMs"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:24.211883"], ["updated_at", "2021-11-22 10:43:24.211883"], ["password_digest", "$2a$04$F6hJDL9o8QdwEbmDtH4ZkeqRLbn1j7y1qWjb1k3C5c0OWbc1hSnDO"], ["authentication_token", "yq4JNQTUQQFoEdaz6p8SzuJw"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:24.225241"], ["updated_at", "2021-11-22 10:43:24.225241"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:24.225251"], ["updated_at", "2021-11-22 10:43:24.225251"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:24.252596"], ["updated_at", "2021-11-22 10:43:24.252596"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:24.252946"], ["updated_at", "2021-11-22 10:43:24.252946"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.253213"], ["updated_at", "2021-11-22 10:43:24.253213"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.253542"], ["updated_at", "2021-11-22 10:43:24.253542"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.253921"], ["updated_at", "2021-11-22 10:43:24.253921"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.253903"], ["updated_at", "2021-11-22 10:43:24.253903"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.254325"], ["updated_at", "2021-11-22 10:43:24.254325"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.254220"], ["updated_at", "2021-11-22 10:43:24.254220"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.254706"], ["updated_at", "2021-11-22 10:43:24.254706"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.254642"], ["updated_at", "2021-11-22 10:43:24.254642"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:24.256346"], ["updated_at", "2021-11-22 10:43:24.256346"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:24.256397"], ["updated_at", "2021-11-22 10:43:24.256397"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:43:24.256797"], ["updated_at", "2021-11-22 10:43:24.256797"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:43:24.257119"], ["updated_at", "2021-11-22 10:43:24.257119"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.3ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:43:24.257728"], ["updated_at", "2021-11-22 10:43:24.257728"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:43:24.259521"], ["updated_at", "2021-11-22 10:43:24.259521"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:43:24.355231"], ["updated_at", "2021-11-22 10:43:24.355231"]]
+  [1m[36mAttemptAnswer Create (0.2ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:43:24.356019"], ["updated_at", "2021-11-22 10:43:24.356019"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:43:24.356614"], ["updated_at", "2021-11-22 10:43:24.356614"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[36mTruncate Tables (2.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (4.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (3.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.4ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+AttemptAnswerTest: test_attempt_is_invalid
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:46.588129"], ["updated_at", "2021-11-22 10:43:46.588129"], ["password_digest", "$2a$04$vQHqfAbIpUPuCxZpcp0dGewvx9UA3JIvL/XEdW/Ru1LJm.tb0aJ66"], ["authentication_token", "RN7ByLXtT4nWfqnEuD6cixxU"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:46.588142"], ["updated_at", "2021-11-22 10:43:46.588142"], ["password_digest", "$2a$04$Q3v/FSqL/h514nRYzluIfOuUm6Rl2xSkKHO7cmIYSC/z4sLeujZYS"], ["authentication_token", "gwqQxVLntXWwyJBvV2eneDSM"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:46.600796"], ["updated_at", "2021-11-22 10:43:46.600796"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.4ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:46.600798"], ["updated_at", "2021-11-22 10:43:46.600798"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:46.718697"], ["updated_at", "2021-11-22 10:43:46.718697"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:46.719122"], ["updated_at", "2021-11-22 10:43:46.719122"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.719303"], ["updated_at", "2021-11-22 10:43:46.719303"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.719661"], ["updated_at", "2021-11-22 10:43:46.719661"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.719687"], ["updated_at", "2021-11-22 10:43:46.719687"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.719965"], ["updated_at", "2021-11-22 10:43:46.719965"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.720049"], ["updated_at", "2021-11-22 10:43:46.720049"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.720258"], ["updated_at", "2021-11-22 10:43:46.720258"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.720347"], ["updated_at", "2021-11-22 10:43:46.720347"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.720628"], ["updated_at", "2021-11-22 10:43:46.720628"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:46.722187"], ["updated_at", "2021-11-22 10:43:46.722187"]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:43:46.722464"], ["updated_at", "2021-11-22 10:43:46.722464"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:43:46.722565"], ["updated_at", "2021-11-22 10:43:46.722565"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:43:46.722830"], ["updated_at", "2021-11-22 10:43:46.722830"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:43:46.722856"], ["updated_at", "2021-11-22 10:43:46.722856"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:43:46.723121"], ["updated_at", "2021-11-22 10:43:46.723121"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:43:46.736908"], ["updated_at", "2021-11-22 10:43:46.736908"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:43:46.737702"], ["updated_at", "2021-11-22 10:43:46.737702"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:43:46.738187"], ["updated_at", "2021-11-22 10:43:46.738187"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (4.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.7ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (4.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+------------------------------------------
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+  [1m[36mTruncate Tables (2.4ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:59.936604"], ["updated_at", "2021-11-22 10:43:59.936604"], ["password_digest", "$2a$04$3ljd5tiGC3M5H1uVw00DO.h/LDC6vKOhqL6aIh/iWyTvNkizh8APK"], ["authentication_token", "DDtPiWwoaBQH2Y3kj8pUiEeh"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:43:59.936669"], ["updated_at", "2021-11-22 10:43:59.936669"], ["password_digest", "$2a$04$8/zl4w5DzEYa30IR0FO.GuMDfFln63b2Op4CR7VAI.oek2wdr.xWi"], ["authentication_token", "Vk5TKrQ9UQbouaSWFzqE3NLK"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:59.965782"], ["updated_at", "2021-11-22 10:43:59.965782"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.4ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:43:59.965766"], ["updated_at", "2021-11-22 10:43:59.965766"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:00.021479"], ["updated_at", "2021-11-22 10:44:00.021479"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.022255"], ["updated_at", "2021-11-22 10:44:00.022255"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.022641"], ["updated_at", "2021-11-22 10:44:00.022641"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.023128"], ["updated_at", "2021-11-22 10:44:00.023128"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.023439"], ["updated_at", "2021-11-22 10:44:00.023439"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:00.025318"], ["updated_at", "2021-11-22 10:44:00.025318"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:44:00.025788"], ["updated_at", "2021-11-22 10:44:00.025788"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:44:00.026114"], ["updated_at", "2021-11-22 10:44:00.026114"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:00.029939"], ["updated_at", "2021-11-22 10:44:00.029939"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.030719"], ["updated_at", "2021-11-22 10:44:00.030719"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.031096"], ["updated_at", "2021-11-22 10:44:00.031096"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.031630"], ["updated_at", "2021-11-22 10:44:00.031630"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.031926"], ["updated_at", "2021-11-22 10:44:00.031926"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:00.035764"], ["updated_at", "2021-11-22 10:44:00.035764"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:44:00.036326"], ["updated_at", "2021-11-22 10:44:00.036326"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:44:00.036670"], ["updated_at", "2021-11-22 10:44:00.036670"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:44:00.054483"], ["updated_at", "2021-11-22 10:44:00.054483"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:44:00.055247"], ["updated_at", "2021-11-22 10:44:00.055247"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:44:00.055772"], ["updated_at", "2021-11-22 10:44:00.055772"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (4.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (4.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (4.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (2.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.3ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (2.7ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+  [1m[36mTruncate Tables (1.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:44:12.981646"], ["updated_at", "2021-11-22 10:44:12.981646"], ["password_digest", "$2a$04$4iimKrqco7AEUlqvM4FBheVlV8zcYCdR/aLHHORKrQoe1NzwF3AaW"], ["authentication_token", "joH7xvhCWsgzvghm5tThxzGQ"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:44:12.981665"], ["updated_at", "2021-11-22 10:44:12.981665"], ["password_digest", "$2a$04$uumumXR7ecSWMX4c1QtGM.oJA1wTFVIoW0KDMq97MBnrPHD13AkqK"], ["authentication_token", "5JbsdTVJniFmzoyBYw8QSsSv"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:44:12.993446"], ["updated_at", "2021-11-22 10:44:12.993446"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:44:12.993426"], ["updated_at", "2021-11-22 10:44:12.993426"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:13.051596"], ["updated_at", "2021-11-22 10:44:13.051596"]]
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.067218"], ["updated_at", "2021-11-22 10:44:13.067218"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.068494"], ["updated_at", "2021-11-22 10:44:13.068494"]]
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:13.049180"], ["updated_at", "2021-11-22 10:44:13.049180"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.075985"], ["updated_at", "2021-11-22 10:44:13.075985"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.076674"], ["updated_at", "2021-11-22 10:44:13.076674"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.070062"], ["updated_at", "2021-11-22 10:44:13.070062"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.077518"], ["updated_at", "2021-11-22 10:44:13.077518"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.077932"], ["updated_at", "2021-11-22 10:44:13.077932"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.084402"], ["updated_at", "2021-11-22 10:44:13.084402"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (5.9ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:13.094569"], ["updated_at", "2021-11-22 10:44:13.094569"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:44:13.109518"], ["updated_at", "2021-11-22 10:44:13.109518"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:13.101441"], ["updated_at", "2021-11-22 10:44:13.101441"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:44:13.109918"], ["updated_at", "2021-11-22 10:44:13.109918"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:44:13.110044"], ["updated_at", "2021-11-22 10:44:13.110044"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:44:13.110378"], ["updated_at", "2021-11-22 10:44:13.110378"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:44:13.123620"], ["updated_at", "2021-11-22 10:44:13.123620"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:44:13.124242"], ["updated_at", "2021-11-22 10:44:13.124242"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:44:13.124633"], ["updated_at", "2021-11-22 10:44:13.124633"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[36mTruncate Tables (3.4ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.7ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (3.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (4.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (4.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[36mTruncate Tables (3.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (2.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+AttemptAnswerTest: test_attempt_is_invalid
+----------------------------------------
+------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:44:27.405449"], ["updated_at", "2021-11-22 10:44:27.405449"], ["password_digest", "$2a$04$SIuBvDAN/4QK0.rv0hag/ePpuOFB3ihQvyu19HtvPziHJMlvaT4fG"], ["authentication_token", "g7P1vYcBgd21kcovSCSyxges"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:44:27.405448"], ["updated_at", "2021-11-22 10:44:27.405448"], ["password_digest", "$2a$04$sfnu/UdXE.bOx/xHEBLKqebK56UMVcRzKk9FmSGFYj3AvCdMvsemG"], ["authentication_token", "XPRvZNR5w989u2xBWB6dgZHS"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:44:27.418417"], ["updated_at", "2021-11-22 10:44:27.418417"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:44:27.418416"], ["updated_at", "2021-11-22 10:44:27.418416"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:27.539812"], ["updated_at", "2021-11-22 10:44:27.539812"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:27.539876"], ["updated_at", "2021-11-22 10:44:27.539876"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.540405"], ["updated_at", "2021-11-22 10:44:27.540405"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.540435"], ["updated_at", "2021-11-22 10:44:27.540435"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.540748"], ["updated_at", "2021-11-22 10:44:27.540748"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.540776"], ["updated_at", "2021-11-22 10:44:27.540776"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.541068"], ["updated_at", "2021-11-22 10:44:27.541068"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.541043"], ["updated_at", "2021-11-22 10:44:27.541043"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.541559"], ["updated_at", "2021-11-22 10:44:27.541559"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.541586"], ["updated_at", "2021-11-22 10:44:27.541586"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:27.543051"], ["updated_at", "2021-11-22 10:44:27.543051"]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:44:27.543057"], ["updated_at", "2021-11-22 10:44:27.543057"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:44:27.543411"], ["updated_at", "2021-11-22 10:44:27.543411"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:44:27.543413"], ["updated_at", "2021-11-22 10:44:27.543413"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:44:27.543699"], ["updated_at", "2021-11-22 10:44:27.543699"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:44:27.543710"], ["updated_at", "2021-11-22 10:44:27.543710"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:44:27.556063"], ["updated_at", "2021-11-22 10:44:27.556063"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:44:27.556654"], ["updated_at", "2021-11-22 10:44:27.556654"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:44:27.557033"], ["updated_at", "2021-11-22 10:44:27.557033"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (4.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (5.4ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (3.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+-------------------------------------------------------------
+AttemptAnswerTest: test_attempt_answer_should_be_valid_answer
+-------------------------------------------------------------
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+------------------------------------------
+  [1m[36mTruncate Tables (2.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.3ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:46:23.951309"], ["updated_at", "2021-11-22 10:46:23.951309"], ["password_digest", "$2a$04$eDHZfN0akxap5il/93hm1u5ga/nwuF.KQuY92ypWCPViM3E4ZXSRK"], ["authentication_token", "genrC3iRqdvVBpcLFex3QLUh"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:46:23.951255"], ["updated_at", "2021-11-22 10:46:23.951255"], ["password_digest", "$2a$04$AoaLy0yM2MzrwCy9SPLIAe3F4ZlOLAAegMnfOlWxgX8zVqSAuNeaG"], ["authentication_token", "FCPKGkPSfCRjuHQGDovhCfds"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:46:23.952012"], ["updated_at", "2021-11-22 10:46:23.952012"], ["password_digest", "$2a$04$nJwRbMRo739/hZYveFruQuFPRAvN6SHY/XS57CHDqbREca2bAB6cK"], ["authentication_token", "PaCcDAEVcuMhJaxvdKULxvtt"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:46:23.964728"], ["updated_at", "2021-11-22 10:46:23.964728"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:46:23.964655"], ["updated_at", "2021-11-22 10:46:23.964655"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:46:23.964673"], ["updated_at", "2021-11-22 10:46:23.964673"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:46:24.013197"], ["updated_at", "2021-11-22 10:46:24.013197"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.014028"], ["updated_at", "2021-11-22 10:46:24.014028"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.014438"], ["updated_at", "2021-11-22 10:46:24.014438"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.014750"], ["updated_at", "2021-11-22 10:46:24.014750"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.015047"], ["updated_at", "2021-11-22 10:46:24.015047"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:46:24.017218"], ["updated_at", "2021-11-22 10:46:24.017218"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.017872"], ["updated_at", "2021-11-22 10:46:24.017872"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.018224"], ["updated_at", "2021-11-22 10:46:24.018224"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:46:24.019033"], ["updated_at", "2021-11-22 10:46:24.019033"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.019974"], ["updated_at", "2021-11-22 10:46:24.019974"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.020407"], ["updated_at", "2021-11-22 10:46:24.020407"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.020752"], ["updated_at", "2021-11-22 10:46:24.020752"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.021091"], ["updated_at", "2021-11-22 10:46:24.021091"]]
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:46:24.019749"], ["updated_at", "2021-11-22 10:46:24.019749"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.022609"], ["updated_at", "2021-11-22 10:46:24.022609"]]
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:46:24.023201"], ["updated_at", "2021-11-22 10:46:24.023201"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.024174"], ["updated_at", "2021-11-22 10:46:24.024174"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.024344"], ["updated_at", "2021-11-22 10:46:24.024344"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.024675"], ["updated_at", "2021-11-22 10:46:24.024675"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.024805"], ["updated_at", "2021-11-22 10:46:24.024805"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.024994"], ["updated_at", "2021-11-22 10:46:24.024994"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:46:24.027072"], ["updated_at", "2021-11-22 10:46:24.027072"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.027557"], ["updated_at", "2021-11-22 10:46:24.027557"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.027878"], ["updated_at", "2021-11-22 10:46:24.027878"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:46:24.043276"], ["updated_at", "2021-11-22 10:46:24.043276"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.044279"], ["updated_at", "2021-11-22 10:46:24.044279"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.044701"], ["updated_at", "2021-11-22 10:46:24.044701"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:46:24.052068"], ["updated_at", "2021-11-22 10:46:24.052068"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:46:24.052961"], ["updated_at", "2021-11-22 10:46:24.052961"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "invalid_option"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:46:24.053378"], ["updated_at", "2021-11-22 10:46:24.053378"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (3.7ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTruncate Tables (2.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+------------------------------------------
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (3.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.1ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.3ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:48:11.012768"], ["updated_at", "2021-11-22 10:48:11.012768"], ["password_digest", "$2a$04$sMKnb9zFV3XqZksg5V5cZuMwpBHkVT08chNEqWFaPm1zLotf4RMbu"], ["authentication_token", "dufxv1ia43aq2HgmuZrBQsjr"]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 10:48:11.012734"], ["updated_at", "2021-11-22 10:48:11.012734"], ["password_digest", "$2a$04$r4G4JFiVugQ4NyJdkZIyw.4qUicM0b/hmP4rlU0uMyb1OXIjQjth2"], ["authentication_token", "dpDb1we1PDYzjw1B97LvjVTg"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:48:11.042100"], ["updated_at", "2021-11-22 10:48:11.042100"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 10:48:11.042094"], ["updated_at", "2021-11-22 10:48:11.042094"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:48:11.066001"], ["updated_at", "2021-11-22 10:48:11.066001"]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 10:48:11.066000"], ["updated_at", "2021-11-22 10:48:11.066000"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.066552"], ["updated_at", "2021-11-22 10:48:11.066552"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.066547"], ["updated_at", "2021-11-22 10:48:11.066547"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.067042"], ["updated_at", "2021-11-22 10:48:11.067042"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.067048"], ["updated_at", "2021-11-22 10:48:11.067048"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.067325"], ["updated_at", "2021-11-22 10:48:11.067325"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.067331"], ["updated_at", "2021-11-22 10:48:11.067331"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.067591"], ["updated_at", "2021-11-22 10:48:11.067591"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.067601"], ["updated_at", "2021-11-22 10:48:11.067601"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:48:11.068939"], ["updated_at", "2021-11-22 10:48:11.068939"]]
+  [1m[36mQuestion Create (0.0ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 10:48:11.068975"], ["updated_at", "2021-11-22 10:48:11.068975"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:48:11.069320"], ["updated_at", "2021-11-22 10:48:11.069320"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 10:48:11.069297"], ["updated_at", "2021-11-22 10:48:11.069297"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:48:11.069770"], ["updated_at", "2021-11-22 10:48:11.069770"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 10:48:11.069784"], ["updated_at", "2021-11-22 10:48:11.069784"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 10:48:11.159883"], ["updated_at", "2021-11-22 10:48:11.159883"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 10:48:11.160504"], ["updated_at", "2021-11-22 10:48:11.160504"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 10:48:11.161024"], ["updated_at", "2021-11-22 10:48:11.161024"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
