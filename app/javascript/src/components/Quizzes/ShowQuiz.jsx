@@ -173,13 +173,15 @@ const ShowQuiz = ({ history }) => {
                 <div className="text-gray-600">{`Question ${index + 1}`}</div>
                 <div className="font-extrabold">{question.name}</div>
                 <div className="flex space-x-6">
-                  <Button
-                    onClick={() => editQuestion(question.id)}
-                    style="secondary"
-                    label="Edit"
-                    iconPosition="left"
-                    icon={Edit}
-                  />
+                  <div>
+                    <Button
+                      onClick={() => editQuestion(question.id)}
+                      style="secondary"
+                      label="Edit"
+                      iconPosition="left"
+                      icon={Edit}
+                    />
+                  </div>
                   <DeleteQuestion
                     question_id={question.id}
                     fetchQuizDetails={fetchQuizDetails}
