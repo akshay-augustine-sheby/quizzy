@@ -27307,3 +27307,1553 @@ Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 5190
 Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 4366)
   [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (5.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (6.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (5.2ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (5.3ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (4.3ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (5.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (4.8ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (3.4ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+QuizTest: test_quiz_creator_should_be_present
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------
+QuestionTest: test_atleast_2_options_should_be_present
+------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+QuizzesControllerTest: test_should_list_all_quizzes_for_valid_user
+------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+QuizTest: test_quiz_name_should_be_present
+------------------------------------------
+-----------------------------------------------------------
+QuizzesControllerTest: test_valid_user_can_update_quiz_name
+-----------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+QuizzesControllerTest: test_user_should_create_valid_quiz
+---------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+QuizzesControllerTest: test_valid_user_can_view_quiz
+----------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------
+QuizzesControllerTest: test_valid_user_should_be_able_to_destroy_quiz
+---------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.699439"], ["updated_at", "2021-11-22 18:06:29.699439"], ["password_digest", "$2a$04$No1eqoJLjj1uXTJ2nw1aL.GNDAHHnNf6yipillHRyqMzFLu8zJoDK"], ["authentication_token", "TSssrc7b4adbvrxyuoWEqJWk"]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.701389"], ["updated_at", "2021-11-22 18:06:29.701389"], ["password_digest", "$2a$04$/SeiZOvsXhZVxihyz5gPt.iGloWnKfvVqK371yHUNTpG7/uctc3Yi"], ["authentication_token", "3jPH32pqWkmezGasVoC75t64"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.703451"], ["updated_at", "2021-11-22 18:06:29.703451"], ["password_digest", "$2a$04$.JzThvjLJNjaClTeynQ/7eGb0.ofGOec9AnIx8JP.IdONMX/s9P5u"], ["authentication_token", "vocrYkB1r795cQhvM8xEgy5j"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+QuestionTest: test_question_should_be_present
+---------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+QuestionTest: test_option1_should_be_present
+--------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Create (0.2ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.729298"], ["updated_at", "2021-11-22 18:06:29.729298"], ["slug", "sample-quiz"]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.745153"], ["updated_at", "2021-11-22 18:06:29.745153"], ["password_digest", "$2a$04$8X05nRyJe8IQJkx.Bb5IVOm4wWFnxI2KzvX/v6pHlsNv8i6.tbD82"], ["authentication_token", "qyvkxPiwDhs38Xq61LyZ9yUJ"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.747002"], ["updated_at", "2021-11-22 18:06:29.747002"], ["password_digest", "$2a$04$E5ecoQUTwS/umsjpH8775.td9gNcyUvOHA4xA30HZtv9Z2.JdrH9O"], ["authentication_token", "Rdd1VXGF665NWwww1hoghpFC"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.761259"], ["updated_at", "2021-11-22 18:06:29.761259"], ["role", 1], ["password_digest", "$2a$04$uZbRMJGOHcp9C2PFnbO0wu7cyrKFRGQC/Zqzqgmoh6LHIxzBsJKCy"], ["authentication_token", "TZc9xwiC2yq4tD95qmVBNBJC"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.762449"], ["updated_at", "2021-11-22 18:06:29.762449"], ["role", 1], ["password_digest", "$2a$04$espMZCZZYAoObV1G45UcpOcZi/d6sUXb6qvd1TXjWA2.2Kg8OnJgy"], ["authentication_token", "ewSS6Y6gWMPExL8itLKwGhJF"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.764839"], ["updated_at", "2021-11-22 18:06:29.764839"], ["role", 1], ["password_digest", "$2a$04$W2m/l4Yx808sO35a0IZ5W.x12EU83wL8b7avsBUlBYcERY6NSVlwy"], ["authentication_token", "hhy5BSmDJ8KajkQkHW9zgJoN"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.756258"], ["updated_at", "2021-11-22 18:06:29.756258"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.758736"], ["updated_at", "2021-11-22 18:06:29.758736"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.776562"], ["updated_at", "2021-11-22 18:06:29.776562"], ["role", 1], ["password_digest", "$2a$04$5P.xwp1evvSMdWCZUGk2.OripQdyCpZssFzOV8ZluF6Me/RRMG6Be"], ["authentication_token", "dSigsm8GYcGrSVmXvJ745hhZ"]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.779094"], ["updated_at", "2021-11-22 18:06:29.779094"], ["role", 1], ["password_digest", "$2a$04$d314uoqmHiihsuSv4VB8DuWcCMzLLmoYpxBY2aJVkAB1FDt3Chf6."], ["authentication_token", "jM9CN742pLsRJGAuqHKMrf3t"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/quizzes" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+Started GET "/quizzes" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+QuestionTest: test_more_than_4_options_not_allowed
+--------------------------------------------------
+Processing by QuizzesController#create as JSON
+  Parameters: {"quiz"=>{"name"=>"test", "user_id"=>"1"}}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.905267"], ["updated_at", "2021-11-22 18:06:29.905267"], ["password_digest", "$2a$04$Jmi6h9NE2EQq9Rk.jeMaQuROQkIQXiET19JALx9moIZgZdmGjS1hS"], ["authentication_token", "9k2Vk4gg9kbLVz1breQsHFeC"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.780080"], ["updated_at", "2021-11-22 18:06:29.780080"], ["slug", "test"]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.908401"], ["updated_at", "2021-11-22 18:06:29.908401"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[31mUnpermitted parameter: :user_id[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started DELETE "/quizzes/test" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+QuestionTest: test_option2_should_be_present
+--------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptTest: test_quiz_should_be_present
+----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptTest: test_user_should_be_present
+----------------------------------------
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.917932"], ["updated_at", "2021-11-22 18:06:29.917932"], ["password_digest", "$2a$04$4KWk/oa/Fm8qz0U3YqMvneknEIfjspt7CMneQvx7jkPYt3TCkqGtW"], ["authentication_token", "mv6DKptzSuM2fmoyaAfUe2xw"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.921055"], ["updated_at", "2021-11-22 18:06:29.921055"], ["password_digest", "$2a$04$ewuhEAsSCqSK5ro/7DE9KueYxNuw342viF73OqRhafyMbSfmnRNJ6"], ["authentication_token", "tSHnNsc5HWEVj8a3UqbJ4CMf"]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.912698"], ["updated_at", "2021-11-22 18:06:29.912698"], ["slug", "test"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.922496"], ["updated_at", "2021-11-22 18:06:29.922496"], ["password_digest", "$2a$04$FkKgX756.KnKgH/5tP4B7OAajpYjy.ijA86UYrMTrNiB.TLusC4vm"], ["authentication_token", "HhQ1V1q2YDmreGAJqMVz5LCQ"]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.923279"], ["updated_at", "2021-11-22 18:06:29.923279"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.923728"], ["updated_at", "2021-11-22 18:06:29.923728"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.924236"], ["updated_at", "2021-11-22 18:06:29.924236"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+Completed 200 OK in 29ms (Views: 6.9ms | ActiveRecord: 0.6ms | Allocations: 28952)
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+----------------------------------------------------
+AttemptTest: test_user_can_attempt_different_quizzes
+----------------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Create (1.6ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.784685"], ["updated_at", "2021-11-22 18:06:29.784685"], ["slug", "test"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started PUT "/quizzes/test" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.793449"], ["updated_at", "2021-11-22 18:06:29.793449"], ["slug", "test"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/quizzes/test" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.939433"], ["updated_at", "2021-11-22 18:06:29.939433"], ["password_digest", "$2a$04$NDoTAB6jJZVdgG9PGWlR.u9MAuYpfCgu25KZwyJSGkJVI978YSpFW"], ["authentication_token", "7FfKfuFQqeQbYtcxkw2ax7NX"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mbegin transaction[0m
+Processing by QuizzesController#destroy as JSON
+  Parameters: {"slug"=>"test"}
+-----------------------------------------------------
+QuestionsControllerTest: test_should_destroy_question
+-----------------------------------------------------
+QuestionsControllerTest: test_should_update_question
+----------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.946139"], ["updated_at", "2021-11-22 18:06:29.946139"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by QuizzesController#index as JSON
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "test"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.951080"], ["updated_at", "2021-11-22 18:06:29.951080"], ["password_digest", "$2a$04$1CxcAKDllwj.dLSE9evmFuiuKSFwB4QQ90OrUrSdmnaLxEyNaNiN."], ["authentication_token", "n3mjKb2GNRvNok7Kwup9pjx9"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+----------------------------------------------------
+QuestionsControllerTest: test_should_create_question
+  [1m[36mQuiz Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+----------------------------------------------------
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz-2$|sample-quiz-2-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 4961)
+  [1m[36mQuiz Create (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz 2"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.955705"], ["updated_at", "2021-11-22 18:06:29.955705"], ["slug", "sample-quiz-2"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mAttempt Load (0.1ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
+  [1m[36mQuiz Destroy (0.2ms)[0m  [1m[31mDELETE FROM "quizzes" WHERE "quizzes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 9394)
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"test"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Create (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.955122"], ["updated_at", "2021-11-22 18:06:29.955122"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 1], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.964791"], ["updated_at", "2021-11-22 18:06:29.964791"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 1], ["quiz_id", 2], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.966495"], ["updated_at", "2021-11-22 18:06:29.966495"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Processing by QuizzesController#update as JSON
+  Parameters: {"quiz"=>{"name"=>"testtest"}, "slug"=>"test"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+QuestionsControllerTest: test_should_view_question
+--------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+QuestionsControllerTest: test_should_show_questions
+---------------------------------------------------
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "test"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+------------------------------------------
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.981189"], ["updated_at", "2021-11-22 18:06:29.981189"], ["password_digest", "$2a$04$vj5FwF.q0WAFD1l.feSk3OrmK3pfWg9.88T5eNkCAqX7D6yHhlSxe"], ["authentication_token", "dz4GbAWWbCQyyWLZxVjy4Knj"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.983526"], ["updated_at", "2021-11-22 18:06:29.983526"], ["password_digest", "$2a$04$U7gofgp.LoErdybUNer2NeKobD6eODfl1JCUisgPk.WSMzkeJ//B."], ["authentication_token", "jT959eFSF5j7zSMQLg2m5tpc"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.983476"], ["updated_at", "2021-11-22 18:06:29.983476"], ["password_digest", "$2a$04$iSYRn0hFYb6gLCVy194mb.r8AoocZdyTnyc/gsJA72bbC2MH1iuO."], ["authentication_token", "eeDPtsPvhoZwQcXHntVgywXx"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "test"], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.985169"], ["updated_at", "2021-11-22 18:06:29.985169"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:29.987217"], ["updated_at", "2021-11-22 18:06:29.987217"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:06:29.987817"], ["updated_at", "2021-11-22 18:06:29.987817"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:06:29.988191"], ["updated_at", "2021-11-22 18:06:29.988191"]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:29.988220"], ["updated_at", "2021-11-22 18:06:29.988220"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:06:29.988526"], ["updated_at", "2021-11-22 18:06:29.988526"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.4ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:06:29.988887"], ["updated_at", "2021-11-22 18:06:29.988887"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:06:29.989268"], ["updated_at", "2021-11-22 18:06:29.989268"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:06:29.989585"], ["updated_at", "2021-11-22 18:06:29.989585"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" = ? AND "quizzes"."id" != ? LIMIT ?[0m  [["slug", "test"], ["id", 1], ["LIMIT", 1]]
+Started PUT "/questions/1" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mQuiz Create (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.987515"], ["updated_at", "2021-11-22 18:06:29.987515"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Load (5.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+Started DELETE "/questions/1" for 127.0.0.1 at 2021-11-22 23:36:29 +0530
+  [1m[36mQuiz Update (0.9ms)[0m  [1m[33mUPDATE "quizzes" SET "name" = ?, "updated_at" = ? WHERE "quizzes"."id" = ?[0m  [["name", "testtest"], ["updated_at", "2021-11-22 18:06:29.991202"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 4832)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 2.2ms | ActiveRecord: 6.5ms | Allocations: 6913)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:29.995923"], ["updated_at", "2021-11-22 18:06:29.995923"], ["password_digest", "$2a$04$i8vuz7XmTexCjBZzLEXXQ.9RwHzJUbfHE2xY0Lzm5XD3lcM8hGAPG"], ["authentication_token", "zAKHG9TmcpCXzzSD1Swisgyd"]]
+Processing by QuestionsController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mOption Destroy (0.1ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 1]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 2]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+  [1m[36mAttemptAnswer Load (0.1ms)[0m  [1m[34mSELECT "attempt_answers".* FROM "attempt_answers" WHERE "attempt_answers"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mQuestion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 3859)
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:30.002032"], ["updated_at", "2021-11-22 18:06:30.002032"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:30.005914"], ["updated_at", "2021-11-22 18:06:30.005914"], ["password_digest", "$2a$04$2qwDvkp/DE5SAHqWjdOk0eLh469pt1/aUhfYy7efECwn//nh/o.fe"], ["authentication_token", "V9M8k868v32wpLiiCNqMtbkz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:30.006527"], ["updated_at", "2021-11-22 18:06:30.006527"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:30.007860"], ["updated_at", "2021-11-22 18:06:30.007860"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.6ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.007227"], ["updated_at", "2021-11-22 18:06:30.007227"]]
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.009604"], ["updated_at", "2021-11-22 18:06:30.009604"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------
+UserTest: test_invalid_user
+---------------------------
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------
+UserTest: test_validation_should_accept_valid_addresses
+-------------------------------------------------------
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.010843"], ["updated_at", "2021-11-22 18:06:30.010843"]]
+Started POST "/questions" for 127.0.0.1 at 2021-11-22 23:36:30 +0530
+  [1m[36mQuiz Create (0.7ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:29.988557"], ["updated_at", "2021-11-22 18:06:29.988557"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.011865"], ["updated_at", "2021-11-22 18:06:30.011865"]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "USER@example.COM"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "US-ER@example.org"], ["LIMIT", 1]]
+Processing by QuestionsController#update as JSON
+  Parameters: {"question"=>{"name"=>"Sample Questiontest", "answer"=>"optionC", "quiz_id"=>"1"}, "id"=>"1"}
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "first.last@example.in"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user+one@example.ac.in"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:30.018072"], ["updated_at", "2021-11-22 18:06:30.018072"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.018663"], ["updated_at", "2021-11-22 18:06:30.018663"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.019027"], ["updated_at", "2021-11-22 18:06:30.019027"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.019338"], ["updated_at", "2021-11-22 18:06:30.019338"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.019626"], ["updated_at", "2021-11-22 18:06:30.019626"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:30.018496"], ["updated_at", "2021-11-22 18:06:30.018496"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:30.021283"], ["updated_at", "2021-11-22 18:06:30.021283"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 18:06:30.021787"], ["updated_at", "2021-11-22 18:06:30.021787"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 18:06:30.022111"], ["updated_at", "2021-11-22 18:06:30.022111"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 18:06:30.020973"], ["updated_at", "2021-11-22 18:06:30.020973"]]
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-22 23:36:30 +0530
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 18:06:30.022948"], ["updated_at", "2021-11-22 18:06:30.022948"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:30.024635"], ["updated_at", "2021-11-22 18:06:30.024635"], ["password_digest", "$2a$04$9vWex5bDRUQ3Cx2A18tXWuWafiktRy5geYPr0Tuu8r2vOkZa5yR82"], ["authentication_token", "hUGMuLDWc5kyVvGKvm53y2wQ"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by QuestionsController#create as JSON
+  Parameters: {"question"=>{"name"=>"Sample Question", "answer"=>"optionA", "quiz_id"=>"1", "options_attributes"=>[{"name"=>"optionA"}, {"name"=>"optionB"}, {"name"=>"optionC"}]}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:06:30.026404"], ["updated_at", "2021-11-22 18:06:30.026404"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:30.028556"], ["updated_at", "2021-11-22 18:06:30.028556"]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 784)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------
+UserTest: test_user_should_have_matching_password_and_password_confirmation
+---------------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.029114"], ["updated_at", "2021-11-22 18:06:30.029114"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------
+UserTest: test_last_name_should_be_valid_length
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.031573"], ["updated_at", "2021-11-22 18:06:30.031573"]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuestion Update (0.1ms)[0m  [1m[33mUPDATE "questions" SET "name" = ?, "answer" = ?, "updated_at" = ? WHERE "questions"."id" = ?[0m  [["name", "Sample Questiontest"], ["answer", "optionC"], ["updated_at", "2021-11-22 18:06:30.032082"], ["id", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:06:30.032237"], ["updated_at", "2021-11-22 18:06:30.032237"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 4355)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mOption Create (1.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.032928"], ["updated_at", "2021-11-22 18:06:30.032928"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.034547"], ["updated_at", "2021-11-22 18:06:30.034547"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+------------------------------------------------
+UserTest: test_first_name_should_be_valid_length
+------------------------------------------------
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.034982"], ["updated_at", "2021-11-22 18:06:30.034982"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 4675)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mOption Create (2.3ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.033464"], ["updated_at", "2021-11-22 18:06:30.033464"]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+------------------------------------------
+UserTest: test_last_name_should_be_present
+------------------------------------------
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 18:06:30.039262"], ["updated_at", "2021-11-22 18:06:30.039262"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 18:06:30.040002"], ["updated_at", "2021-11-22 18:06:30.040002"]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 18:06:30.040442"], ["updated_at", "2021-11-22 18:06:30.040442"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+-------------------------------------
+UserTest: test_email_should_be_saved_in_lowercase
+-------------------------------------------------
+UserTest: test_email_should_be_unique
+-------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "SAM@EMAIL.COM"], ["LIMIT", 1]]
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-22 23:36:30 +0530
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:06:30.045228"], ["updated_at", "2021-11-22 18:06:30.045228"], ["password_digest", "$2a$04$9KjAi8T5BMfYk4PAPbOa3.Ky2QCuZc8BA558xOKxCLoqYdULNLuf."], ["authentication_token", "ZTQ1WER35bRrCyfJQmgNQ8Ja"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@email.com"], ["created_at", "2021-11-22 18:06:30.045335"], ["updated_at", "2021-11-22 18:06:30.045335"], ["password_digest", "$2a$04$JN.OHt9wDomRaDRyRPPrdujqq2LdPUxQsdXmR8K/iIHBH.wFyQCMi"], ["authentication_token", "pwvcMsoP7Wq7SoV5xUehsJu5"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+--------------------------------------------------
+UserTest: test_password_confirmation_cant_be_blank
+--------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+UserTest: test_password_should_have_minimum_length
+--------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+UserTest: test_first_name_cant_be_blank
+---------------------------------------
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+-----------------------------------------------------
+UserTest: test_users_with_same_emails_cant_be_created
+-----------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+UserTest: test_user_cant_have_invalid_role
+--------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+------------------------------------------
+UserTest: test_user_should_have_valid_role
+------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akshay@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+UserTest: test_user_should_be_valid
+--------------------------------------
+UserTest: test_last_name_cant_be_blank
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+-------------------------------------------
+UserTest: test_first_name_should_be_present
+-------------------------------------------
+-----------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+UserTest: test_password_cant_be_blank
+-------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+UserTest: test_validation_should_reject_invalid_addresses
+---------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+UserTest: test_email_cant_be_blank
+----------------------------------
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user_at_example.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user.name@example."], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "@sam-sam.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@sam+exam.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fishy+#.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2310)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[36mTruncate Tables (3.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[36mTruncate Tables (4.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (5.0ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[36mTruncate Tables (2.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[36mTruncate Tables (3.5ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[36mTruncate Tables (2.9ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTruncate Tables (2.6ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTruncate Tables (2.7ms)[0m  [1m[31mDELETE FROM "users";
+DELETE FROM "attempt_answers";
+DELETE FROM "attempts";
+DELETE FROM "options";
+DELETE FROM "questions";
+DELETE FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+---------------------------------------------------------
+QuizzesControllerTest: test_user_should_create_valid_quiz
+---------------------------------------------------------
+-----------------------------------------------------------
+QuizzesControllerTest: test_valid_user_can_view_quiz
+QuizzesControllerTest: test_valid_user_can_update_quiz_name
+----------------------------------------------------
+-----------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------
+QuizzesControllerTest: test_valid_user_should_be_able_to_destroy_quiz
+---------------------------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------
+QuizzesControllerTest: test_should_list_all_quizzes_for_valid_user
+------------------------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+QuestionTest: test_question_should_be_present
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------
+QuestionTest: test_atleast_2_options_should_be_present
+------------------------------------------------------
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+QuestionTest: test_more_than_4_options_not_allowed
+--------------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:13.988836"], ["updated_at", "2021-11-22 18:07:13.988836"], ["password_digest", "$2a$04$mPSQtHTeKCod5GIAeWoZiuZ5Vdb/YP8ZG/ePxKShKqGl6FBqjXqoC"], ["authentication_token", "pGy3bbsSt5Gmf45a2hMjgx3a"]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:13.988561"], ["updated_at", "2021-11-22 18:07:13.988561"], ["password_digest", "$2a$04$Vg1tERefQ9d3AwPqWi40oevS.sHmtbpnhnlArmqPeNbcdS89FI9Vm"], ["authentication_token", "ZUARc7vmYWnp92sRHQDehwoe"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:13.995676"], ["updated_at", "2021-11-22 18:07:13.995676"], ["password_digest", "$2a$04$jyF6NTrmj2pTm38k0JoOzOSHi3qxCpO7CrFF4aBn/is.o/WJ.R2Di"], ["authentication_token", "iFnrbmY5938ZNG432FJTtnkx"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.010914"], ["updated_at", "2021-11-22 18:07:14.010914"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.063450"], ["updated_at", "2021-11-22 18:07:14.063450"], ["role", 1], ["password_digest", "$2a$04$7iTduMA6fzCOkPHbJYMHaudtD9haT8hEgJ6fai5d4YYrnfVtEfMJ6"], ["authentication_token", "KBtpGGKCHp1sfEDTs4q9w1aD"]]
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.069653"], ["updated_at", "2021-11-22 18:07:14.069653"], ["role", 1], ["password_digest", "$2a$04$hpp9kZLy8mdXNO/4BgoCxugJGGDMEGB8ano/P61W4JPMjXSpTtyHa"], ["authentication_token", "eB7YFeWH6P3obhiLVh3C1Etb"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.035180"], ["updated_at", "2021-11-22 18:07:14.035180"], ["slug", "sample-quiz"]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.073085"], ["updated_at", "2021-11-22 18:07:14.073085"], ["role", 1], ["password_digest", "$2a$04$0c7WrjsDluZPr59oM8melep9QUBJUx/GsL0K.RF8U1zca4owAjy.O"], ["authentication_token", "J7vdvbKvHAuTpuF3jdhR4JPd"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.073614"], ["updated_at", "2021-11-22 18:07:14.073614"], ["role", 1], ["password_digest", "$2a$04$cZmpxDYeOtz6LvkcCyPv0e.ynDHz7/6UV7wz1LyoicxA19uvdF4Vu"], ["authentication_token", "GffNPjFCiC7AKdkFXUMQhyT5"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.041163"], ["updated_at", "2021-11-22 18:07:14.041163"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "role", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.080420"], ["updated_at", "2021-11-22 18:07:14.080420"], ["role", 1], ["password_digest", "$2a$04$kBNSTa7wwA514eEg0V/tnOw6hBn9pOVZPqyCNoSYCLoOphbDe5AWG"], ["authentication_token", "T5GfxkYoU48xZQLdHk5Cd9W1"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/quizzes" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+Started GET "/quizzes" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+QuestionTest: test_option1_should_be_present
+--------------------------------------------
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.101780"], ["updated_at", "2021-11-22 18:07:14.101780"], ["password_digest", "$2a$04$g.9lsqyHw3xR32x8ui4n5unapyfPR1nhILgjF.7ge7opHj89RqZiG"], ["authentication_token", "mSmmD2Dn4QM1s26rBSbXe5Ng"]]
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.104886"], ["updated_at", "2021-11-22 18:07:14.104886"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+QuestionTest: test_option2_should_be_present
+--------------------------------------------
+Processing by QuizzesController#index as JSON
+Processing by QuizzesController#create as JSON
+  Parameters: {"quiz"=>{"name"=>"test", "user_id"=>"1"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+UserTest: test_password_should_have_minimum_length
+--------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+UserTest: test_user_should_be_valid
+-----------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.118484"], ["updated_at", "2021-11-22 18:07:14.118484"], ["password_digest", "$2a$04$tPUkV6FB4fFw1bN9viBI8OsW9E96Tg4OpmBDlTbJSLKfeIjWPH8iC"], ["authentication_token", "m3oeqTAR8tS7Dx3CUDbFSN2X"]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.120342"], ["updated_at", "2021-11-22 18:07:14.120342"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+[31mUnpermitted parameter: :user_id[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------
+UserTest: test_validation_should_reject_invalid_addresses
+---------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+UserTest: test_password_confirmation_cant_be_blank
+--------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+UserTest: test_first_name_cant_be_blank
+---------------------------------------
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? ORDER BY created_at DESC[0m  [["user_id", 1]]
+Completed 200 OK in 22ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4960)
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example,com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user_at_example.org"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user.name@example."], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "@sam-sam.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@sam+exam.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fishy+#.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Create (0.2ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.099502"], ["updated_at", "2021-11-22 18:07:14.099502"], ["slug", "test"]]
+------------------------------------------
+UserTest: test_user_should_have_valid_role
+------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------
+UserTest: test_validation_should_accept_valid_addresses
+-------------------------------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+UserTest: test_user_cant_have_invalid_role
+------------------------------------------
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "USER@example.COM"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.2ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.092389"], ["updated_at", "2021-11-22 18:07:14.092389"], ["slug", "test"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "US-ER@example.org"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "first.last@example.in"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user+one@example.ac.in"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+UserTest: test_users_with_same_emails_cant_be_created
+-----------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+UserTest: test_last_name_should_be_present
+------------------------------------------
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Create (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.099023"], ["updated_at", "2021-11-22 18:07:14.099023"], ["slug", "test"]]
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+UserTest: test_email_should_be_unique
+-------------------------------------
+-----------------------------------------------
+UserTest: test_last_name_should_be_valid_length
+-----------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+UserTest: test_first_name_should_be_valid_length
+------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.172039"], ["updated_at", "2021-11-22 18:07:14.172039"], ["password_digest", "$2a$04$ystwObhx2dqtwwfflcWubud/a2jAB6IEMsEiFjG5ZOyKfuW9roCgy"], ["authentication_token", "uo2Yvmrs5bW5F4RbvdJSMj11"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started PUT "/quizzes/test" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+UserTest: test_first_name_should_be_present
+-------------------------------------------
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+UserTest: test_last_name_cant_be_blank
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+--------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------
+UserTest: test_password_cant_be_blank
+-------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------
+UserTest: test_invalid_user
+---------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+--------------------------------------
+Started DELETE "/quizzes/test" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "akshay@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+----------------------------------
+UserTest: test_email_cant_be_blank
+----------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------------------------------
+UserTest: test_user_should_have_matching_password_and_password_confirmation
+---------------------------------------------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+UserTest: test_email_should_be_saved_in_lowercase
+-------------------------------------------------
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "SAM@EMAIL.COM"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptTest: test_quiz_should_be_present
+----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptTest: test_user_should_be_present
+----------------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.214338"], ["updated_at", "2021-11-22 18:07:14.214338"], ["password_digest", "$2a$04$ofWmxBiF0RdSdiIVYQ71yug417mzZSTtnp3YUYHX0Odgf31W5Fl02"], ["authentication_token", "N6gzR3GCRLUDTEHw7QCuUQV3"]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@email.com"], ["created_at", "2021-11-22 18:07:14.215679"], ["updated_at", "2021-11-22 18:07:14.215679"], ["password_digest", "$2a$04$S8tehNhQcFxRhdGJ.ICa5.Rt.UcDN.UxVWN0MZ2KsbL.ZpJag5Bga"], ["authentication_token", "t4fXSgvvs69UMPXV84tkJErY"]]
+----------------------------------------------------
+AttemptTest: test_user_can_attempt_different_quizzes
+----------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.216624"], ["updated_at", "2021-11-22 18:07:14.216624"], ["password_digest", "$2a$04$6KQK/Xjkqw8tRO4A0T7/Ne1kYeOywACGnVruD5uTWPPDGKgY6r2uW"], ["authentication_token", "b6DDT6CBVKbKqVTm7Hu1w7v4"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.219301"], ["updated_at", "2021-11-22 18:07:14.219301"], ["password_digest", "$2a$04$Dyyh2pvCnnJErKvKTb/LOusWo.wbcPJ.S2kqcJxPFsuBINhGkjbFm"], ["authentication_token", "VQnn4Cr177evzybGo8otQUKN"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.219438"], ["updated_at", "2021-11-22 18:07:14.219438"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/quizzes/test" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.221670"], ["updated_at", "2021-11-22 18:07:14.221670"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'test$|test-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.125345"], ["updated_at", "2021-11-22 18:07:14.125345"], ["slug", "test"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 128ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 28951)
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------
+AttemptAnswerTest: test_attempt_is_valid
+----------------------------------------
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.240197"], ["updated_at", "2021-11-22 18:07:14.240197"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by QuizzesController#update as JSON
+  Parameters: {"quiz"=>{"name"=>"testtest"}, "slug"=>"test"}
+Processing by QuizzesController#show as JSON
+  Parameters: {"slug"=>"test"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.261007"], ["updated_at", "2021-11-22 18:07:14.261007"], ["password_digest", "$2a$04$ctxtq3sn/9s8T1fUtW5TFOr9F7HECODuBh2brDNDxM0OcCLRS1yUK"], ["authentication_token", "UQxWdsKJfsqREmXzGqkkzE3D"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "test"], ["LIMIT", 1]]
+------------------------------------------
+AttemptAnswerTest: test_attempt_is_invalid
+------------------------------------------
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+Processing by QuizzesController#destroy as JSON
+  Parameters: {"slug"=>"test"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+Completed 200 OK in 13ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 6914)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "test"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."user_id" = ? AND "quizzes"."slug" = ? LIMIT ?[0m  [["user_id", 1], ["slug", "test"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" = ? AND "quizzes"."id" != ? LIMIT ?[0m  [["slug", "test"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.277355"], ["updated_at", "2021-11-22 18:07:14.277355"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Update (0.1ms)[0m  [1m[33mUPDATE "quizzes" SET "name" = ?, "updated_at" = ? WHERE "quizzes"."id" = ?[0m  [["name", "testtest"], ["updated_at", "2021-11-22 18:07:14.277600"], ["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 4832)
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+QuestionsControllerTest: test_should_create_question
+----------------------------------------------------
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.270112"], ["updated_at", "2021-11-22 18:07:14.270112"], ["password_digest", "$2a$04$JG12f1GwYflSQ/8r8tc9ZOeH/Lhc8s1ZdlQb5ofGJJD26WtMzLBNG"], ["authentication_token", "TaA6eXw2cSKHz2y93CCFVViF"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+QuestionsControllerTest: test_should_destroy_question
+-----------------------------------------------------
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.293468"], ["updated_at", "2021-11-22 18:07:14.293468"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.293131"], ["updated_at", "2021-11-22 18:07:14.293131"], ["password_digest", "$2a$04$54IaJxBgpb3np4IFcQkTweBs7sUh4l9c0ER4g3ZJ/g4Ta7zBfFTNi"], ["authentication_token", "9PStQDCiQeHxwwHBGHJunEKB"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOption Create (0.4ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.295102"], ["updated_at", "2021-11-22 18:07:14.295102"]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.296387"], ["updated_at", "2021-11-22 18:07:14.296387"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.296927"], ["updated_at", "2021-11-22 18:07:14.296927"]]
+  [1m[36mAttempt Load (0.2ms)[0m  [1m[34mSELECT "attempts".* FROM "attempts" WHERE "attempts"."quiz_id" = ?[0m  [["quiz_id", 1]]
+  [1m[36mQuiz Destroy (0.2ms)[0m  [1m[31mDELETE FROM "quizzes" WHERE "quizzes"."id" = ?[0m  [["id", 1]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.298231"], ["updated_at", "2021-11-22 18:07:14.298231"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 33ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 9394)
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.299357"], ["updated_at", "2021-11-22 18:07:14.299357"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+QuestionsControllerTest: test_should_update_question
+----------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "quizzes"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.303607"], ["updated_at", "2021-11-22 18:07:14.303607"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 18:07:14.304162"], ["updated_at", "2021-11-22 18:07:14.304162"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 18:07:14.304507"], ["updated_at", "2021-11-22 18:07:14.304507"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.304095"], ["updated_at", "2021-11-22 18:07:14.304095"], ["password_digest", "$2a$04$wIrDQdbch/w8997Madct1e42eFx1Iv9MEx21K2Nn8sNu.GY7BWsQG"], ["authentication_token", "Kig9B5CWBfN7TtPfs5mZWWNS"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.307727"], ["updated_at", "2021-11-22 18:07:14.307727"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+QuestionsControllerTest: test_should_view_question
+--------------------------------------------------
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.320227"], ["updated_at", "2021-11-22 18:07:14.320227"], ["password_digest", "$2a$04$E./gDihZEmQdzVpuh7ZNiOJ3b1UqsbRm7ju/KYCCM/C.JpLY1kpPy"], ["authentication_token", "qFXS2dNi1Th5DUGJ1EvaE9Kr"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.322190"], ["updated_at", "2021-11-22 18:07:14.322190"], ["slug", "sample-quiz"]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz-2$|sample-quiz-2-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.323333"], ["updated_at", "2021-11-22 18:07:14.323333"]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz 2"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.323104"], ["updated_at", "2021-11-22 18:07:14.323104"], ["slug", "sample-quiz-2"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.323973"], ["updated_at", "2021-11-22 18:07:14.323973"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.324356"], ["updated_at", "2021-11-22 18:07:14.324356"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.324767"], ["updated_at", "2021-11-22 18:07:14.324767"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/questions" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 1], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.325646"], ["updated_at", "2021-11-22 18:07:14.325646"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+---------------------------------------------------
+QuestionsControllerTest: test_should_show_questions
+---------------------------------------------------
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 1], ["quiz_id", 2], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.328905"], ["updated_at", "2021-11-22 18:07:14.328905"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+Started PUT "/questions/1" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.332861"], ["updated_at", "2021-11-22 18:07:14.332861"]]
+---------------------------------------------
+QuizTest: test_quiz_creator_should_be_present
+---------------------------------------------
+  [1m[36mOption Create (0.4ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.333794"], ["updated_at", "2021-11-22 18:07:14.333794"]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.334629"], ["updated_at", "2021-11-22 18:07:14.334629"]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.335006"], ["updated_at", "2021-11-22 18:07:14.335006"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mAttempt Create (0.1ms)[0m  [1m[32mINSERT INTO "attempts" ("submitted", "quiz_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["submitted", 0], ["quiz_id", 1], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.335316"], ["updated_at", "2021-11-22 18:07:14.335316"]]
+  [1m[36mAttemptAnswer Create (0.1ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionD"], ["attempt_id", 1], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.336066"], ["updated_at", "2021-11-22 18:07:14.336066"]]
+  [1m[36mAttemptAnswer Create (0.0ms)[0m  [1m[32mINSERT INTO "attempt_answers" ("answer", "attempt_id", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["answer", "optionB"], ["attempt_id", 1], ["question_id", 2], ["created_at", "2021-11-22 18:07:14.336503"], ["updated_at", "2021-11-22 18:07:14.336503"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Processing by QuestionsController#update as JSON
+  Parameters: {"question"=>{"name"=>"Sample Questiontest", "answer"=>"optionC", "quiz_id"=>"1"}, "id"=>"1"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.339209"], ["updated_at", "2021-11-22 18:07:14.339209"], ["password_digest", "$2a$04$G73g.pguhA1y5pP0aJgaTuJwP6t6YV8fy63.qBSbykPfAdUf/kyli"], ["authentication_token", "hhvqU3CtgAUqSsrDjLVdbFDx"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Processing by QuestionsController#create as JSON
+  Parameters: {"question"=>{"name"=>"Sample Question", "answer"=>"optionA", "quiz_id"=>"1", "options_attributes"=>[{"name"=>"optionA"}, {"name"=>"optionB"}, {"name"=>"optionC"}]}}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 922)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuestion Update (0.1ms)[0m  [1m[33mUPDATE "questions" SET "name" = ?, "answer" = ?, "updated_at" = ? WHERE "questions"."id" = ?[0m  [["name", "Sample Questiontest"], ["answer", "optionC"], ["updated_at", "2021-11-22 18:07:14.346340"], ["id", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.327099"], ["updated_at", "2021-11-22 18:07:14.327099"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2804)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------
+QuizTest: test_quiz_name_should_be_present
+------------------------------------------
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuestion Create (0.4ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.347358"], ["updated_at", "2021-11-22 18:07:14.347358"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mOption Create (0.3ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.349445"], ["updated_at", "2021-11-22 18:07:14.349445"]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.350516"], ["updated_at", "2021-11-22 18:07:14.350516"], ["password_digest", "$2a$04$yk8Qr.CyKtDyM.Qw/xJ9suivXCbMUpGd.yAVIDDMyj8rEzL8bt0eW"], ["authentication_token", "jCsoY2xFC1KSpKP4marQgphX"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.351214"], ["updated_at", "2021-11-22 18:07:14.351214"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mOption Create (0.2ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.352562"], ["updated_at", "2021-11-22 18:07:14.352562"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 3642)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 1"], ["answer", "optionD"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.359168"], ["updated_at", "2021-11-22 18:07:14.359168"]]
+  [1m[36mOption Create (0.3ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.359904"], ["updated_at", "2021-11-22 18:07:14.359904"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.360495"], ["updated_at", "2021-11-22 18:07:14.360495"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.360818"], ["updated_at", "2021-11-22 18:07:14.360818"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionD"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.361114"], ["updated_at", "2021-11-22 18:07:14.361114"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question 2"], ["answer", "optionB"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.362633"], ["updated_at", "2021-11-22 18:07:14.362633"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 2], ["created_at", "2021-11-22 18:07:14.363022"], ["updated_at", "2021-11-22 18:07:14.363022"]]
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 2], ["created_at", "2021-11-22 18:07:14.363547"], ["updated_at", "2021-11-22 18:07:14.363547"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.367769"], ["updated_at", "2021-11-22 18:07:14.367769"], ["password_digest", "$2a$04$YOe/axwn7E/YsYRgUgPQSeFjj7bojzEqNNa7BCA7INob2fiNYg6wS"], ["authentication_token", "5VyoiWgSTBFfvNZj1UVfQhxM"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sam@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "created_at", "updated_at", "password_digest", "authentication_token") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Sam"], ["last_name", "Smith"], ["email", "sam@example.com"], ["created_at", "2021-11-22 18:07:14.369110"], ["updated_at", "2021-11-22 18:07:14.369110"], ["password_digest", "$2a$04$0LtY59iyStWyU8I/3Yx5fuOwoZqVQ5fBqGuVQUJUo7mXS2xz6R2Qu"], ["authentication_token", "gem485nwsyBrBGGzPxryi6q9"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.369578"], ["updated_at", "2021-11-22 18:07:14.369578"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "quizzes" WHERE "quizzes"."slug" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE (slug REGEXP 'sample-quiz$|sample-quiz-[0-9]+$') ORDER BY "quizzes"."slug" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuiz Create (0.1ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "user_id", "created_at", "updated_at", "slug") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Quiz"], ["user_id", 1], ["created_at", "2021-11-22 18:07:14.371040"], ["updated_at", "2021-11-22 18:07:14.371040"], ["slug", "sample-quiz"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("name", "answer", "quiz_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sample Question"], ["answer", "optionA"], ["quiz_id", 1], ["created_at", "2021-11-22 18:07:14.372041"], ["updated_at", "2021-11-22 18:07:14.372041"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mQuiz Load (0.0ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOption Create (2.4ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionA"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.372745"], ["updated_at", "2021-11-22 18:07:14.372745"]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mOption Create (0.1ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionB"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.375812"], ["updated_at", "2021-11-22 18:07:14.375812"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mOption Create (0.0ms)[0m  [1m[32mINSERT INTO "options" ("name", "question_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "optionC"], ["question_id", 1], ["created_at", "2021-11-22 18:07:14.376477"], ["updated_at", "2021-11-22 18:07:14.376477"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/questions/1" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started DELETE "/questions/1" for 127.0.0.1 at 2021-11-22 23:37:14 +0530
+Processing by QuestionsController#show as JSON
+  Parameters: {"id"=>"1"}
+Processing by QuestionsController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE (quiz_id = '1')[0m
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2128)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mOption Load (0.1ms)[0m  [1m[34mSELECT "options".* FROM "options" WHERE "options"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mOption Destroy (0.1ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 1]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 2]]
+  [1m[36mOption Destroy (0.0ms)[0m  [1m[31mDELETE FROM "options" WHERE "options"."id" = ?[0m  [["id", 3]]
+  [1m[36mAttemptAnswer Load (0.1ms)[0m  [1m[34mSELECT "attempt_answers".* FROM "attempt_answers" WHERE "attempt_answers"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[36mQuestion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 5251)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "questions"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m

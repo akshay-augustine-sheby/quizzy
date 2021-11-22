@@ -54,14 +54,4 @@ class QuestionTest < ActiveSupport::TestCase
     assert_not @question.valid?
     assert_includes @question.errors.full_messages, "Too many options, maximum only 4 options allowed"
   end
-
-  def test_options_should_be_unique
-    @question = Question.new(
-      name: "Sample Question", answer: "optionA", quiz_id: @quiz.id,
-      options_attributes: [{ name: "optionA" },
-                            { name: "optionA" },
-                            { name: "optionB" }])
-    assert_not @question.valid?
-    assert_includes @question.errors.full_messages, "Options must be unique"
-  end
 end
