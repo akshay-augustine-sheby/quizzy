@@ -22,4 +22,12 @@ class AttemptTest < ActiveSupport::TestCase
     assert_not @attempt.valid?
     assert_includes @attempt.errors.full_messages, "Quiz must exist"
   end
+
+  def test_user_can_attempt_different_quizzes
+    @quiz2 = Quiz.create!(name: "Sample Quiz 2", user_id: @user.id)
+    @attempt1 = Attempt.create!(submitted: true, quiz_id: @quiz.id, user_id: @user.id)
+    @attempt2 = Attempt.new(submitted: true, quiz_id: @quiz2.id, user_id: @user.id)
+    @attempt2.save
+    assert @attempt2.valid?
+  end
 end

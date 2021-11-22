@@ -41,6 +41,7 @@ const QuestionCreate = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await questionsApi.create({
         question: {
           name: question,
@@ -54,7 +55,7 @@ const QuestionCreate = ({ history }) => {
         },
       });
       setLoading(false);
-      history.push(`/quiz/${slug}/show`);
+      history.push(`/quizzes/${slug}/show`);
     } catch (error) {
       logger.error(error);
       setLoading(false);

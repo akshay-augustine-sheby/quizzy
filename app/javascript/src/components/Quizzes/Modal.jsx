@@ -3,7 +3,7 @@ import React from "react";
 import { Delete, Warning } from "@bigbinary/neeto-icons";
 import { Modal, Typography, Button } from "@bigbinary/neetoui/v2";
 
-const ModalQuiz = ({ showModal, setShowModal, val, deleteQuiz }) => {
+const ModalQuiz = ({ showModal, setShowModal, val, deletee }) => {
   return (
     <Modal isOpen={showModal} onClose={() => setShowModal(false)} size="xs">
       <Modal.Header>
@@ -28,7 +28,7 @@ const ModalQuiz = ({ showModal, setShowModal, val, deleteQuiz }) => {
           iconPosition="left"
           onClick={() => {
             setShowModal(false);
-            deleteQuiz(val);
+            deletee(val);
           }}
         />
         <Button

@@ -23,12 +23,13 @@ const ShowQuiz = ({ history }) => {
   const [questions, setQuestions] = useState([]);
   const [pageLoading, setPageLoading] = useState(true);
   const [quizId, setQuizId] = useState("");
+  const [published, setPublished] = useState(false);
   const [options, setOptions] = useState({});
   const [url, setUrl] = useState("");
   const [copied, setCopied] = useState(false);
 
   const handleCreateQuestion = () => {
-    history.push(`/quiz/${slug}/question/create`);
+    history.push(`/quizzes/${slug}/question/create`);
   };
 
   const fetchQuizDetails = async () => {
@@ -36,6 +37,7 @@ const ShowQuiz = ({ history }) => {
       const response = await quizzesApi.show(slug);
       setQuiz(response.data.quiz);
       setQuizId(response.data.quiz.id);
+      setPublished(response.data.quiz.published);
       setQuestions(response.data.questions);
       setOptions(response.data.options);
     } catch (error) {
@@ -45,21 +47,33 @@ const ShowQuiz = ({ history }) => {
     }
   };
 
-  const handlePublish = () => {
-    //console.log(window.location.origin)
-    const path = `${window.location.origin}/public/${slug}`;
-    setUrl(path);
-    //console.log(url)
+  const handlePublish = async () => {
+    try {
+      await quizzesApi.update({
+        slug,
+        payload: { quiz: { published: true } },
+      });
+      const path = `${window.location.origin}/public/${slug}`;
+      setUrl(path);
+    } catch (error) {
+      logger.error(error);
+    }
   };
 
   const editQuestion = question_id => {
     localStorage.setItem("slug", slug);
-    history.push(`/question/${question_id}/edit`);
+    history.push(`/questions/${question_id}/edit`);
   };
 
   useEffect(() => {
     fetchQuizDetails();
   }, []);
+  useEffect(() => {
+    if (published === true) {
+      const path = `${window.location.origin}/public/${slug}`;
+      setUrl(path);
+    }
+  }, [published]);
 
   if (pageLoading) {
     return (
@@ -92,7 +106,7 @@ const ShowQuiz = ({ history }) => {
 
   return (
     <Container>
-      <div className="flex-col space-y-20 mt-10">
+      <div className="flex-col space-y-10 mt-10 mb-10">
         <div className="flex justify-between">
           <div className="text-3xl font-bold">{quiz.name}</div>
           <div className="flex space-x-2">
@@ -151,7 +165,7 @@ const ShowQuiz = ({ history }) => {
         )}
         <div className="flex-row space-y-12">
           {questions?.map((question, index) => (
-            <div key={index} className="space-y-3">
+            <div key={index} className="space-y-3 shadow-lg p-10">
               <div className="flex space-x-10 ">
                 <div className="text-gray-600">{`Question ${index + 1}`}</div>
                 <div className="font-extrabold">{question.name}</div>

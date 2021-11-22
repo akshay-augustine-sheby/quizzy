@@ -17,6 +17,7 @@ const Quizzes = ({ history }) => {
 
   const fetchQuizzes = async () => {
     try {
+      setLoading(true);
       const response = await quizzesApi.list();
       setQuizzes(response.data.quizzes);
     } catch (error) {
@@ -27,25 +28,24 @@ const Quizzes = ({ history }) => {
   };
 
   const handleCreateQuiz = () => {
-    window.location.href = "/quiz/create";
+    history.push("/quizzes/create");
   };
 
   const deleteQuiz = async slug => {
     try {
       await quizzesApi.destroy(slug);
       await fetchQuizzes();
-      window.location.href = "/";
     } catch (error) {
       logger.error(error);
     }
   };
 
   const editQuiz = slug => {
-    history.push(`/quiz/${slug}/edit`);
+    history.push(`/quizzes/${slug}/edit`);
   };
 
   const showQuiz = slug => {
-    history.push(`/quiz/${slug}/show`);
+    history.push(`/quizzes/${slug}/show`);
     logger.log(slug);
   };
 

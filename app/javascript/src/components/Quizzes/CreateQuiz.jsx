@@ -14,6 +14,7 @@ const CreateQuiz = ({ history }) => {
   const handleSubmit = async event => {
     event.preventDefault();
     try {
+      setLoading(true);
       await quizzesApi.create({ quiz: { name: quiz } });
       setLoading(false);
       history.push("/");
@@ -39,6 +40,7 @@ const CreateQuiz = ({ history }) => {
             size="small"
             type="text"
             onChange={e => setQuiz(e.target.value)}
+            required
           />
           <Button type="submit" buttonText="Submit" loading={loading} />
         </form>

@@ -6,6 +6,7 @@ const Button = ({ type = "button", buttonText, onClick, loading }) => {
   return (
     <div className="mt-6">
       <button
+        disabled={loading}
         type={type}
         onClick={onClick}
         className="relative flex justify-center px-4 py-2

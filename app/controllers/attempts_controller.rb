@@ -14,7 +14,7 @@ class AttemptsController < ApplicationController
         }
       end
     end
-    render status: :ok, json: { data: @data }
+    render status: :ok, json: { data: @data.reject { |dat| dat.blank? } }
   end
 
   def update

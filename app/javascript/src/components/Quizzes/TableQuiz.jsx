@@ -111,7 +111,7 @@ const TableQuiz = ({ quizzes, deleteQuiz, editQuiz, showQuiz }) => {
         showModal={showModal}
         val={val}
         setShowModal={setShowModal}
-        deleteQuiz={deleteQuiz}
+        deletee={deleteQuiz}
       />
     </div>
   );

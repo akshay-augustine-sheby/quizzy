@@ -9,6 +9,7 @@ import { initializeLogger } from "common/logger";
 import Login from "components/Authentication/Login";
 import PrivateRoute from "components/Common/PrivateRoute";
 
+import ErrorBoundary from "./components/ErrorBoundary";
 import PageLoader from "./components/PageLoader";
 import LoginUser from "./components/Publish/LoginUser";
 import QuestionCreate from "./components/Questions/CreateQuestion";
@@ -45,27 +46,29 @@ const App = () => {
       <Switch>
         <Route exact path="/public/:slug" component={LoginUser} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/quiz/reports" component={Reports} />
-        <Route exact path="/quiz/create" component={CreateQuiz} />
-        <Route exact path="/quiz/:slug/edit" component={EditQuiz} />
-        <Route exact path="/quiz/:slug/show" component={ShowQuiz} />
+        <Route exact path="/reports" component={Reports} />
+        <Route exact path="/quizzes/create" component={CreateQuiz} />
+        <Route exact path="/quizzes/:slug/edit" component={EditQuiz} />
+        <Route exact path="/quizzes/:slug/show" component={ShowQuiz} />
         <Route
           exact
-          path="/question/:question_id/edit"
+          path="/questions/:question_id/edit"
           component={EditQuestion}
         />
 
         <Route
           exact
-          path="/quiz/:slug/question/create"
+          path="/quizzes/:slug/question/create"
           component={QuestionCreate}
         />
         <PrivateRoute
+          exact
           path="/"
           redirectRoute="/login"
           condition={isLoggedIn}
           component={Quizzes}
         />
+        <Route component={ErrorBoundary} />
       </Switch>
     </Router>
   );
