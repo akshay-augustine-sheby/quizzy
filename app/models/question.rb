@@ -13,7 +13,7 @@ class Question < ApplicationRecord
   validate :answer_should_present_in_options
 
   accepts_nested_attributes_for :options, reject_if: proc { |attributes|
- attributes["name"].blank? }, update_only: true, allow_destroy: true
+ attributes["name"].blank? }, allow_destroy: true
 
   private
 

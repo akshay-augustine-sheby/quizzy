@@ -6,6 +6,7 @@ import FormQuestion from "./Form";
 
 import optionsApi from "../../apis/options";
 import questionsApi from "../../apis/questions";
+import Toastr from "../Common/Toastr";
 import PageLoader from "../PageLoader";
 
 const EditQuestion = ({ history }) => {
@@ -13,6 +14,7 @@ const EditQuestion = ({ history }) => {
   const [answer, setAnswer] = useState("");
   const [options, setOptions] = useState([{ option: "" }, { option: "" }]);
   const [optionsId, setOptionsId] = useState([]);
+  const [deleteOptionsId, setDeleteOptionsId] = useState([]);
   const { question_id } = useParams();
   const [loading, setLoading] = useState(false);
   //const [deleteIds, setDeleteIds] = useState([])
@@ -32,12 +34,13 @@ const EditQuestion = ({ history }) => {
   const handleRemove = async id => {
     try {
       if (optionsId[id]) {
-        await optionsApi.destroy(optionsId[id]);
+        setDeleteOptionsId([...deleteOptionsId, optionsId[id]]);
         setAnswer("");
         const values = [...options];
         values.splice(id, 1);
         setOptions(values);
       } else {
+        setAnswer("");
         const values = [...options];
         values.splice(id, 1);
         setOptions(values);
@@ -69,36 +72,52 @@ const EditQuestion = ({ history }) => {
     }
   };
 
+  const updat = () => {
+    let arr1 = deleteOptionsId.map(item => {
+      return {
+        id: item,
+        _destroy: "1",
+      };
+    });
+    let arr2 = options.map((opt, index) => {
+      if (optionsId[index] !== undefined) {
+        return {
+          id: optionsId[index],
+          name: opt.option,
+          question_id: question_id,
+        };
+      }
+      //console.log(opt.option)
+
+      return {
+        name: opt.option,
+        question_id: question_id,
+      };
+    });
+    return [...arr1, ...arr2];
+  };
+
   const handleSubmit = async event => {
     event.preventDefault();
     try {
       setLoading(true);
-      await questionsApi.update({
-        question_id,
-        payload: {
-          question: {
-            name: question,
-            answer: answer.value,
-            options_attributes: options.map((opt, index) => {
-              if (optionsId[index] != undefined) {
-                return {
-                  id: optionsId[index],
-                  name: opt.option,
-                  question_id: question_id,
-                };
-              }
-
-              return {
-                name: opt.option,
-                question_id: question_id,
-              };
-            }),
+      if (answer === "") {
+        Toastr.error("Please select an answer");
+      } else {
+        await questionsApi.update({
+          question_id,
+          payload: {
+            question: {
+              name: question,
+              answer: answer.value,
+              options_attributes: updat(),
+            },
           },
-        },
-      });
+        });
+        const slug = localStorage.getItem("slug");
+        history.push(`/quizzes/${slug}/show`);
+      }
       setLoading(false);
-      const slug = localStorage.getItem("slug");
-      history.push(`/quizzes/${slug}/show`);
     } catch (error) {
       logger.error(error);
       setLoading(false);

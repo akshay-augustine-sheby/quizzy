@@ -17,7 +17,8 @@ class ExportReportWorker
         }
       end
     end
-    reports = attempts.pluck :quiz_name, :user_name, :email, :correct, :incorrect
+    arr = attempts.reject { |dat| dat.blank? }
+    reports = arr.pluck :quiz_name, :user_name, :email, :correct, :incorrect
     total reports.size
     xlsx_package = Axlsx::Package.new
     xlsx_workbook = xlsx_package.workbook
@@ -26,7 +27,6 @@ class ExportReportWorker
       reports.each.with_index(1) do |report, idx|
         worksheet.add_row report
         at idx
-        sleep 1
       end
     end
     sleep 10
