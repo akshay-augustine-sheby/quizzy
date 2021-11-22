@@ -47,8 +47,7 @@ const ShowQuiz = ({ history }) => {
     }
   };
 
-  const handlePublish = async event => {
-    event.preventDefault();
+  const handlePublish = async () => {
     try {
       await quizzesApi.update({
         slug,
