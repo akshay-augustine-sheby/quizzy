@@ -165,7 +165,7 @@ const ShowQuiz = ({ history }) => {
         )}
         <div className="flex-row space-y-12">
           {questions?.map((question, index) => (
-            <div key={index} className="space-y-3">
+            <div key={index} className="space-y-3 shadow-lg p-10">
               <div className="flex space-x-10 ">
                 <div className="text-gray-600">{`Question ${index + 1}`}</div>
                 <div className="font-extrabold">{question.name}</div>
