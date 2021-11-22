@@ -102,6 +102,7 @@ const LoginUser = () => {
                 type="text"
                 value={firstName}
                 onChange={e => setFirstName(e.target.value)}
+                required
               />
               <Input
                 label="Last Name"
@@ -110,6 +111,7 @@ const LoginUser = () => {
                 type="text"
                 value={lastName}
                 onChange={e => setLastName(e.target.value)}
+                required
               />
               <Input
                 label="Email"
@@ -118,6 +120,7 @@ const LoginUser = () => {
                 type="email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
+                required
               />
               <Button type="submit" buttonText="Next" loading={loading} />
             </form>

@@ -28,26 +28,28 @@ const FormQuestion = ({
         </div>
         <form onSubmit={handleSubmit} className="space-y-3">
           <Input
-            label="Question*"
+            label="Question"
             placeholder=""
             size="small"
             type="text"
             className="w-3/5"
             value={question}
             onChange={e => setQuestion(e.target.value)}
+            required
           />
           {options.map((opt, id) => {
             if (id <= 1) {
               return (
                 <div key={`${opt}-${id}`}>
                   <Input
-                    label={`Option ${id + 1}*`}
+                    label={`Option ${id + 1}`}
                     placeholder=""
                     size="small"
                     type="text"
                     className="w-3/5"
                     value={options[id].option}
                     onChange={e => handleChange(id, e)}
+                    required
                   />
                 </div>
               );
@@ -90,7 +92,7 @@ const FormQuestion = ({
           <div className="">
             <Select
               isCreatable
-              label="Correct answer*"
+              label="Correct answer"
               value={answer}
               name="ValueList"
               className="w-3/5"
@@ -103,6 +105,7 @@ const FormQuestion = ({
               })}
               placeholder="Select an Option"
               onChange={val => setAnswer(val)}
+              required
             />
           </div>
           <Button2

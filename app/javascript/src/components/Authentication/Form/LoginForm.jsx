@@ -17,6 +17,7 @@ const LoginForm = ({ handleSubmit, setEmail, setPassword, loading }) => {
             size="small"
             type="email"
             onChange={e => setEmail(e.target.value)}
+            required
           />
           <Input
             label="Password"
@@ -24,6 +25,7 @@ const LoginForm = ({ handleSubmit, setEmail, setPassword, loading }) => {
             size="small"
             type="password"
             onChange={e => setPassword(e.target.value)}
+            required
           />
           <Button type="submit" buttonText="Submit" loading={loading} />
         </form>

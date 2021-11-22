@@ -40,6 +40,7 @@ const CreateQuiz = ({ history }) => {
             size="small"
             type="text"
             onChange={e => setQuiz(e.target.value)}
+            required
           />
           <Button type="submit" buttonText="Submit" loading={loading} />
         </form>
