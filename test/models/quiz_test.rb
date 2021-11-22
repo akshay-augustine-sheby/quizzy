@@ -15,4 +15,10 @@ class QuizTest < ActiveSupport::TestCase
     assert_not @quiz.valid?
     assert_includes @quiz.errors.full_messages, "Name can't be blank"
   end
+
+  def test_quiz_creator_should_be_present
+    @quiz.user_id = ""
+    assert_not @quiz.valid?
+    assert_includes @quiz.errors.full_messages, "User must exist"
+  end
 end

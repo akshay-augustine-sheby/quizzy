@@ -13,6 +13,16 @@ class QuestionTest < ActiveSupport::TestCase
     @quiz = Quiz.create!(name: "Sample Quiz", user_id: @user.id)
   end
 
+  def test_question_should_be_present
+    @question = Question.new(
+      name: "", answer: "optionA", quiz_id: @quiz.id,
+      options_attributes: [{ name: "optionA" },
+                            { name: "optionB" },
+                            { name: "optionC" }])
+    assert_not @question.valid?
+    assert_includes @question.errors.full_messages, "Name can't be blank"
+  end
+
   def test_option1_should_be_present
     @question = Question.new(
       name: "Sample Question", answer: "optionD", quiz_id: @quiz.id,
