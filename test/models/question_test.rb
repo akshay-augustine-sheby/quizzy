@@ -3,9 +3,6 @@
 require "test_helper"
 
 class QuestionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
   def setup
     @user = User.create!(
       first_name: "Sam", last_name: "Smith", email: "sam@example.com", password: "welcome",
