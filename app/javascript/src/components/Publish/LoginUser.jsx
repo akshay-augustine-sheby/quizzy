@@ -20,33 +20,20 @@ const LoginUser = () => {
   const [quizId, setQuizId] = useState("");
   const [loading, setLoading] = useState(true);
   const [attemptId, setAttemptId] = useState("");
-  const [questionIds, setQuestionIds] = useState([]);
-  const [questions, setQuestions] = useState([]);
-  const [options, setOptions] = useState({});
   const [login, setLogin] = useState(false);
   const [error, setError] = useState(false);
   const { slug } = useParams();
 
   useEffect(() => {
-    fetchQuiz(slug);
+    fetchQuizName(slug);
   }, []);
 
-  const fetchQuiz = async slug => {
+  const fetchQuizName = async slug => {
     try {
-      const response = await publicQuizzesApi.show(slug);
-      if (response.data.quiz.published === false) {
-        setError(true);
-        setLoading(false);
-      } else {
-        setQuizName(response.data.quiz.name);
-        //console.log(response.data.quiz.id)
-        setQuizId(response.data.quiz.id);
-        setQuestionIds(response.data.id);
-        setQuestions(response.data.name);
-        setOptions(response.data.options);
-        //setOptionsId(response.data.optionsId);
-        setLoading(false);
-      }
+      const response = await publicQuizzesApi.showQuizName(slug);
+      setQuizName(response.data.quiz_name);
+      setQuizId(response.data.quiz_id);
+      setLoading(false);
     } catch (error) {
       setError(true);
       logger.error(error);
@@ -59,6 +46,7 @@ const LoginUser = () => {
     event.preventDefault();
     try {
       setLoading(true);
+
       const response = await usersApi.create({
         user: {
           first_name: firstName,
@@ -129,16 +117,7 @@ const LoginUser = () => {
       );
     }
 
-    return (
-      <AttemptQuiz
-        quizName={quizName}
-        attemptId={attemptId}
-        questionIds={questionIds}
-        questions={questions}
-        options={options}
-        quizId={quizId}
-      />
-    );
+    return <AttemptQuiz slug={slug} attemptId={attemptId} />;
   }
 
   return <ErrorPage />;

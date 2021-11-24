@@ -7,27 +7,46 @@ import Button from "components/Button";
 import Result from "./Result";
 
 import attemptsApi from "../../apis/attempts";
+import publicQuizzesApi from "../../apis/publicQuizzes";
 import Toastr from "../Common/Toastr";
 import PublicNavBar from "../NavBar/PublicNavBar";
 import PageLoader from "../PageLoader";
 
-const AttemptQuiz = ({
-  quizName,
-  attemptId,
-  questionIds,
-  questions,
-  options,
-  quizId,
-}) => {
+const AttemptQuiz = ({ attemptId, slug }) => {
   const [loading, setLoading] = useState(false);
   //const [optionsId, setOptionsId] = useState({});
+  const [quizName, setQuizName] = useState("");
+  const [quizId, setQuizId] = useState("");
+  const [questionIds, setQuestionIds] = useState([]);
+  const [options, setOptions] = useState({});
+  const [questions, setQuestions] = useState([]);
   const [attempt_id, setAttempt_id] = useState("");
   const [userAnswers, setUserAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
+  const fetchQuiz = async slug => {
+    try {
+      const response = await publicQuizzesApi.show(slug);
+      setQuizName(response.data.quiz.name);
+      //console.log(response.data.quiz.id)
+      setQuizId(response.data.quiz.id);
+      setQuestionIds(response.data.id);
+      setQuestions(response.data.name);
+      setOptions(response.data.options);
+      //setOptionsId(response.data.optionsId);
+      setLoading(false);
+    } catch (error) {
+      logger.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     setAttempt_id(attemptId);
+    fetchQuiz(slug);
   }, []);
+
   const handleSubmit = async event => {
     event.preventDefault();
     try {
@@ -82,7 +101,7 @@ const AttemptQuiz = ({
     return (
       <div>
         <PublicNavBar />
-        <div className="flex flex-col justify-center items-center space-y-20 mt-10">
+        <div className="flex flex-col justify-center items-center space-y-20 mt-10 mb-10 px-20">
           <form onSubmit={handleSubmit}>
             <div className="mb-10">
               <div className="text-3xl font-bold">{quizName}</div>

@@ -1,6 +1,21 @@
 # frozen_string_literal: true
 
 class Public::QuizzesController < ApplicationController
+  def show_quiz_name
+    @quiz = Quiz.find_by(slug: params[:slug])
+    if @quiz
+      if @quiz.published == true
+        render status: :ok, json: { quiz_name: @quiz.name, quiz_id: @quiz.id }
+      else
+        render status: :unprocessable_entity,
+          json: { error: "Quiz not found" }
+      end
+    else
+      render status: :unprocessable_entity,
+        json: { error: "Quiz not found" }
+    end
+  end
+
   def show
     hash_name = {}
     hash_id = {}

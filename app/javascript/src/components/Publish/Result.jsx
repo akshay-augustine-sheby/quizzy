@@ -77,7 +77,7 @@ const Result = ({ quizName, options, userAnswers, quizId, attempt_id }) => {
   return (
     <div>
       <PublicNavBar />
-      <div className="flex flex-col justify-center items-center space-y-5 mt-10">
+      <div className="flex flex-col justify-center items-center space-y-5 mt-10 mb-10 px-20">
         <div>
           <div className="text-3xl font-bold">{quizName}</div>
         </div>
