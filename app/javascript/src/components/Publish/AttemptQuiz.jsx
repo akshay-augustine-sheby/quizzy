@@ -14,7 +14,6 @@ import PageLoader from "../PageLoader";
 
 const AttemptQuiz = ({ attemptId, slug }) => {
   const [loading, setLoading] = useState(false);
-  //const [optionsId, setOptionsId] = useState({});
   const [quizName, setQuizName] = useState("");
   const [quizId, setQuizId] = useState("");
   const [questionIds, setQuestionIds] = useState([]);
@@ -28,12 +27,10 @@ const AttemptQuiz = ({ attemptId, slug }) => {
     try {
       const response = await publicQuizzesApi.show(slug);
       setQuizName(response.data.quiz.name);
-      //console.log(response.data.quiz.id)
       setQuizId(response.data.quiz.id);
       setQuestionIds(response.data.id);
       setQuestions(response.data.name);
       setOptions(response.data.options);
-      //setOptionsId(response.data.optionsId);
       setLoading(false);
     } catch (error) {
       logger.error(error);
@@ -68,7 +65,6 @@ const AttemptQuiz = ({ attemptId, slug }) => {
       setLoading(false);
       Toastr.success("Quiz submitted successfully ");
       setSubmitted(true);
-      //history.push("/");
     } catch (error) {
       logger.error(error);
       setLoading(false);
